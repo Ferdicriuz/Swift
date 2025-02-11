@@ -220,19 +220,22 @@ background-size: cover;
 
 footer .container1{
 margin: 3rem 0;
+width: 40rem;
+text-align: center;
 }
 
 footer .container2{
 display: flex;
-justify-content: space-between;
+justify-content: start;
 align-items: start;
 flex-wrap: wrap;
 height: auto;
+width: 90rem;
 margin: 3rem ;
 }
 
 footer img{
-width: 80%;
+width: 50%;
 }
 
 .container2 .box{
@@ -241,7 +244,7 @@ justify-content: start;
 align-items: start;
 flex-direction: column;
 height: 18rem;
-width: 18rem;
+width: 20rem;
 }
 
 .container2 .box h1{
