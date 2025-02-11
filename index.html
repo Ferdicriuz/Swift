@@ -26,18 +26,20 @@
 
 <div class="box box2">
 
-    <form action="">
+    <form action="" id="fill">
     <label for="email">Email <br>
         <input type="text" id="email" name="email"/>
     </label><br>
     
     <label for="password">Password<br>
-        <input type="password" id="psword" name="password"/>
+        <input type="password" id="psword" name="quantity" min="6" max="8" />
     </label>
     
     <div class="sob"><a href="forgotenpass.html">Forgot Password</a></div>
     
     <button type="submit" id="login" > Login </button>
+    <p id="emailMessage"></p>
+    <p id="passwordMessage"></p>
     </form>
 </div>
 
@@ -60,5 +62,6 @@
 </div>
     </section>
 </main>
+<script src="script.js"></script>
 </body>
 </html>
