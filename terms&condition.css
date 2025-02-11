@@ -1,0 +1,1958 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    }
+    
+    header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100vw;
+    flex-wrap: wrap;
+    min-height: 8vh;
+    }
+
+    header img{
+    width: 10rem;
+    }
+
+    .box3, #boxout{
+    display: none;
+    }
+
+    header .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    }
+
+    .dropdown-button, .login, .cart{
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background:transparent;
+    }
+
+    nav a{
+    font-size: 1.3rem;
+    color: #000000;
+    padding:1rem;
+    font-weight: 500;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-button {
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 1.3rem;
+    }
+
+    .dropdown-content {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 100rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    }
+
+    .dropdown-content.show{
+    display: flex;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    }
+
+    header .box2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+    width: auto; 
+    border-bottom: 2px solid #000000;
+    border-radius: 1rem;
+    }
+
+    header .box4{
+    display: none;
+    }
+
+    .box2 .fa-search{
+    cursor: pointer;
+    font-size: 1.5rem;
+    }
+
+    #search{
+    border: none;
+    width:26rem;
+    padding: 1rem;
+    background: transparent;
+    }
+
+    #search:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    }
+
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 47rem;
+    background: #003E27;
+    }
+
+    main .box h1{
+    font-size: 5rem;
+    color: #FFFFFF;
+    }
+
+    main .box a{
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 2rem 3rem;
+    word-spacing: 1rem;
+    }
+
+    article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: auto;
+    }
+
+    article .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 120rem;
+    height: auto;
+    margin: 1rem;
+    }
+
+    article .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+article .sob{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+}
+
+.container .box h1{
+font-size: 4rem;
+}
+
+.container .box h2{
+font-size: 2.5rem;
+padding-bottom: 1rem;
+}
+.container .box p{
+font-size: 1.5rem;
+margin: 1rem 0;
+}
+.container .box ul li{
+font-size: 1.5rem;
+list-style-position:inside;
+margin-left: 1rem;
+}
+
+footer{
+display: flex;
+justify-content: space-between;
+align-items: start;
+min-width: 100vw;
+min-height: 56vh;
+background-image: url('Assets/Footer\ Backround.jpg');
+background-position: center;
+background-size: cover;
+}
+
+footer .container1{
+margin: 3rem 0;
+}
+
+footer .container2{
+display: flex;
+justify-content: space-between;
+align-items: start;
+flex-wrap: wrap;
+height: auto;
+margin: 3rem ;
+}
+
+footer img{
+width: 80%;
+}
+
+.container2 .box{
+display: flex;
+justify-content: start;
+align-items: start;
+flex-direction: column;
+height: 18rem;
+width: 18rem;
+}
+
+.container2 .box h1{
+font-size: 1.6rem;
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+.container2 .box a{
+color: #FFFFFF;
+font-size: 1.3rem;
+padding: 0.5rem 0;
+text-decoration: none;
+}
+
+@media(max-width:768px){
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    scroll-behavior: smooth;
+    }
+    
+    header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 8vh;
+    }
+
+    header img{
+    width: 10rem;
+    }
+
+    .box3{
+    display: flex;
+    font-size: 2rem;
+    }
+
+ header .box3 #btn{
+border: none;
+background: none;
+font-size: 3rem;
+}
+    header .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    }
+
+    .dropdown-button, .login, .cart{
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background:transparent;
+    }
+
+    header .nav, header .box1{
+    display: none;
+    }
+
+    nav a{
+    font-size: 1.3rem;
+    color: #000000;
+    padding:1rem;
+    font-weight: 500;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-button {
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 1.3rem;
+    }
+
+    .dropdown-content {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 100rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    }
+
+    .dropdown-content.show{
+    display: flex;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    }
+
+      header .box4{
+    display: none;
+    }
+
+    header .box2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    width: auto; 
+    border-bottom: 2px solid #000000;
+    border-radius: 1rem;
+    }
+
+    .box2 .fa-search{
+    cursor: pointer;
+    font-size: 1.5rem;
+    }
+
+    #search{
+    border: none;
+    width:40rem;
+    padding: 1rem;
+    background: transparent;
+    }
+
+    #search:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    }
+
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 47rem;
+    background: #003E27;
+    }
+
+    main .box h1{
+    font-size: 5rem;
+    color: #FFFFFF;
+    }
+
+    main .box a{
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 1rem 2rem;
+    word-spacing: 1rem;
+    }
+
+    article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: auto;
+    }
+
+    article .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 80rem;
+    height: auto;
+    margin: 1rem;
+    }
+
+    article .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    width: 80rem;
+    height: auto;
+    padding: 1rem;
+}
+
+article .sob{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+}
+
+.container .box h1{
+font-size: 4rem;
+}
+
+.container .box h2{
+font-size: 2.5rem;
+padding-bottom: 1rem;
+}
+.container .box p{
+font-size: 1.5rem;
+padding: 1rem 0;
+}
+.container .box ul li{
+font-size: 1.5rem;
+list-style-position:inside;
+margin-left: 1rem;
+}
+
+footer{
+display: flex;
+justify-content: space-around;
+align-items: start;
+min-width: 100vw;
+min-height: 50vh;
+background-image: url('Assets/Footer\ Backround.jpg');
+background-position: center;
+background-size: cover;
+}
+
+footer .container1{
+margin: 3rem ;
+}
+
+footer .container2{
+display: flex;
+justify-content: start;
+align-items: start;
+flex-wrap: wrap;
+height: auto;
+width: 60rem;
+margin: 3rem ;
+}
+
+footer img{
+width: 70%;
+}
+
+.container2 .box{
+display: flex;
+justify-content: start;
+align-items: start;
+flex-direction: column;
+height: 18rem;
+width: 15rem;
+}
+
+.container2 .box h1{
+font-size: 1.6rem;
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+.container2 .box a{
+color: #FFFFFF;
+font-size: 1.3rem;
+padding: 0.5rem 0;
+text-decoration: none;
+}
+}
+
+
+@media(max-width:600px){
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    scroll-behavior: smooth;
+    }
+    
+    header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100vw;
+    min-height: 10vh;
+    padding: 2rem 0;
+    }
+
+    header img{
+    width: 10rem;
+    }
+
+   header .box3{
+    display: none;
+    font-size: 2rem;
+    }
+
+
+    header .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    }
+
+    .dropdown-button, .login, .cart{
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background:transparent;
+    }
+
+    header .nav, header .box1, .box3{
+    display: none;
+    }
+
+    header .logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+
+    header .logo #boxout{
+    display: flex;
+    border: none;
+    font-size: 3rem;
+    background: none;
+    padding-right: 2rem;
+    }
+
+    nav a{
+    font-size: 1.3rem;
+    color: #000000;
+    padding:1rem;
+    font-weight: 500;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-button {
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 1.3rem;
+    }
+
+    .dropdown-content {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 100rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    }
+
+    .dropdown-content.show{
+    display: flex;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    }
+
+    header .box2{
+        display: none;
+    }
+    
+    header .box4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    width: auto; 
+    border-bottom: 2px solid #000000;
+    border-radius: 1rem;
+    }
+
+    .box2 .fa-search{
+    cursor: pointer;
+    font-size: 1.5rem;
+    }
+
+    #search{
+    border: none;
+    width:40rem;
+    padding: 1rem;
+    background: transparent;
+    }
+
+    #search:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    }
+
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 47rem;
+    background: #003E27;
+    }
+
+    main .box h1{
+    font-size: 5rem;
+    margin: 2rem ;
+    color: #FFFFFF;
+    }
+
+    main .box a{
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 2rem ;
+    word-spacing: 1rem;
+    }
+
+    article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: auto;
+    }
+
+    article .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 60rem;
+    height: auto;
+    margin: 1rem;
+    }
+
+    article .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    width: 60rem;
+    height: auto;
+    padding: 1rem;
+}
+
+article .sob{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+}
+
+.container .box h1{
+font-size: 4rem;
+}
+
+.container .box h2{
+font-size: 2.5rem;
+padding-bottom: 1rem;
+}
+.container .box p{
+font-size: 1.5rem;
+padding: 1rem 0;
+}
+.container .box ul li{
+font-size: 1.5rem;
+list-style-position:inside;
+margin-left: 1rem;
+}
+
+footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+min-width: 100vw;
+min-height: 50vh;
+background-image: url('Assets/Footer\ Backround.jpg');
+background-position: center;
+background-size: cover;
+}
+
+footer .container1{
+margin: 3rem 0;
+text-align: center;
+width: 100%;
+}
+
+footer .container2{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+height: auto;
+width: 100%;
+margin: 3rem ;
+}
+
+footer img{
+width: 40%;
+}
+
+.container2 .box{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 18rem;
+width: 100%;
+}
+
+.container2 .box h1{
+font-size: 2rem;
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+.container2 .box a{
+color: #FFFFFF;
+font-size: 1.6rem;
+padding: 0.5rem 0;
+text-decoration: none;
+}
+}
+
+@media(max-width:550px){
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    scroll-behavior: smooth;
+    }
+    
+    header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100vw;
+    min-height: 10vh;
+    padding: 2rem 0;
+    }
+
+    header img{
+    width: 10rem;
+    }
+
+   header .box3{
+    display: none;
+    font-size: 2rem;
+    }
+
+
+    header .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    }
+
+    .dropdown-button, .login, .cart{
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background:transparent;
+    }
+
+    header .nav, header .box1, .box3{
+    display: none;
+    }
+
+    header .logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+
+    header .logo #boxout{
+    display: flex;
+    border: none;
+    font-size: 3rem;
+    background: none;
+    padding-right: 2rem;
+    }
+
+    nav a{
+    font-size: 1.3rem;
+    color: #000000;
+    padding:1rem;
+    font-weight: 500;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-button {
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 1.3rem;
+    }
+
+    .dropdown-content {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 100rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    }
+
+    .dropdown-content.show{
+    display: flex;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    }
+
+    header .box2{
+        display: none;
+    }
+    
+    header .box4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    width: auto; 
+    border-bottom: 2px solid #000000;
+    border-radius: 1rem;
+    }
+
+    .box2 .fa-search{
+    cursor: pointer;
+    font-size: 3rem;
+    }
+
+    #search{
+    border: none;
+    width:35rem;
+    padding: 1rem;
+    background: transparent;
+    }
+
+    #search:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    }
+
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 47rem;
+    background: #003E27;
+    }
+
+    main .box h1{
+    margin: 1rem 2rem;
+    font-size: 5rem;
+    color: #FFFFFF;
+    }
+
+    main .box a{
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 1rem 2rem;
+    word-spacing: 1rem;
+    }
+
+    article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: auto;
+    }
+
+    article .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 60rem;
+    height: auto;
+    margin: 1rem;
+    }
+
+    article .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    width: 60rem;
+    height: auto;
+    padding: 1rem;
+}
+
+article .sob{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+}
+
+.container .box h1{
+font-size: 4rem;
+}
+
+.container .box h2{
+font-size: 2.5rem;
+padding-bottom: 1rem;
+}
+.container .box p{
+font-size: 1.5rem;
+padding: 1rem 0;
+}
+.container .box ul li{
+font-size: 1.5rem;
+list-style-position:inside;
+margin-left: 1rem;
+}
+
+footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+min-width: 100vw;
+min-height: 50vh;
+background-image: url('Assets/Footer\ Backround.jpg');
+background-position: center;
+background-size: cover;
+}
+
+footer .container1{
+margin: 3rem 0;
+text-align: center;
+width: 100%;
+}
+
+footer .container2{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+height: auto;
+margin: 3rem ;
+}
+
+footer img{
+width: 40%;
+}
+
+.container2 .box{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 18rem;
+width: 100%;
+}
+
+.container2 .box h1{
+font-size: 2rem;
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+.container2 .box a{
+color: #FFFFFF;
+font-size: 1.6rem;
+padding: 0.5rem 0;
+text-decoration: none;
+}
+}
+
+@media(max-width:500px){
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    scroll-behavior: smooth;
+    }
+    
+    header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100vw;
+    min-height: 10vh;
+    padding: 2rem 0;
+    }
+
+    header img{
+    width: 10rem;
+    }
+
+   header .box3{
+    display: none;
+    font-size: 2rem;
+    }
+
+
+    header .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    }
+
+    .dropdown-button, .login, .cart{
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background:transparent;
+    }
+
+    header .nav, header .box1, .box3{
+    display: none;
+    }
+
+    header .logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+
+    header .logo #boxout{
+    display: flex;
+    border: none;
+    font-size: 3rem;
+    background: none;
+    padding-right: 2rem;
+    }
+
+    nav a{
+    font-size: 1.3rem;
+    color: #000000;
+    padding:1rem;
+    font-weight: 500;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-button {
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 1.3rem;
+    }
+
+    .dropdown-content {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 100rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    }
+
+    .dropdown-content.show{
+    display: flex;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    }
+
+    header .box2{
+        display: none;
+    }
+    
+    header .box4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    width: auto; 
+    border-bottom: 2px solid #000000;
+    border-radius: 1rem;
+    }
+
+    .box2 .fa-search{
+    cursor: pointer;
+    font-size: 3rem;
+    }
+
+    #search{
+    border: none;
+    width:35rem;
+    padding: 1rem;
+    background: transparent;
+    }
+
+    #search:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    }
+
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 47rem;
+    background: #003E27;
+    }
+
+    main .box h1{
+    margin: 1rem 2rem;
+    font-size: 5rem;
+    color: #FFFFFF;
+    }
+
+    main .box a{
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 1rem 2rem;
+    word-spacing: 1rem;
+    }
+
+    article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: auto;
+    }
+
+    article .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 60rem;
+    height: auto;
+    margin: 1rem;
+    }
+
+    article .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    width: 60rem;
+    height: auto;
+    padding: 1rem;
+}
+
+article .sob{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+}
+
+.container .box h1{
+font-size: 4rem;
+}
+
+.container .box h2{
+font-size: 2.5rem;
+padding-bottom: 1rem;
+}
+.container .box p{
+font-size: 1.5rem;
+padding: 1rem 0;
+}
+.container .box ul li{
+font-size: 1.5rem;
+list-style-position:inside;
+margin-left: 1rem;
+}
+
+footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+min-width: 100vw;
+min-height: 50vh;
+background-image: url('Assets/Footer\ Backround.jpg');
+background-position: center;
+background-size: cover;
+}
+
+footer .container1{
+margin: 3rem 0;
+text-align: center;
+width: 100%;
+}
+
+footer .container2{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+height: auto;
+width: 100%;
+margin: 3rem ;
+}
+
+footer img{
+width: 40%;
+}
+
+.container2 .box{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 18rem;
+width: 100%;
+}
+
+.container2 .box h1{
+font-size: 2rem;
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+.container2 .box a{
+color: #FFFFFF;
+font-size: 1.6rem;
+padding: 0.5rem 0;
+text-decoration: none;
+}
+}
+
+@media(max-width:450px){
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    scroll-behavior: smooth;
+    }
+    
+    header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100vw;
+    min-height: 10vh;
+    padding: 2rem 0;
+    }
+
+    header img{
+    width: 10rem;
+    }
+
+   header .box3{
+    display: none;
+    font-size: 2rem;
+    }
+
+
+    header .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    }
+
+    .dropdown-button, .login, .cart{
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background:transparent;
+    }
+
+    header .nav, header .box1, .box3{
+    display: none;
+    }
+
+    header .logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+
+    header .logo #boxout{
+    display: flex;
+    border: none;
+    font-size: 3rem;
+    background: none;
+    padding-right: 2rem;
+    }
+
+    nav a{
+    font-size: 1.3rem;
+    color: #000000;
+    padding:1rem;
+    font-weight: 500;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-button {
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 1.3rem;
+    }
+
+    .dropdown-content {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 100rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    }
+
+    .dropdown-content.show{
+    display: flex;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    }
+
+    header .box2{
+        display: none;
+    }
+    
+    header .box4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    width: auto; 
+    border-bottom: 2px solid #000000;
+    border-radius: 1rem;
+    }
+
+    .box2 .fa-search{
+    cursor: pointer;
+    font-size: 3rem;
+    }
+
+    #search{
+    border: none;
+    width:30rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background: transparent;
+    }
+
+    #search:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    }
+
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 47rem;
+    background: #003E27;
+    }
+
+    main .box h1{
+    margin: 1rem 2rem;
+    font-size: 5rem;
+    color: #FFFFFF;
+    }
+
+    main .box a{
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 1rem 2rem;
+    word-spacing: 1rem;
+    }
+
+    article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: auto;
+    }
+
+    article .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 50rem;
+    height: auto;
+    margin: 1rem;
+    }
+
+    article .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    width: 50rem;
+    height: auto;
+    padding: 1rem;
+}
+
+article .sob{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+}
+
+.container .box h1{
+font-size: 4rem;
+}
+
+.container .box h2{
+font-size: 2.5rem;
+padding-bottom: 1rem;
+}
+.container .box p{
+font-size: 1.5rem;
+padding: 1rem 0;
+}
+.container .box ul li{
+font-size: 1.5rem;
+list-style-position:inside;
+margin-left: 1rem;
+}
+
+footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+min-width: 100vw;
+min-height: 50vh;
+background-image: url('Assets/Footer\ Backround.jpg');
+background-position: center;
+background-size: cover;
+}
+
+footer .container1{
+text-align: center;
+width: 100%;
+}
+
+footer .container2{
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: auto;
+width: 100%;
+}
+
+footer img{
+width: 40%;
+}
+
+.container2 .box{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 18rem;
+width: 100%;
+}
+
+.container2 .box h1{
+font-size: 2rem;
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+.container2 .box a{
+color: #FFFFFF;
+font-size: 1.6rem;
+padding: 0.5rem 0;
+text-decoration: none;
+}
+}
+
+@media(max-width:350px){
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    scroll-behavior: smooth;
+    }
+    
+    header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100vw;
+    min-height: 10vh;
+    padding: 2rem 0;
+    }
+
+    header img{
+    width: 10rem;
+    }
+
+   header .box3{
+    display: none;
+    font-size: 2rem;
+    }
+
+
+    header .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    }
+
+    .dropdown-button, .login, .cart{
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background:transparent;
+    }
+
+    header .nav, header .box1, .box3{
+    display: none;
+    }
+
+    header .logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+
+    header .logo #boxout{
+    display: flex;
+    border: none;
+    font-size: 3rem;
+    background: none;
+    padding-right: 2rem;
+    }
+
+    nav a{
+    font-size: 1.3rem;
+    color: #000000;
+    padding:1rem;
+    font-weight: 500;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-button {
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 1.3rem;
+    }
+
+    .dropdown-content {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 100rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    }
+
+    .dropdown-content.show{
+    display: flex;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    }
+
+    header .box2{
+        display: none;
+    }
+    
+    header .box4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    width: auto; 
+    border-bottom: 2px solid #000000;
+    border-radius: 1rem;
+    }
+
+    .box2 .fa-search{
+    cursor: pointer;
+    font-size: 3rem;
+    }
+
+    #search{
+    border: none;
+    width:30rem;
+    padding: 1rem;
+    background: transparent;
+    }
+
+    #search:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    }
+
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 47rem;
+    background: #003E27;
+    }
+
+    main .box h1{
+    text-align: center;
+    margin: 1rem 2rem;
+    font-size: 5rem;
+    color: #FFFFFF;
+    }
+
+    main .box a{
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 1rem 2rem;
+    word-spacing: 1rem;
+    }
+
+    article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: auto;
+    }
+
+    article .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 45rem;
+    height: auto;
+    margin: 1rem;
+    }
+
+    article .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    width: 45rem;
+    height: auto;
+    padding: 1rem;
+}
+
+article .sob{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+}
+
+.container .box h1{
+font-size: 4rem;
+}
+
+.container .box h2{
+font-size: 2.5rem;
+padding-bottom: 1rem;
+}
+.container .box p{
+font-size: 1.5rem;
+padding: 1rem 0;
+}
+.container .box ul li{
+font-size: 1.5rem;
+list-style-position:inside;
+margin-left: 1rem;
+}
+
+footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+min-width: 100vw;
+min-height: 50vh;
+background-image: url('Assets/Footer\ Backround.jpg');
+background-position: center;
+background-size: cover;
+}
+
+footer .container1{
+text-align: center;
+width: 45rem;
+}
+
+footer .container2{
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: auto;
+width: 45rem;
+}
+
+footer img{
+width: 40%;
+}
+
+.container2 .box{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 18rem;
+width: 40rem;
+}
+
+.container2 .box h1{
+font-size: 2rem;
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+.container2 .box a{
+color: #FFFFFF;
+font-size: 1.6rem;
+padding: 0.5rem 0;
+text-decoration: none;
+}
+}
