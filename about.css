@@ -145,7 +145,7 @@
     margin-top: 5rem;
     }
 
-    .overlay .box{
+    .container .box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,41 +154,54 @@
     height: 10rem;
     }
 
+    .container{
+    width: 90rem;
+    }
+
     .overlay .box h1{
         font-size: 5rem;
     }
 
     .overlay .box p{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: center;
     }
 
-    .overlay .box1{
+    .container .box1{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     text-align: center;
     height: 40rem;
+    width: 100%;
     }
 
-    .overlay .sub h2{
+    .container .box1 .sub h2{
     font-size: 2rem;
     color:  #003E27;
     }
-    .overlay .sub p{
+
+    .container .box1 .sub p{
     font-size: 2rem;
 
     }
 
-    .overlay .sub{
-    padding: 1rem;
+    .container .box1 .sub{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 30rem;
     }
-    .overlay .sub img{
-    width: 80%;
+
+    .container .box1 .sub img{
+    width: 60%;
     }
 
      .container1 .box{
+    text-align: center;
+    align-content: center;
     height: 15rem;
     }
 
@@ -217,59 +230,109 @@
     text-align: center;
     }
 
-    .container2
-
-
-   
-    
-footer{
+    .container2{
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    min-width: 100vw;
-    min-height: 56vh;
-    background-image: url('Assets/Footer\ Backround.jpg');
-    background-position: center;
-    background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
     }
-    
-    footer .container1{
-    margin: 3rem 0;
-    width: 40rem;
+
+    .container2 .box{
+    text-align: center;
+    align-content: center;
+    height: 15rem;
+    }
+
+
+    .container2 .box1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+    .container2 .box1 .sub{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 30rem;
+    margin: 0 1rem;
+    }
+
+    .container2 .box1 .sub h2{
+    font-size: 2rem;
+    }
+
+     .container2 .box1 .sub p{
+    font-size: 1.5rem;
     text-align: center;
     }
-    
-    footer .container2{
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-wrap: wrap;
-    height: auto;
-    width: 90rem;
-    margin: 3rem ;
+
+    .container2 .sub img{
+    width: 40%;
     }
-    
-    footer img{
-    width: 50%;
-    }
-    
-    footer .container2 .box{
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
-    height: 18rem;
-    width: 20rem;
-    }
-    
-    footer .container2 .box h1{
-    font-size: 1.6rem;
+
+    .container3 .box1 a{
+    background: #003E27;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
     color: #FFFFFF;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
     }
-   footer .container2 .box a{
-    color: #FFFFFF;
-    font-size: 1.3rem;
-    padding: 0.5rem 0;
-    text-decoration: none;
-    }
+
+    footer{
+display: flex;
+justify-content: space-between;
+align-items: start;
+min-width: 100vw;
+min-height: 56vh;
+background-image: url('Assets/Footer\ Backround.jpg');
+background-position: center;
+background-size: cover;
+}
+
+footer .container1{
+margin: 3rem 0;
+width: 40rem;
+text-align: center;
+}
+
+footer .container2{
+display: flex;
+justify-content: start;
+align-items: start;
+flex-wrap: wrap;
+flex-direction: row;
+height: auto;
+width: 90rem;
+margin: 3rem ;
+}
+
+footer img{
+width: 50%;
+}
+
+.container2 .box{
+display: flex;
+justify-content: start;
+align-items: start;
+flex-direction: column;
+height: 18rem;
+width: 20rem;
+}
+
+.container2 .box h1{
+font-size: 1.6rem;
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+.container2 .box a{
+color: #FFFFFF;
+font-size: 1.3rem;
+padding: 0.5rem 0;
+text-decoration: none;
+}
