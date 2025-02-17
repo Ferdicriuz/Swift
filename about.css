@@ -141,8 +141,7 @@
     flex-direction: column;
     width: 100rem;
     height: auto;
-    border: 1px solid red;
-    margin-top: 5rem;
+    padding: 5rem 0;
     }
 
     .container .box{
@@ -174,6 +173,10 @@
     text-align: center;
     height: 40rem;
     width: 100%;
+    }
+
+    .container .box h1{
+    color: #000000;
     }
 
     .container .box1 .sub h2{
@@ -276,12 +279,16 @@
     width: 40%;
     }
 
-    .container3 .box1 a{
+    .overlay .container3 .box1{
+    height: 5rem;
+    align-content: end;
+    }
+
+    .overlay .container3 .box1 a{
     background: #003E27;
     padding: 2rem 3rem;
     border-radius: 1rem;
     color: #FFFFFF;
-    margin-top: 2rem;
     }
 
     footer{
@@ -316,7 +323,7 @@ footer img{
 width: 50%;
 }
 
-.container2 .box{
+footer .container2 .box{
 display: flex;
 justify-content: start;
 align-items: start;
@@ -325,12 +332,13 @@ height: 18rem;
 width: 20rem;
 }
 
-.container2 .box h1{
+footer .container2 .box h1{
 font-size: 1.6rem;
 color: #FFFFFF;
 margin-bottom: 1rem;
 }
-.container2 .box a{
+
+footer .container2 .box a{
 color: #FFFFFF;
 font-size: 1.3rem;
 padding: 0.5rem 0;
