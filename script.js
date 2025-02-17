@@ -86,3 +86,14 @@ document.getElementById("#emailForm").addEventListener("submit", function(event)
     message.style.color = "green";
     message.textContent = "Valid email address";
 });
+
+// For HomePage Favorite Love
+document.getElementById("loveButton").addEventListener("click", function(event) {
+    event.preventDefault();
+    this.classList.toggle("active");
+    if (this.classList.contains("active")) {
+        this.style.backgroundColor = "pink";
+    } else {
+        this.style.backgroundColor = "gray";
+    }
+});
