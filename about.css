@@ -23,7 +23,7 @@
     min-width: 100vw;
     flex-wrap: wrap;
     color: #FFFFFF;
-    min-height: 8vh;
+    min-height: 10vh;
     background: #003E27;
     }
 
@@ -194,7 +194,7 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    width: 30rem;
+    width: 32rem;
     height: 30rem;
     }
 
@@ -279,6 +279,60 @@
     width: 40%;
     }
 
+.containerx .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height: 10rem;
+    }
+
+    .containerx{
+    width: 90rem;
+    }
+
+    .overlay .box h1{
+        font-size: 5rem;
+    }
+
+    .overlay .box p{
+    font-size: 1.5rem;
+    text-align: center;
+    }
+
+    .containerx .box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40rem;
+    width: 100%;
+    }
+
+    .containerx .box h1{
+    color: #000000;
+    }
+
+    .containerx .box1 .sub h2{
+    font-size: 2rem;
+    color:  #003E27;
+    }
+
+    .containerx .box1 .sub p{
+    font-size: 2rem;
+
+    }
+
+    .containerx .box1 .sub{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 32rem;
+    height: 30rem;
+    }
+
     .overlay .container3 .box1{
     height: 5rem;
     align-content: end;
@@ -343,4 +397,418 @@ color: #FFFFFF;
 font-size: 1.3rem;
 padding: 0.5rem 0;
 text-decoration: none;
+}
+
+@media(max-width:768px){
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    scroll-behavior: smooth;
+    }
+    
+    header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 10vh;
+    }
+
+    header img{
+    width: 10rem;
+    }
+
+    .box3{
+    display: flex;
+    font-size: 2rem;
+    }
+
+ header .box3 #btn{
+border: none;
+background: none;
+font-size: 3rem;
+color: #FFFFFF;
+}
+    header .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    }
+
+    .dropdown-button, .login, .cart{
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background:transparent;
+    }
+
+    header .nav, header .box1{
+    display: none;
+    }
+
+    nav a{
+    font-size: 1.3rem;
+    color: #000000;
+    padding:1rem;
+    font-weight: 500;
+    text-decoration: none;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-button {
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 1.3rem;
+    }
+
+    .dropdown-content {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 100rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    }
+
+    .dropdown-content.show{
+    display: flex;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    }
+
+      header .box4{
+    display: none;
+    }
+
+    header .box2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    width: auto; 
+    border-bottom: 2px solid #FFFFFF;
+    border-radius: 1rem;
+    }
+
+    .box2 .fa-search{
+    cursor: pointer;
+    font-size: 1.5rem;
+    }
+
+    #search{
+    border: none;
+    width:40rem;
+    padding: 1rem;
+    background: transparent;
+    }
+
+    #search:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    }
+
+    main{
+    min-width: 100vw;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    main .overlay{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 70rem;
+    height: auto;
+    padding: 5rem 0;
+    }
+
+    .container .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height: auto;
+    }
+
+    .container{
+    width: 100%;
+    }
+
+    .overlay .container .box h1{
+        font-size: 5rem;
+        padding: 1rem;
+    }
+
+    .overlay .container .box p{
+    font-size: 2rem;
+    text-align: center;
+    }
+
+    .container .box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    }
+
+    .container .box h1{
+    color: #000000;
+    margin-top: 2rem;
+    }
+
+    .container .box1 .sub h2{
+    font-size: 2.5rem;
+    color:  #003E27;
+    }
+
+    .container .box1 .sub p{
+    font-size: 1.6rem;
+
+    }
+
+    .container .box1 .sub{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 30rem;
+    }
+
+    .container .box1 .sub img{
+    width: 70%;
+    }
+
+     .container1 .box{
+    text-align: center;
+    align-content: center;
+    height: 15rem;
+    }
+
+    .container1 .box1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .container1 .box1 img{
+    width: 40%;
+    margin: 1rem 0;
+    }
+
+     .container1 .box1 .sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 30rem;
+    text-align: center;
+    }
+
+    .container1 .box1 p{
+    font-size: 1.6rem;
+    text-align: center;
+    }
+
+    .container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    }
+
+    .container2 .box{
+    text-align: center;
+    align-content: center;
+    height: 20rem;
+    }
+
+
+    .container2 .box1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .container2 .box1 .sub{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 30rem;
+    margin: 0 1rem;
+    }
+
+    .container2 .box1 .sub h2{
+    font-size: 2.5rem;
+    padding: 0 2rem;
+    }
+
+     .container2 .box1 .sub p{
+    font-size: 1.6rem;
+    text-align: center;
+    }
+
+    .container2 .sub img{
+    width: 40%;
+    }
+
+    .containerx .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height: auto;
+    }
+
+    .containerx{
+    width: 100%;
+    }
+
+    .overlay .containerx .box h1{
+        font-size: 5rem;
+        padding: 1rem;
+    }
+
+    .overlay .containerx .box p{
+    font-size: 1.6rem;
+    text-align: center;
+    }
+
+    .containerx .box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    }
+
+    .containerx .box h1{
+    color: #000000;
+    margin-top: 2rem;
+    }
+
+    .containerx .box1 .sub h2{
+    font-size: 2rem;
+    color:  #003E27;
+    }
+
+    .containerx .box1 .sub p{
+    font-size: 1.6rem;
+
+    }
+
+    .overlay .container3 .box1{
+    height: 5rem;
+    align-content: end;
+    }
+
+    .overlay .container3 .box1 a{
+    background: #003E27;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    }
+    
+footer{
+display: flex;
+justify-content: space-around;
+align-items: start;
+min-width: 100vw;
+min-height: 50vh;
+background-image: url('Assets/Footer\ Backround.jpg');
+background-position: center;
+background-size: cover;
+}
+
+footer .container1{
+margin: 3rem ;
+}
+
+footer .container2{
+display: flex;
+justify-content: start;
+align-items: start;
+flex-wrap: wrap;
+height: auto;
+width: 60rem;
+margin: 3rem ;
+}
+
+footer img{
+width: 70%;
+}
+
+footer .container2 .box{
+display: flex;
+justify-content: start;
+align-items: start;
+flex-direction: column;
+height: 18rem;
+width: 15rem;
+}
+
+footer .container2 .box h1{
+font-size: 1.6rem;
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+
+footer .container2 .box a{
+color: #FFFFFF;
+font-size: 1.3rem;
+padding: 0.5rem 0;
+text-decoration: none;
+}
 }
