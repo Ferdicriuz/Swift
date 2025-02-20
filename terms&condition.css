@@ -1261,6 +1261,7 @@ text-decoration: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     min-width: 100vw;
     min-height: 47rem;
     background: #003E27;
@@ -1550,6 +1551,7 @@ text-decoration: none;
     align-items: center;
     flex-direction: column;
     min-width: 100vw;
+    flex-wrap: wrap;
     min-height: 47rem;
     background: #003E27;
     }
@@ -1835,6 +1837,7 @@ text-decoration: none;
     flex-direction: column;
     min-width: 100vw;
     min-height: 47rem;
+    flex-wrap: wrap;
     background: #003E27;
     }
 
