@@ -88,12 +88,21 @@ document.getElementById("#emailForm").addEventListener("submit", function(event)
 });
 
 // For HomePage Favorite Love
-document.getElementById("loveButton").addEventListener("click", function(event) {
-    event.preventDefault();
-    this.classList.toggle("active");
-    if (this.classList.contains("active")) {
-        this.style.backgroundColor = "pink";
+
+function toggleFavorite(button) {
+    button.classList.toggle("active");
+    let icon = button.querySelector(".icon");
+    if (button.classList.contains("active")) {
+        icon.classList.remove("far");
+        icon.classList.add("fas");
+        button.style.backgroundColor = "transparent";
+        button.style.borderRadius = "50%";
+        button.style.transition = "background-color 0.3s ease-in-out";
     } else {
-        this.style.backgroundColor = "gray";
+        icon.classList.remove("fas");
+        icon.classList.add("far");
+        button.style.backgroundColor = "transparent";
+        button.style.borderRadius = "";
+        button.style.padding = "";
     }
-});
+}
