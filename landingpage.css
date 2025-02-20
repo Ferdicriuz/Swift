@@ -3697,7 +3697,7 @@ text-decoration: none;
    
     .overlay .cont2{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     }
@@ -3742,7 +3742,7 @@ color: #F3CE64;
 
     article .overlay .cont{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 50rem;
     margin: 2rem 0;
@@ -3750,7 +3750,7 @@ color: #F3CE64;
 
     article .cont .box{
     align-content: first baseline;
-    width: 30rem;
+    width: 20rem;
     height: 34rem;
     box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.032);
     margin-bottom: 1rem;
