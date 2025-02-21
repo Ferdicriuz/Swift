@@ -754,7 +754,7 @@ font-size: 3rem;
     min-height: 50vh;
     background-image: url('Assets/Hero.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 100%;
     background-repeat: no-repeat;
     }
 
@@ -1389,7 +1389,7 @@ text-decoration: none;
     min-height: 50vh;
     background-image: url('Assets/Hero.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 100%;
     background-repeat: no-repeat;
     }
 
@@ -2026,7 +2026,7 @@ text-decoration: none;
     min-height: 50vh;
     background-image: url('Assets/Hero.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 105%;
     background-repeat: no-repeat;
     }
 
@@ -2663,7 +2663,7 @@ text-decoration: none;
     min-height: 50vh;
     background-image: url('Assets/Hero.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 100%;
     background-repeat: no-repeat;
     }
 
@@ -3302,7 +3302,7 @@ text-decoration: none;
     min-height: 50vh;
     background-image: url('Assets/Hero.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 90%;
     background-repeat: no-repeat;
     }
 
@@ -3937,7 +3937,7 @@ text-decoration: none;
     min-height: 50vh;
     background-image: url('Assets/Hero.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 80%;
     background-repeat: no-repeat;
     }
 
