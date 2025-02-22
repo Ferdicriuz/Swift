@@ -8,61 +8,960 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fontawesome.com/icons/plus?f=classic&s=solid">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+    <header>
+        <div class="logo box"><img src="Assets/Logo.svg" alt="Logo"/>
+            <div class="box3 box">
+                <a href="index.html" id="login" class="login">Login</a>
+                <a href="register.html" id="login" class="login">Sign up</a>
+                <button id="cart" class="cart"><i class="fa fa-shopping-cart"></i><span>0</span></button>
+            </div>
+        </div>
+        
+        <nav class="nav box">
 
-<main>
-    <section class="container">
-<div class="box box1"><img src="Assets/Logo.svg" alt="logo"/>
-    
-    <div class="sox">
-        <h1>Welcome Back</h1>
-    <p>Log in to your account</p>
+            <div class="dropdown">
+                <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-caret-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button id="Location" class="dropdown-button">Location <i id="drop-icon" class="fa fa-caret-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <a href="#">Blog</a>
+
+              <div class="dropdown">
+                <button id="Help" class="dropdown-button">Help/Support <i id="drop-icon" class="fa fa-caret-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              
+        </nav>
+
+        <div class="box2">
+            <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
+        </div>
+
+        <div class="box1 box">
+            <a href="index.html" id="login" class="login">Login</a>
+            <a href="register.html" id="login" class="login">Sign up</a>
+            <button id="cart" class="cart"><i class="fa fa-shopping-cart"></i><span>0</span></button>
+        </div>
+    </header>
+
+<main class="showcase">
+    <div class="weekend">
+        <h1>Weekend Buzz Sales</h1>
+       <a href="#">Shop Now <i class="fa fa-arrow-right"></i></a>
     </div>
+</main>
+
+<article>
+    <section class="overlay">
+    <section class="cont1">
+        <p>Recommended For You:</p>
+        <button type="button" id="bottn bottin" class="phone">Phones/Tablets</button>
+        <button type="button" id="bottn">Home Appliances</button>
+        <button type="button" id="bottn">Beauty</button>
+        <button type="button" id="bottn">Health</button>
+        <button type="button" id="bottn">Book</button>
+        <button type="button" id="bottn">Fashion</button>
+    </section>
+
+    <section class="cont cont2">
+        <div class="box">
+            <div class="sob1 soba">
+                <button class="favorite-button" onclick="toggleFavorite(this)">
+                    <i class="fa fa-heart icon"></i>
+                </button>
+            </div>
+
+            <div class="sob2">
+<h2>Galaxy S25 Ultra 2</h2>
+<div class="write">
+    <p><span style="color: #00000066; text-decoration:line-through;">N9,000</span></p>
+    <p>N6,500</p>
+</div>
+            </div>
+
+            <div class="sob3">
+                <p>Compact portable fan</p>
+                <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="sob1 sobb">
+                <button class="favorite-button" onclick="toggleFavorite(this)">
+                    <i class="fa fa-heart icon"></i>
+                </button>
+            </div>
+
+            <div class="sob2">
+<h2>Galaxy S25 Ultra 2</h2>
+<div class="write">
+    <p><span style="color: #00000066; text-decoration:line-through;">N9,000</span></p>
+    <p>N6,500</p>
+</div>
+            </div>
+
+            <div class="sob3">
+                <p>Compact portable fan</p>
+                <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="sob1 sobc">
+                <button class="favorite-button" onclick="toggleFavorite(this)">
+                    <i class="fa fa-heart icon"></i>
+                </button>
+            </div>
+
+            <div class="sob2">
+<h2>Galaxy S25 Ultra 2</h2>
+<div class="write">
+    <p><span style="color: #00000066; text-decoration:line-through;">N9,000</span></p>
+    <p>N6,500</p>
+</div>
+            </div>
+
+            <div class="sob3">
+                <p>Compact portable fan</p>
+                <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="sob1 sobd">
+                <button class="favorite-button" onclick="toggleFavorite(this)">
+                    <i class="fa fa-heart icon"></i>
+                </button>
+            </div>
+
+            <div class="sob2">
+<h2>Samsung Tab S102</h2>
+<div class="write">
+    <p><span style="color: #00000066; text-decoration:line-through;">N9,000</span></p>
+    <p>N6,500</p>
+</div>
+            </div>
+
+            <div class="sob3">
+                <p>Compact portable fan</p>
+                <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    </section>
+
+
+    <section class="overlay">
+        <section class="cont1">
+            <p>Top Categories:</p>
+            <button type="button" id="bottn buttin" class="phone">Electronics</button>
+            <button type="button" id="bottn">Computer/Accessories</button>
+            <button type="button" id="bottn">Phones/Tablets</button>
+            <button type="button" id="bottn">Home Appliances</button>
+            <button type="button" id="bottn">Toys</button>
+            <button type="button" id="bottn">Beauty</button>
+            <button type="button" id="bottn">Health</button>
+            <button type="button" id="bottn">Book</button>
+            <button type="button" id="bottn">Men’s Clothing</button>
+            <button type="button" id="bottn">Women’s Clothing</button>
+            <button type="button" id="bottn">Kid’s Fashion</button>
+            <button type="button" id="bottn">Wine</button>
+            <button type="button" id="bottn">Sports & Outdoors</button>
+            <button type="button" id="bottn">Pet Supplies</button>
+            <button type="button" id="bottn">Musical Instruments</button>
+            <button type="button" id="bottn">Bags & Luggage's</button>
+            <button type="button" id="bottn">Beddings</button>
+            <button type="button" id="bottn">Laptops</button>
+        </section>
+        
+        <section class="cont cont2">
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+                </div>
+
+                <div class="box">
+                    <div class="sob1 sox">
+                        <button class="favorite-button" onclick="toggleFavorite(this)">
+                            <i class="fa fa-heart icon"></i>
+                        </button>
+                    </div>
+        
+                    <div class="sob2">
+        <h2>Compact portable fan</h2>
+        <div class="write">
+            <p>N9,000</p>
+        </div>
+                    </div>
+        
+                    <div class="sob3">
+                        <p>Compact portable fan</p>
+                        <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                        <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    </div>
+                    </div>
+        </section>
+        </section>
+
+
+        <section class="overlay">
+        <section class="cont1 conx">
+            <p>Todays Best deals for You!</p>
+        </section>
+        
+        <section class="cont cont2">
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+                </div>
+
+                <div class="box">
+                    <div class="sob1 sox">
+                        <button class="favorite-button" onclick="toggleFavorite(this)">
+                            <i class="fa fa-heart icon"></i>
+                        </button>
+                    </div>
+        
+                    <div class="sob2">
+        <h2>Compact portable fan</h2>
+        <div class="write">
+            <p>N9,000</p>
+        </div>
+                    </div>
+        
+                    <div class="sob3">
+                        <p>Compact portable fan</p>
+                        <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                        <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    </div>
+                    </div>
+        </section>
+        </section>
+
+
+    <section class="percent">
+<div class="box1">
+    <h1>Best discount deal</h1>
 </div>
 
-
-<div class="box box2">
-
-    <form action="landingpage.html" id="fill">
-    <label for="email">Email <br>
-        <input type="text" id="email" name="email"/>
-    </label><br>
-    
-    <label for="password">Password<br>
-        <input type="password" id="psword" name="quantity" />
-    </label>
-    
-    <div class="sob"><a href="forgotenpass.html">Forgot Password</a></div>
-    
-    <button type="submit" id="login" > Login </button>
-    <p id="emailMessage"></p>
-    <p id="passwordMessage"></p>
-    </form>
-</div>
-
-<div class="box box3">
-<p>Or</p>
-</div>
-
-<div class="box box4">
-    <div class="sub">
-        <img src="Assets/google.svg" alt="Google"/> <a href="#">Continue with Google</a>
-    </div>
-    <div class="sub"><img src="Assets/apple.svg" alt="Apple"/><a href="#">Continue with Apple</a>
-    </div>
-    <div class="sub"><img src="Assets/sms.svg" alt="Mail"/><a href="#">Continue with Mail</a>
+<div class="box2">
+    <div class="sob1">
+        <div class="sub1">
+            <img src="Assets/Bed.png" alt="bed"/>
+        </div>
+        
+        <div class="sub2">
+            <h3>Save</h3>
+            <h1>35%</h1>
+            <h4>Beddings</h4>
+            <p>Royal Patterned Bedsheets With  Pillow Cases</p>
+            <button type="button" id="addToCart" class="addCart1">Add to Cart</button>
+        </div>
     </div>
 
-</div>
-
-<div class="box box5">
-    <p>Don’t have an account with Us? <a href="register.html">Register</a></p>
+    <div class="sob2">
+        <div class="sub1">
+            <img src="Assets/Bed.png" alt="bed"/>
+        </div>
+        <div class="sub2">
+            <h3>Save</h3>
+            <h1>35%</h1>
+            <h4>Beddings</h4>
+            <p>Royal Patterned Bedsheets With  Pillow Cases</p>
+            <button type="button" id="addToCart" class="addCart2">Add to Cart</button>
+        </div>
+    </div>
 </div>
     </section>
-</main>
+
+    <section class="overlay">
+        <section class="cont1 conx">
+            <p>Todays Best deals for You!</p>
+        </section>
+        
+        <section class="cont cont2">
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+                </div>
+
+                <div class="box">
+                    <div class="sob1 sox">
+                        <button class="favorite-button" onclick="toggleFavorite(this)">
+                            <i class="fa fa-heart icon"></i>
+                        </button>
+                    </div>
+        
+                    <div class="sob2">
+        <h2>Compact portable fan</h2>
+        <div class="write">
+            <p>N9,000</p>
+        </div>
+                    </div>
+        
+                    <div class="sob3">
+                        <p>Compact portable fan</p>
+                        <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                        <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+                </div>
+
+                <div class="box">
+                    <div class="sob1 sox">
+                        <button class="favorite-button" onclick="toggleFavorite(this)">
+                            <i class="fa fa-heart icon"></i>
+                        </button>
+                    </div>
+        
+                    <div class="sob2">
+        <h2>Compact portable fan</h2>
+        <div class="write">
+            <p>N9,000</p>
+        </div>
+                    </div>
+        
+                    <div class="sob3">
+                        <p>Compact portable fan</p>
+                        <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                        <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    </div>
+                    </div>
+        </section>
+        </section>
+
+        <section class="mobile">
+            <div class="box1">
+                <h1>Trusted By</h1>
+            </div>
+            <div class="box2">
+                <img src="Assets/Logo/Frame 1686561962.svg" alt="icons"/>
+                <img src="Assets/Logo/Frame 1686561988.svg" alt="icons"/>
+                <img src="Assets/Logo/Frame 1686561989.svg" alt="icons"/>
+                <img src="Assets/Logo/Frame 1686561990.svg" alt="icons"/>
+                <img src="Assets/Logo/Frame 1686561991.svg" alt="icons"/>
+                <img src="Assets/Logo/Frame 1686561992.svg" alt="icons"/>
+                <img src="Assets/Logo/Frame 1686561993.svg" alt="icons"/>
+                <img src="Assets/Logo/Frame 1686561994.svg" alt="icons"/>
+                <img src="Assets/Logo/Frame 1686561995.svg" alt="icons"/>
+                <img src="Assets/Logo/Frame 1686561991.svg" alt="icons"/>
+                <img src="Assets/Logo/Frame 1686561997.svg" alt="icons"/>
+            </div>
+        </section>
+
+        <section class="overlay">
+        <section class="cont1 conx">
+            <p>Hottest Brand Discount Price</p>
+        </section>
+        
+        <section class="cont cont2">
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+                </div>
+
+                <div class="box">
+                    <div class="sob1 sox">
+                        <button class="favorite-button" onclick="toggleFavorite(this)">
+                            <i class="fa fa-heart icon"></i>
+                        </button>
+                    </div>
+        
+                    <div class="sob2">
+        <h2>Compact portable fan</h2>
+        <div class="write">
+            <p>N9,000</p>
+        </div>
+                    </div>
+        
+                    <div class="sob3">
+                        <p>Compact portable fan</p>
+                        <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                        <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2>Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                </div>
+                </div>
+
+                <div class="box">
+                    <div class="sob1 sox">
+                        <button class="favorite-button" onclick="toggleFavorite(this)">
+                            <i class="fa fa-heart icon"></i>
+                        </button>
+                    </div>
+        
+                    <div class="sob2">
+        <h2>Compact portable fan</h2>
+        <div class="write">
+            <p>N9,000</p>
+        </div>
+                    </div>
+        
+                    <div class="sob3">
+                        <p>Compact portable fan</p>
+                        <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                        <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    </div>
+                    </div>
+        </section>
+        </section>
+    </article>
+    
+
+    <footer>
+<section class="container1">
+<div class="logo">
+    <img src="Assets/WhiteLogo.svg" alt="logo" />
+</div>
+</section>
+
+<section class="container2">
+<div class="box">
+    <h1>About Swift</h1>
+    <a href="about.html">About Us</a>
+    <a href="#">Blog</a>
+    <a href="privacy.html">Privacy and Policy</a>
+    <a href="terms&conditions.html">Terms and Condition</a>
+</div>
+<div class="box">
+    <h1>Join Swift</h1>
+    <a href="#">Sell on Swift</a>
+</div>
+<div class="box">
+    <h1>Need Helps?</h1>
+    <a href="#">Chat with Us</a>
+    <a href="#">Help Center</a>
+    <a href="#">Contact Us</a>
+    <a href="#">FAQ</a>
+</div>
+<div class="box">
+    <h1>Payment Method</h1>
+    <a href="#">Mastercard</a>
+    <a href="#">Visa</a>
+    <a href="#">Verve</a>
+    <a href="#">Interswitch</a>
+</div>
+<div class="box">
+    <h1>Delivery Partners</h1>
+    <a href="#">DHL</a>
+    <a href="#">MAX</a>
+</div>
+<div class="box">
+    <h1>Follow Us on</h1>
+    <a href="#">X</a>
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">Tiktok</a>
+    <a href="#">YouTube</a>
+</div>
+</section>
+    </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
