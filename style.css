@@ -112,6 +112,9 @@
     border-radius: 1rem;
     }
 
+    header .box3{
+    display: none;
+    }
 
     .box2 .fa-search{
     cursor: pointer;
