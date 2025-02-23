@@ -35,6 +35,7 @@ const categories = {
 
 let selections = {};
 
+// Generate categories dynamically
 function generateCategories() {
     const container = document.getElementById("categories");
     container.innerHTML = "";
@@ -68,19 +69,30 @@ function generateCategories() {
     });
 }
 
+// Handle selection
 function selectPreference(category, selectedOption) {
+    // Remove "selected" class from other options in the same category
     document.querySelectorAll(`.preference-option[data-category="${category}"]`).forEach(option => {
         option.classList.remove("selected");
     });
 
+    // Add "selected" class to clicked option
     selectedOption.classList.add("selected");
 
+    // Save the selection
     selections[category] = selectedOption.getAttribute("data-value");
 }
 
+// Handle submission and redirect to another page
 function submitPreferences() {
+    if (Object.keys(selections).length === 0) {
+        alert("Please select at least one option before proceeding!");
+        return;
+    }
+
     let queryString = new URLSearchParams(selections).toString();
-    window.location.href = "login.html" + queryString; // Redirect to results page
+    window.location.href = "login.html?" + queryString; // Redirect with data
 }
 
+// Load categories when page loads
 window.onload = generateCategories;

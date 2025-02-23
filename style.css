@@ -23,7 +23,7 @@
     min-width: 100vw;
     flex-wrap: wrap;
     min-height: 10vh;
-    background: #F3CE64;
+    background: #FFFFFF;
     }
 
     header img{
@@ -636,6 +636,7 @@ text-decoration: none;
     justify-content: space-around;
     align-items: center;
     min-width: 100vw;
+    background: #FFFFFF;
     min-height: 8vh;
     }
 
@@ -1268,6 +1269,7 @@ text-decoration: none;
     flex-wrap: wrap;
     min-width: 100vw;
     min-height: 10vh;
+    background: #FFFFFF;
     padding: 2rem 0;
     }
 
@@ -1911,6 +1913,7 @@ text-decoration: none;
     flex-wrap: wrap;
     min-width: 100vw;
     min-height: 10vh;
+    background: #FFFFFF;
     padding: 2rem 0;
     }
 
@@ -2559,6 +2562,7 @@ text-decoration: none;
     flex-wrap: wrap;
     min-width: 100vw;
     min-height: 10vh;
+    background: #FFFFFF;
     padding: 2rem 0;
     }
 
@@ -3207,6 +3211,7 @@ text-decoration: none;
     flex-wrap: wrap;
     min-width: 100vw;
     min-height: 10vh;
+    background: #FFFFFF;
     padding: 2rem 0;
     }
 
@@ -3853,6 +3858,7 @@ text-decoration: none;
     flex-wrap: wrap;
     min-width: 100vw;
     min-height: 10vh;
+    background: #FFFFFF;
     padding: 2rem 0;
     }
 
@@ -3868,7 +3874,7 @@ text-decoration: none;
     color:#000000;
     text-decoration: none;
     border: 1.5px solid #000000;
-    border-radius: 1rem;
+    border-radius:0 1rem;
     margin: 0.2rem;
     }
 
