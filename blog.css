@@ -387,12 +387,22 @@ height: auto;
 flex-wrap: wrap;
 }
 
-.talks .container2 .box h1{
+.talks .container2 .box1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+width: 95rem;
+height: auto;
+flex-wrap: wrap;
+}
+
+.talks .container2 .box1 h1{
 font-size: 4rem;
 color: #000000;
 }
 
-.talks .container2 .box p{
+.talks .container2 .box1 p{
 font-size: 1.6rem;
 word-spacing: 0.5rem;
 }
@@ -4307,6 +4317,7 @@ justify-content: space-between;
 align-items: center;
 width: 50rem;
 height: auto;
+border: 1px solid red;
 flex-wrap: wrap;
 }
 
