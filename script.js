@@ -9,9 +9,10 @@
 // icon.classList.toggle("fa-user-times");
 // });
 
-function toggleMenu() {
+// Toggle Hamburger Menu
+function toggleMenu() { 
     const menu = document.querySelector("#menu-links");
-    const icon = document.querySelector("#menu-iconn");
+    const icon = document.querySelector("#menu-icon");
 
     menu.classList.toggle("active");
 
@@ -25,7 +26,28 @@ function toggleMenu() {
     }
 }
 
-// dropdown
+// Toggle Dropdown Menus
+function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    dropdown.classList.toggle("show");
+
+    // Close other dropdowns
+    document.querySelectorAll(".dropdown-content").forEach((item) => {
+        if (item.id !== id) {
+            item.classList.remove("show");
+        }
+    });
+}
+
+// Close dropdowns when clicking outside
+window.onclick = function (event) {
+    if (!event.target.matches(".dropdown-button")) {
+        document.querySelectorAll(".dropdown-content").forEach((item) => {
+            item.classList.remove("show");
+        });
+    }
+};
+
 
 // For HomePage Favorite Love
 
