@@ -905,11 +905,12 @@ display: none;
     display: flex;
     }
 
-    #menu-button{
+   #menu-button{
     border: none;
     background: transparent;
     color: #FFFFFF;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-right: 1rem;
     }
 
 
@@ -1351,13 +1352,13 @@ display: none;
     display: flex;
     }
 
-    #menu-button{
+   #menu-button{
     border: none;
     background: transparent;
     color: #FFFFFF;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-right: 1rem;
     }
-
 
     .dropdown {
     position: relative;
@@ -1801,13 +1802,13 @@ display: none;
     display: flex;
     }
 
-    #menu-button{
+  #menu-button{
     border: none;
     background: transparent;
     color: #FFFFFF;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-right: 1rem;
     }
-
 
     .dropdown {
     position: relative;
@@ -2254,7 +2255,8 @@ display: none;
     border: none;
     background: transparent;
     color: #FFFFFF;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-right: 1rem;
     }
 
 
@@ -2700,11 +2702,12 @@ display: none;
     display: flex;
     }
 
-    #menu-button{
+ #menu-button{
     border: none;
     background: transparent;
     color: #FFFFFF;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-right: 1rem;
     }
 
 
