@@ -1,5 +1,32 @@
 "use strict"
 
+// nav
+
+// document.querySelector(".menu-iconn").addEventListener("click", function(){
+// const menuLinks = document.querySelector("#menu-links");
+// const icon = document.querySelector("#bars");
+// menuLinks.classList.toggle("show");
+// icon.classList.toggle("fa-user-times");
+// });
+
+function toggleMenu() {
+    const menu = document.querySelector("#menu-links");
+    const icon = document.querySelector("#menu-iconn");
+
+    menu.classList.toggle("active");
+
+    // Toggle icon
+    if (menu.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+    } else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+    }
+}
+
+// dropdown
+
 // For HomePage Favorite Love
 
 function toggleFavorite(button) {
@@ -131,7 +158,7 @@ function subscribe() {
     
     message.style.color = "green";
     message.innerText = "Thank you for subscribing!";
-    showAlert("Thank you for subscribing!");
+    alert("Thank you for subscribing!");
     document.getElementById("email").value = "";
     document.getElementById("agree").checked = false;
 }
