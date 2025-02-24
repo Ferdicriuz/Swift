@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift.com</title>
+    <link rel="stylesheet" href="contactUs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo box"><img src="Assets/WhiteLogo.svg" alt="Logo"/>
+            <button type="button" id="boxout"><i class="fa fa-bars"></i></button></div>
+        </div>
+        <nav class="nav box">
+
+            <div class="dropdown">
+                <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button id="Location" class="dropdown-button">Location <i id="drop-icon" class="fa fa-angle-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <a href="#">Blog</a>
+
+              <div class="dropdown">
+                <button id="Help" class="dropdown-button">Help/Support <i id="drop-icon" class="fa fa-angle-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              
+        </nav>
+
+        <div class="box2">
+            <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
+        </div>
+
+        <div class="box1 box">
+            <button id="login" class="login"><i class="fa fa-user"></i></button>
+            <button id="cart" class="cart"><i class="fa fa-shopping-cart"></i><span>0</span></button>
+        </div>
+        
+        <div class="box3"><button type="button" id="btn"><i class="fa fa-bars"></i></button></div>
+
+        <div class="box4">
+            <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
+        </div>
+    </header>
+
+    <main class="showCase">
+        <section class="container1">
+            <div class="box1">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="box2">
+                <img src="Assets/Contact Us/24-support.svg" alt="24support"/>
+                <p>Live</p>
+            </div>
+        </section>
+
+        <section class="container2">
+            <div class="box1">
+                <h1>Get through to US</h1>
+            </div>
+
+            <div class="box2">
+                <div class="sub">
+                    <div class="sob1 soba"></div>
+                    <div class="sob2">
+                        <h1>Need help?</h1>
+                        <p>You can contact Swift customer service for help.</p>
+                        <a href="#">Chat us <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="sub">
+                    <div class="sob1 sobb"></div>
+                    <div class="sob2">
+                        <h1>Our head office</h1>
+                        <p>We will have one soon.</p>
+                        <div class="link">
+                        <a href="#"><i class="fa fa-globe"></i> Google Map </i></a>
+                        <a href="#"> Locate more office <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container3">
+            <div class="box">
+                <h1>Subscribe to our newsletter</h1>
+                <form action="#Subscribe">
+                    <label class="emay">Email</label><br>
+                    <input type="email" id="myEmail" name="email"/>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="myCheck" name="checkbox"/>
+                    <label>I agree to Swift’s Privacy and Cookie Policy. You can unsubscribe from newsletters at any time.</label>
+                    <br>
+                </form>
+                <button  id="Subscribe" onclick="subscribe()">Subscribe</button>
+                <p class="message" id="message"></p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="container1">
+        <div class="logo">
+            <img src="Assets/WhiteLogo.svg" alt="logo" />
+        </div>
+        </section>
+        
+        <section class="container2">
+        <div class="box">
+            <h1>About Swift</h1>
+            <a href="about.html">About Us</a>
+    <a href="blog.html">Blog</a>
+    <a href="privacy.html">Privacy and Policy</a>
+    <a href="terms&conditions.html">Terms and Condition</a>
+        </div>
+
+        <div class="box">
+            <h1>Join Swift</h1>
+            <a href="#">Sell on Swift</a>
+        </div>
+
+        <div class="box">
+            <h1>Need Helps?</h1>
+            <a href="#">Chat with Us</a>
+            <a href="#">Help Center</a>
+            <a href="#">Contact Us</a>
+            <a href="#">FAQ</a>
+        </div>
+
+        <div class="box">
+            <h1>Payment Method</h1>
+            <a href="#">Mastercard</a>
+            <a href="#">Visa</a>
+            <a href="#">Verve</a>
+            <a href="#">Interswitch</a>
+        </div>
+
+        <div class="box">
+            <h1>Delivery Partners</h1>
+            <a href="#">DHL</a>
+            <a href="#">MAX</a>
+        </div>
+
+        <div class="box">
+            <h1>Follow Us on</h1>
+            <a href="#">X</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Tiktok</a>
+            <a href="#">YouTube</a>
+        </div>
+        </section>
+            </footer>
+<script src="script.js"></script>
+</body>
+</html>

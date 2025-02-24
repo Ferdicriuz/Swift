@@ -1037,6 +1037,16 @@ height: auto;
 flex-wrap: wrap;
 }
 
+.talks .container2 .box1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+width: 70rem;
+height: auto;
+flex-wrap: wrap;
+}
+
 .talks .container2 .box h1{
 font-size: 4rem;
 color: #000000;

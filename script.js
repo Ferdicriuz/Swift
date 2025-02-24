@@ -96,3 +96,42 @@ function submitPreferences() {
 
 // Load categories when page loads
 window.onload = generateCategories;
+
+
+// news letter
+
+function showAlert(message) {
+    const alertBox = document.getElementById("customAlert");
+    alertBox.innerText = message;
+    alertBox.style.display = "block";
+    setTimeout(() => {
+        alertBox.style.display = "none";
+    }, 3000);
+}
+
+function subscribe() {
+    const email = document.getElementById("myEmail").value.trim();
+    const agree = document.getElementById("myCheck").checked;
+    const message = document.getElementById("message");
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if (!emailPattern.test(email)) {
+        message.style.color = "red";
+        message.innerText = "Please enter a valid email address.";
+        showAlert("Invalid email address. Please enter a valid email.");
+        return;
+    }
+    
+    if (!agree) {
+        message.style.color = "red";
+        message.innerText = "You must agree to the terms and conditions.";
+        showAlert("Please agree to the terms and conditions.");
+        return;
+    }
+    
+    message.style.color = "green";
+    message.innerText = "Thank you for subscribing!";
+    showAlert("Thank you for subscribing!");
+    document.getElementById("email").value = "";
+    document.getElementById("agree").checked = false;
+}
