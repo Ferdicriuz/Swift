@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift.com</title>
+    <link rel="stylesheet" href="registrationseller.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fontawesome.com/icons/plus?f=classic&s=solid">
+</head>
+<body>
+    
+
+<main>
+    <section class="container">
+<div class="box box1"><img src="Assets/Logo.svg" alt="logo"/>
+</div>
+<h2>Initial Registration</h2>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+        <div class="progress-step active"><p>Step Ahead</p></div>
+        <div class="progress-step"><p>Almost There</p></div>
+        <div class="progress-step"><p>You're Here</p></div>
+    </div>
+
+    <form id="registrationForm">
+        <div class="form-step active">
+            <h3>Basic Information</h3>
+            <label>Email</label><br>
+            <input id="fill" type="email"  required><br><br>
+            <label>Phone Number</label><br>
+            <input id="fill" type="tel"  required><br><br>
+            <label>Password</label><br>
+            <input id="fill" type="password" name="password" required><br><br>
+            <label>Confirm Password</label><br>
+            <input  id="fill" type="password" name="comfirmpassword" required><br><br><br><br>
+
+            
+            <h3>Business Information</h3>
+            <label>Business name</label><br>
+            <input id="fill" type="text"  required><br><br>
+            <label>Address</label><br>
+            <input  id="fill" type="text"  required><br><br>
+            <label>Business type</label><br>
+            <select class="selet" name="Business" id="biz">
+                <option value="Select">Select</option>
+                <option value="Wholesale">Wholesale</option>
+                <option value="Retail">Retail</option>
+                <option value="Distributor">Distributor</option>
+              </select>
+
+            <div class="buttons">
+                <button type="button" class="next-btn" onclick="nextStep()">Continue</button>
+            </div>
+        </div>
+
+        <div class="form-step">
+            <h3>Verification Process</h3><br><br>
+            <p>Personal</p>
+            <label>Identity Verification</label><br>
+            <div class="lou">
+            <select class="sele" name="Business" id="biz">
+                <option value="NIN">NIN</option>
+                <option value="Passport">Passport</option>
+                <option value="Voters">Voters Card</option>
+                <option value="Distributor">Drivers license</option>
+              </select>
+            <input id="lalo" type="number" placeholder="Enter ID number" required><br><br>
+        </div>
+
+            <p>Business</p>
+
+            <label>Business Verification</label><br>
+            <div class="lou">
+            <select class="sele" name="Business" id="biz">
+                <option value="tax">TAX ID</option>
+                <option value="cac">CAC</option>
+                <option value="tin">TIN</option>
+              </select>
+            <input id="lalo" type="number" placeholder="Enter ID number" required><br><br>
+            </div>
+            
+            <div class="buttons">
+                <button type="button" class="prev-btn" onclick="prevStep()">Previous</button>
+                <button type="button" class="next-btn" onclick="nextStep()">Continue</button>
+            </div>
+        </div>
+
+        <div class="form-step">
+            <h3>Store Setup</h3>
+            <br><br>
+            <p>Store Information</p><br><br>
+
+            <label>Name</label><br>
+            <input  id="laz" type="text"  required><br><br>
+
+            <label>Description</label><br>
+            <input id="laz" type="text"  required><br><br>
+
+            <h4>Select a Category</h4>
+            <div class="category-container">
+                <div class="category" onclick="selectCategory(this)">Electronics & Gadgets</div>
+                <div class="category" onclick="selectCategory(this)">Fashion & Apparel</div>
+                <div class="category" onclick="selectCategory(this)">Health & Beauty</div>
+                <div class="category" onclick="selectCategory(this)">Smartphones & Accessories</div>
+                <div class="category" onclick="selectCategory(this)">Pet Supplies</div>
+                <div class="category" onclick="selectCategory(this)">Home & Living</div>
+                <div class="category" onclick="selectCategory(this)">Baby & Kids</div>
+                <div class="category" onclick="selectCategory(this)">Fashion</div>
+                <div class="category" onclick="selectCategory(this)">Automotive & Tools</div>
+                <div class="category" onclick="selectCategory(this)">Groceries & Food Items</div>
+                <div class="category" onclick="selectCategory(this)">Home & Living</div>
+                <div class="category" onclick="selectCategory(this)">Sports & Outdoor</div>
+                <div class="category" onclick="selectCategory(this)">Books & Stationery</div>
+            </div>
+            <input type="hidden" id="selectedCategory" required>
+
+            <h4>Payment Information</h4>
+            <div class="lou">
+                <select class="sele1" name="Business" id="biz">
+                    <option value="PayPal">Paypal</option>
+                    <option value="cac">Cashapp</option>
+                    <option value="tin">Flashpay</option>
+                  </select>
+                <input id="lalo1" type="number" placeholder="Enter Account number" required><br><br>
+                </div>
+<div class="nus">
+            <input type="checkbox" id="agreeCheckbox" onclick="toggleSubmit()"><p>Already read Terms and Conditions?</p>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="prev-btn" onclick="prevStep()">Previous</button>
+                <button type="button" class="submit-btn" id="submitBtn" onclick="submitForm(event)" disabled>Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <p class="success-message" id="successMessage">Registration Successful!</p>
+    </section>
+
+    
+</main>
+
+<div class="last">
+    <p>Already have an account with Us?</p> <a href="login.html">Log In</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+    
+
+   
+

@@ -1,0 +1,1622 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 62.5%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    min-width:100vw;
+    min-height: 100vh;
+    font-family: "Raleway", serif;
+    }
+
+    #fill, .selet{
+    width: 40rem;
+    height: 4rem;
+    border-radius: 1rem;
+    }
+    
+    .progress-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        margin: 20px auto;
+        position: relative;
+    }
+
+
+    .progress-step p{
+    position: absolute;
+    top: 20px;
+    font-weight: 500;
+    left: -20px;
+    width: 7rem;
+    text-align: left;
+    }
+
+    .progress-bar {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background-color: #D69A1B;
+        transition: width 0.4s ease-in-out;
+        z-index: -1;
+    }
+
+    .progress-step {
+        width: 20px;
+        height: 20px;
+        background-color: #ddd;
+        border-radius: 50%;
+        border: 3px solid #ddd;
+        transition: background-color 0.3s, border-color 0.3s;
+        position: relative;
+        z-index: 1;
+    }
+
+    .progress-step.active {
+        background-color: #D69A1B;
+        border-color: #D69A1B;
+    }
+
+    .form-step {
+        display: none;
+    font-family: "Raleway", serif;
+
+    }
+
+    .form-step.active {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .form-step.active h3{
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    }
+
+    
+    .form-step.active label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    }
+
+    .form-step h3{
+    width: 100%;
+    text-align: center;
+    }
+
+    .form-step p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    }
+
+    .form-step .sele{
+    width: 5rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #000000;
+    }
+
+    .form-step #lalo{
+    height: 4rem;
+    border-radius: 0.5rem;
+    width: 20rem;
+    }
+
+     .form-step #laz{
+    height: 5rem;
+    border-radius: 0.5rem;
+    width: 40rem;
+    }
+
+    .buttons {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .buttons button {
+        padding: 1rem 2rem;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .next-btn {
+        background-color: #D69A1B;
+        color: white;
+    }
+
+    .prev-btn {
+        background-color: #ccc;
+    }
+
+    .submit-btn {
+        background-color: #008CBA;
+        color: white;
+    }
+
+    .submit-btn:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    .category-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 50rem;
+    }
+
+    .form-step h4{
+    font-size: 1.3rem;
+    margin: 3rem 0;
+    }
+
+    .category {
+        padding: 1rem;
+        border: 2px solid #ddd;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.3rem;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .category.selected {
+        background-color: transparent;
+        border-color: #000000;
+        color: rgb(0, 0, 0);
+    }
+
+    .success-message {
+        display: none;
+        color: green;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+
+    .last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 10vh;
+    }
+
+     .form-step .sele1{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #000000;
+    }
+
+    .form-step #lalo1{
+    height: 4rem;
+    border-radius: 0.5rem;
+    width: 35rem;
+    }
+    
+    .nus{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    }
+    
+
+    .last p{
+    font-size: 1.3rem;
+    }
+
+    .last a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 1rem;
+    font-weight: 600;
+    }
+  
+    
+    @media(max-width:768px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size:50%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    min-width:100vw;
+    min-height: 100vh;
+    font-family: "Raleway", serif;
+    }
+
+    #fill, .selet{
+    width: 40rem;
+    height: 4rem;
+    border-radius: 1rem;
+    }
+    
+    .progress-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        margin: 20px auto;
+        position: relative;
+    }
+
+
+    .progress-step p{
+    position: absolute;
+    top: 20px;
+    font-weight: 500;
+    left: -20px;
+    width: 7rem;
+    text-align: left;
+    }
+
+    .progress-bar {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background-color: #D69A1B;
+        transition: width 0.4s ease-in-out;
+        z-index: -1;
+    }
+
+    .progress-step {
+        width: 20px;
+        height: 20px;
+        background-color: #ddd;
+        border-radius: 50%;
+        border: 3px solid #ddd;
+        transition: background-color 0.3s, border-color 0.3s;
+        position: relative;
+        z-index: 1;
+    }
+
+    .progress-step.active {
+        background-color: #D69A1B;
+        border-color: #D69A1B;
+    }
+
+    .form-step {
+        display: none;
+    font-family: "Raleway", serif;
+
+    }
+
+    .form-step.active {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .form-step.active h3{
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    }
+
+    
+    .form-step.active label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    }
+
+    .form-step h3{
+    width: 100%;
+    text-align: center;
+    }
+
+    .form-step p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    }
+
+    .form-step .sele{
+    width: 5rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #000000;
+    }
+
+    .form-step #lalo{
+    height: 4rem;
+    border-radius: 0.5rem;
+    width: 20rem;
+    }
+
+     .form-step #laz{
+    height: 5rem;
+    border-radius: 0.5rem;
+    width: 40rem;
+    }
+
+    .buttons {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .buttons button {
+        padding: 1rem 2rem;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .next-btn {
+        background-color: #D69A1B;
+        color: white;
+    }
+
+    .prev-btn {
+        background-color: #ccc;
+    }
+
+    .submit-btn {
+        background-color: #008CBA;
+        color: white;
+    }
+
+    .submit-btn:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    .category-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 50rem;
+    }
+
+    .form-step h4{
+    font-size: 1.3rem;
+    margin: 3rem 0;
+    }
+
+    .category {
+        padding: 1rem;
+        border: 2px solid #ddd;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.3rem;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .category.selected {
+        background-color: transparent;
+        border-color: #000000;
+        color: rgb(0, 0, 0);
+    }
+
+    .success-message {
+        display: none;
+        color: green;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+
+    .last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 10vh;
+    }
+
+     .form-step .sele1{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #000000;
+    }
+
+    .form-step #lalo1{
+    height: 4rem;
+    border-radius: 0.5rem;
+    width: 35rem;
+    }
+    
+    .nus{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    }
+    
+
+    .last p{
+    font-size: 1.3rem;
+    }
+
+    .last a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 1rem;
+    font-weight: 600;
+    }}
+    
+    @media(max-width:600px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size:50%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    min-width:100vw;
+    min-height: 100vh;
+    font-family: "Raleway", serif;
+    }
+
+    #fill, .selet{
+    width: 40rem;
+    height: 4rem;
+    border-radius: 1rem;
+    }
+    
+    .progress-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        margin: 20px auto;
+        position: relative;
+    }
+
+
+    .progress-step p{
+    position: absolute;
+    top: 20px;
+    font-weight: 500;
+    left: -20px;
+    width: 7rem;
+    text-align: left;
+    }
+
+    .progress-bar {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background-color: #D69A1B;
+        transition: width 0.4s ease-in-out;
+        z-index: -1;
+    }
+
+    .progress-step {
+        width: 20px;
+        height: 20px;
+        background-color: #ddd;
+        border-radius: 50%;
+        border: 3px solid #ddd;
+        transition: background-color 0.3s, border-color 0.3s;
+        position: relative;
+        z-index: 1;
+    }
+
+    .progress-step.active {
+        background-color: #D69A1B;
+        border-color: #D69A1B;
+    }
+
+    .form-step {
+        display: none;
+    font-family: "Raleway", serif;
+
+    }
+
+    .form-step.active {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .form-step.active h3{
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    }
+
+    
+    .form-step.active label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    }
+
+    .form-step h3{
+    width: 100%;
+    text-align: center;
+    }
+
+    .form-step p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    }
+
+    .form-step .sele{
+    width: 6rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #000000;
+    }
+
+    .form-step #lalo{
+    height: 4rem;
+    border-radius: 0.5rem;
+    width: 25rem;
+    }
+
+     .form-step #laz{
+    height: 5rem;
+    border-radius: 0.5rem;
+    width: 40rem;
+    }
+
+    .buttons {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .buttons button {
+        padding: 1rem 2rem;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .next-btn {
+        background-color: #D69A1B;
+        color: white;
+    }
+
+    .prev-btn {
+        background-color: #ccc;
+    }
+
+    .submit-btn {
+        background-color: #008CBA;
+        color: white;
+    }
+
+    .submit-btn:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    .category-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 50rem;
+    }
+
+    .form-step h4{
+    font-size: 1.3rem;
+    margin: 3rem 0;
+    }
+
+    .category {
+        padding: 1rem;
+        border: 2px solid #ddd;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.3rem;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .category.selected {
+        background-color: transparent;
+        border-color: #000000;
+        color: rgb(0, 0, 0);
+    }
+
+    .success-message {
+        display: none;
+        color: green;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+
+    .last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 10vh;
+    }
+
+     .form-step .sele1{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #000000;
+    }
+
+    .form-step #lalo1{
+    height: 4rem;
+    border-radius: 0.5rem;
+    width: 35rem;
+    }
+    
+    .nus{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    }
+    
+
+    .last p{
+    font-size: 1.3rem;
+    }
+
+    .last a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 1rem;
+    font-weight: 600;
+    }}
+
+    
+    @media(max-width:550px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size:50%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    min-width:100vw;
+    min-height: 100vh;
+    font-family: "Raleway", serif;
+    }
+
+    #fill, .selet{
+    width: 40rem;
+    height: 4rem;
+    border-radius: 1rem;
+    }
+    
+    .progress-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        margin: 20px auto;
+        position: relative;
+    }
+
+
+    .progress-step p{
+    position: absolute;
+    top: 20px;
+    font-weight: 500;
+    left: -20px;
+    width: 7rem;
+    text-align: left;
+    }
+
+    .progress-bar {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background-color: #D69A1B;
+        transition: width 0.4s ease-in-out;
+        z-index: -1;
+    }
+
+    .progress-step {
+        width: 20px;
+        height: 20px;
+        background-color: #ddd;
+        border-radius: 50%;
+        border: 3px solid #ddd;
+        transition: background-color 0.3s, border-color 0.3s;
+        position: relative;
+        z-index: 1;
+    }
+
+    .progress-step.active {
+        background-color: #D69A1B;
+        border-color: #D69A1B;
+    }
+
+    .form-step {
+        display: none;
+    font-family: "Raleway", serif;
+
+    }
+
+    .form-step.active {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .form-step.active h3{
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    }
+
+    
+    .form-step.active label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    }
+
+    .form-step h3{
+    width: 100%;
+    text-align: center;
+    }
+
+    .form-step p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    }
+
+    .form-step .sele{
+    width: 6rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #000000;
+    }
+
+    .form-step #lalo{
+    height: 4rem;
+    border-radius: 0.5rem;
+    width: 25rem;
+    }
+
+     .form-step #laz{
+    height: 5rem;
+    border-radius: 0.5rem;
+    width: 40rem;
+    }
+
+    .buttons {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .buttons button {
+        padding: 1rem 2rem;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .next-btn {
+        background-color: #D69A1B;
+        color: white;
+    }
+
+    .prev-btn {
+        background-color: #ccc;
+    }
+
+    .submit-btn {
+        background-color: #008CBA;
+        color: white;
+    }
+
+    .submit-btn:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    .category-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 50rem;
+    }
+
+    .form-step h4{
+    font-size: 1.3rem;
+    margin: 3rem 0;
+    }
+
+    .category {
+        padding: 1rem;
+        border: 2px solid #ddd;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.3rem;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .category.selected {
+        background-color: transparent;
+        border-color: #000000;
+        color: rgb(0, 0, 0);
+    }
+
+    .success-message {
+        display: none;
+        color: green;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+
+    .last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 10vh;
+    }
+
+     .form-step .sele1{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #000000;
+    }
+
+    .form-step #lalo1{
+    height: 4rem;
+    border-radius: 0.5rem;
+    width: 35rem;
+    }
+    
+    .nus{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    }
+    
+
+    .last p{
+    font-size: 1.3rem;
+    }
+
+    .last a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 1rem;
+    font-weight: 600;
+    }
+    }
+    
+    @media(max-width:500px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size:50%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    min-width:100vw;
+    min-height: 100vh;
+    font-family: "Raleway", serif;
+    }
+
+    #fill, .selet{
+    width: 40rem;
+    height: 4rem;
+    border-radius: 1rem;
+    }
+    
+    .progress-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        margin: 20px auto;
+        position: relative;
+    }
+
+
+    .progress-step p{
+    position: absolute;
+    top: 20px;
+    font-weight: 500;
+    left: -20px;
+    width: 7rem;
+    text-align: left;
+    }
+
+    .progress-bar {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background-color: #D69A1B;
+        transition: width 0.4s ease-in-out;
+        z-index: -1;
+    }
+
+    .progress-step {
+        width: 20px;
+        height: 20px;
+        background-color: #ddd;
+        border-radius: 50%;
+        border: 3px solid #ddd;
+        transition: background-color 0.3s, border-color 0.3s;
+        position: relative;
+        z-index: 1;
+    }
+
+    .progress-step.active {
+        background-color: #D69A1B;
+        border-color: #D69A1B;
+    }
+
+    .form-step {
+        display: none;
+    font-family: "Raleway", serif;
+
+    }
+
+    .form-step.active {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .form-step.active h3{
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    }
+
+    
+    .form-step.active label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    }
+
+    .form-step h3{
+    width: 100%;
+    text-align: center;
+    }
+
+    .form-step p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    }
+
+    .form-step .sele{
+    width: 6rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #000000;
+    }
+
+    .form-step #lalo{
+    height: 4rem;
+    border-radius: 0.5rem;
+    width: 25rem;
+    }
+
+     .form-step #laz{
+    height: 5rem;
+    border-radius: 0.5rem;
+    width: 40rem;
+    }
+
+    .buttons {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .buttons button {
+        padding: 1rem 2rem;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .next-btn {
+        background-color: #D69A1B;
+        color: white;
+    }
+
+    .prev-btn {
+        background-color: #ccc;
+    }
+
+    .submit-btn {
+        background-color: #008CBA;
+        color: white;
+    }
+
+    .submit-btn:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    .category-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 50rem;
+    }
+
+    .form-step h4{
+    font-size: 1.3rem;
+    margin: 3rem 0;
+    }
+
+    .category {
+        padding: 1rem;
+        border: 2px solid #ddd;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.3rem;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .category.selected {
+        background-color: transparent;
+        border-color: #000000;
+        color: rgb(0, 0, 0);
+    }
+
+    .success-message {
+        display: none;
+        color: green;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+
+    .last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 10vh;
+    }
+
+     .form-step .sele1{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #000000;
+    }
+
+    .form-step #lalo1{
+    height: 4rem;
+    border-radius: 0.5rem;
+    width: 35rem;
+    }
+    
+    .nus{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    }
+    
+
+    .last p{
+    font-size: 1.3rem;
+    }
+
+    .last a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 1rem;
+    font-weight: 600;
+    }
+    }
+    
+    @media(max-width:450px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size:50%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    min-width:100vw;
+    min-height: 100vh;
+    font-family: "Raleway", serif;
+    }
+
+    #fill, .selet{
+    width: 40rem;
+    height: 4rem;
+    border-radius: 1rem;
+    }
+    
+    .progress-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        margin: 20px auto;
+        position: relative;
+    }
+
+
+    .progress-step p{
+    position: absolute;
+    top: 20px;
+    font-weight: 500;
+    left: -20px;
+    width: 7rem;
+    text-align: left;
+    }
+
+    .progress-bar {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background-color: #D69A1B;
+        transition: width 0.4s ease-in-out;
+        z-index: -1;
+    }
+
+    .progress-step {
+        width: 20px;
+        height: 20px;
+        background-color: #ddd;
+        border-radius: 50%;
+        border: 3px solid #ddd;
+        transition: background-color 0.3s, border-color 0.3s;
+        position: relative;
+        z-index: 1;
+    }
+
+    .progress-step.active {
+        background-color: #D69A1B;
+        border-color: #D69A1B;
+    }
+
+    .form-step {
+        display: none;
+    font-family: "Raleway", serif;
+
+    }
+
+    .form-step.active {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .form-step.active h3{
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    }
+
+    
+    .form-step.active label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    }
+
+    .form-step h3{
+    width: 100%;
+    text-align: center;
+    }
+
+    .form-step p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    }
+
+    .form-step .sele{
+    width: 6rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #000000;
+    }
+
+    .form-step #lalo{
+    height: 4rem;
+    border-radius: 0.5rem;
+    width: 25rem;
+    }
+
+     .form-step #laz{
+    height: 5rem;
+    border-radius: 0.5rem;
+    width: 40rem;
+    }
+
+    .buttons {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .buttons button {
+        padding: 1rem 2rem;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .next-btn {
+        background-color: #D69A1B;
+        color: white;
+    }
+
+    .prev-btn {
+        background-color: #ccc;
+    }
+
+    .submit-btn {
+        background-color: #008CBA;
+        color: white;
+    }
+
+    .submit-btn:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    .category-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 50rem;
+    }
+
+    .form-step h4{
+    font-size: 1.3rem;
+    margin: 3rem 0;
+    }
+
+    .category {
+        padding: 1rem;
+        border: 2px solid #ddd;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1.3rem;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .category.selected {
+        background-color: transparent;
+        border-color: #000000;
+        color: rgb(0, 0, 0);
+    }
+
+    .success-message {
+        display: none;
+        color: green;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+
+    .last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 10vh;
+    }
+
+     .form-step .sele1{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #000000;
+    }
+
+    .form-step #lalo1{
+    height: 4rem;
+    border-radius: 0.5rem;
+    width: 35rem;
+    }
+    
+    .nus{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    }
+    
+
+    .last p{
+    font-size: 1.3rem;
+    }
+
+    .last a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 1rem;
+    font-weight: 600;
+    }
+    }
+    
+    @media(max-width:350px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size:50%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    background-image: none;
+    align-items: center;
+    min-width:100vw;
+    min-height: 100vh;
+    }
+    
+    .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius:0;
+    width: 100%;
+    height: auto;
+    }
+    
+    .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 35rem;
+    height: 10rem;
+    }
+    
+    .sox{
+    text-align: center;
+    }
+    
+    .box2 h1{
+    font-size: 2.5rem;
+    }
+    
+    .box p{
+    font-size: 1.6rem;
+    }
+    
+    .box2 a{
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1rem;
+    }
+    
+    #fill{
+    height: 45rem;
+    }
+    
+    .box2{
+    height: 60rem;
+    }
+    
+    label{
+    font-size: 1.6rem;
+    font-weight: 500;
+    }
+    
+    #email, #psword, #cmpsword, #quantity{
+    width: 35rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    border: 2px solid black;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    }
+    
+    #login{
+    font-size: 1.6rem;
+    width: 35rem;
+    height: 5rem;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 4rem;
+    background-color: #D69A1B;
+    }
+    
+    .box4 .sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: #FFFFFF;
+    }
+    
+    .box .sub a{
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 2rem;
+    }
+    
+    .box4{
+    height: 20rem;
+    }
+    
+    
+    
+    .box5 a{
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    }
+    }

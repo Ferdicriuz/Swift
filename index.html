@@ -13,17 +13,15 @@
 <body>
     <header>
         <div class="logo box"><img src="Assets/Logo.svg" alt="Logo"/>
-            <div class="box3 box">
-                <a href="login.html" id="login" class="login">Login</a>
-                <a href="register.html" id="login" class="login">Sign up</a>
-                <button id="cart" class="cart"><i class="fa fa-shopping-cart"></i><span>0</span></button>
+            <div class="boxnill">
+                <button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button></div>
             </div>
         </div>
         
-        <nav class="nav box">
+        <nav class="nav box" id="menu-links">
 
             <div class="dropdown">
-                <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-caret-down"></i></button>
+                <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
                 <div id="myDropdown" class="dropdown-content">
                   <a href="#">Link 1</a>
                   <a href="#">Link 2</a>
@@ -32,7 +30,7 @@
               </div>
 
               <div class="dropdown">
-                <button id="Location" class="dropdown-button">Location <i id="drop-icon" class="fa fa-caret-down"></i></button>
+                <button id="Location" class="dropdown-button">Location <i id="drop-icon" class="fa fa-angle-down"></i></button>
                 <div id="myDropdown" class="dropdown-content">
                   <a href="#">Link 1</a>
                   <a href="#">Link 2</a>
@@ -43,14 +41,13 @@
               <a href="blog.html">Blog</a>
 
               <div class="dropdown">
-                <button id="Help" class="dropdown-button">Help/Support <i id="drop-icon" class="fa fa-caret-down"></i></button>
+                <button id="Help" class="dropdown-button">Help/Support <i id="drop-icon" class="fa fa-angle-down"></i></button>
                 <div id="myDropdown" class="dropdown-content">
                   <a href="#">Link 1</a>
                   <a href="#">Link 2</a>
                   <a href="#">Link 3</a>
                 </div>
               </div>
-              
         </nav>
 
         <div class="box2">
@@ -58,9 +55,14 @@
         </div>
 
         <div class="box1 box">
-            <a href="login.html" id="login" class="login">Login</a>
-            <a href="register.html" id="login" class="login">Sign up</a>
+            <button id="login" class="login"><i class="fa fa-user"></i></button>
             <button id="cart" class="cart"><i class="fa fa-shopping-cart"></i><span>0</span></button>
+        </div>
+        
+        <div class="box3"><button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button></div>
+
+        <div class="box4">
+            <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
         </div>
     </header>
 

@@ -184,3 +184,57 @@ function subscribe() {
     document.getElementById("email").value = "";
     document.getElementById("agree").checked = false;
 }
+
+
+// seller registration
+let currentStep = 0;
+        let steps = document.querySelectorAll(".form-step");
+        let progressBar = document.getElementById("progressBar");
+        let progressSteps = document.querySelectorAll(".progress-step");
+        let submitBtn = document.getElementById("submitBtn");
+
+        function updateProgressBar() {
+            let progress = (currentStep / (steps.length - 1)) * 100;
+            progressBar.style.width = progress + "%";
+
+            progressSteps.forEach((step, index) => {
+                if (index <= currentStep) {
+                    step.classList.add("active");
+                } else {
+                    step.classList.remove("active");
+                }
+            });
+        }
+
+        function nextStep() {
+            if (currentStep < steps.length - 1) {
+                steps[currentStep].classList.remove("active");
+                currentStep++;
+                steps[currentStep].classList.add("active");
+                updateProgressBar();
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 0) {
+                steps[currentStep].classList.remove("active");
+                currentStep--;
+                steps[currentStep].classList.add("active");
+                updateProgressBar();
+            }
+        }
+
+        function selectCategory(element) {
+            document.querySelectorAll(".category").forEach(cat => cat.classList.remove("selected"));
+            element.classList.add("selected");
+            document.getElementById("selectedCategory").value = element.innerText;
+        }
+
+        function toggleSubmit() {
+            submitBtn.disabled = !document.getElementById("agreeCheckbox").checked;
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            document.getElementById("successMessage").style.display = "block";
+        }
