@@ -1,0 +1,549 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 62.5%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-image: url('Assets/Background.jpg');
+    background-size: contain;
+    background-position:end;
+    background-repeat: no-repeat;
+    min-width:100vw;
+    min-height: 100vh;
+    }
+    
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 3rem 0 0 3rem;
+    width: 48rem;
+    height: 100vh;
+    }
+    
+    .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 45rem;
+    height: 20rem;
+    }
+    
+    .box1{
+    margin-top: 2rem;
+    }
+    
+    .sox h1{
+    font-size: 2.5rem;
+    }
+    
+    .sox p{
+    font-size: 1.6rem;
+    }
+    
+   .container .box2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    }
+
+   .container .box2 a{
+    border: 3px solid #003E27;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #003E27;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+   }
+
+
+
+    @media(max-width:768px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    background-image: none;
+    align-items: center;
+    min-width:100vw;
+    min-height: 100vh;
+    }
+    
+   .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 3rem;
+    width: 48rem;
+    height: 100vh;
+    }
+    
+    .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 45rem;
+    height: 20rem;
+    }
+    
+    .box1{
+    margin-top: 2rem;
+    }
+    
+    .sox h1{
+    font-size: 2.5rem;
+    }
+    
+    .sox p{
+    font-size: 1.6rem;
+    }
+    
+   .container .box2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    }
+
+   .container .box2 a{
+    border: 3px solid #003E27;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #003E27;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+   }
+}
+    
+    @media(max-width:600px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    align-items: center;
+    min-width:100vw;
+    min-height: 100vh;
+    }
+    
+    .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius:0;
+    width: 100%;
+    height: auto;
+    }
+    
+    .box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 45rem;
+        height: 20rem;
+        }
+        
+        .box1{
+        margin-top: 2rem;
+        }
+        
+        .sox h1{
+        font-size: 2.5rem;
+        }
+        
+        .sox p{
+        font-size: 1.6rem;
+        }
+        
+       .container .box2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        }
+    
+       .container .box2 a{
+        border: 3px solid #003E27;
+        text-align: center;
+        font-size: 1.4rem;
+        color: #003E27;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+       }
+    }
+    
+    @media(max-width:550px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    align-items: center;
+    min-width:100vw;
+    min-height: 100vh;
+    }
+    
+    .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius:0;
+    width: 100%;
+    height: auto;
+    }
+    
+    .box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 45rem;
+        height: 20rem;
+        }
+        
+        .box1{
+        margin-top: 2rem;
+        }
+        
+        .sox h1{
+        font-size: 2.5rem;
+        }
+        
+        .sox p{
+        font-size: 1.6rem;
+        }
+        
+       .container .box2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        }
+    
+       .container .box2 a{
+        border: 3px solid #003E27;
+        text-align: center;
+        font-size: 1.4rem;
+        color: #003E27;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+       }
+    }
+
+    @media(max-width:500px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    align-items: center;
+    min-width:100vw;
+    min-height: 100vh;
+    }
+    
+    .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius:0;
+    width: 100%;
+    height: auto;
+    }
+    
+    .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 45rem;
+    height: 20rem;
+    }
+    
+    .box1{
+    margin-top: 2rem;
+    }
+    
+    .sox h1{
+    font-size: 2.5rem;
+    }
+    
+    .sox p{
+    font-size: 1.6rem;
+    }
+    
+   .container .box2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    }
+
+   .container .box2 a{
+    border: 3px solid #003E27;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #003E27;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+   }
+}
+    
+    @media(max-width:450px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    align-items: center;
+    min-width:100vw;
+    min-height: 100vh;
+    }
+    
+    .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius:0;
+    width: 100%;
+    height: auto;
+    }
+    
+    .box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 45rem;
+        height: 20rem;
+        }
+        
+        .box1{
+        margin-top: 2rem;
+        }
+        
+        .sox h1{
+        font-size: 2.5rem;
+        }
+        
+        .sox p{
+        font-size: 1.6rem;
+        }
+        
+       .container .box2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        }
+    
+       .container .box2 a{
+        border: 3px solid #003E27;
+        text-align: center;
+        font-size: 1.4rem;
+        color: #003E27;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+       }
+    }
+
+    @media(max-width:350px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    }
+    
+    main{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    align-items: center;
+    min-width:100vw;
+    min-height: 100vh;
+    }
+    
+    .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius:0;
+    width: 100%;
+    height: auto;
+    }
+    
+    .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 45rem;
+    height: 20rem;
+    }
+    
+    .box1{
+    margin-top: 2rem;
+    }
+    
+    .sox h1{
+    font-size: 2.5rem;
+    }
+    
+    .sox p{
+    font-size: 1.6rem;
+    }
+    
+   .container .box2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    }
+
+   .container .box2 a{
+    border: 3px solid #003E27;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #003E27;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+   }
+}
