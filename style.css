@@ -41,7 +41,7 @@
         width: auto;
         }
     
-        .dropdown-button, .login, .cart, .fa-caret-down{
+        .dropdown-button, .fa-caret-down{
         border: none;
         font-size: 1.6rem;
         font-weight: 500;
@@ -106,6 +106,30 @@
     
         header .box4{
         display: none;
+        }
+
+        .box1{
+            gap: 1rem;
+        }
+
+        .box1 .reg{
+        color: #003E27;
+        border: 2px solid #003E27;
+        font-weight: 600;
+        font-size: 1.6rem;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        }
+
+         .box1 .log{
+        background: #003E27;
+        color: #F3CE64;
+        font-weight: 500;
+        font-size: 1.6rem;
+        text-decoration: none;
+        border-radius: 1rem;
+        padding: 1.2rem 2rem;
         }
     
         .box2 .fa-search{
@@ -641,12 +665,28 @@ text-decoration: none;
     display: flex;
     }
 
-    header .box1 a{
-    color:#000000;
+    .box1{
+        gap: 1rem;
+    }
+
+    .box1 .reg{
+    color: #003E27;
+    border: 2px solid #003E27;
+    font-weight: 600;
+    font-size: 1.6rem;
     text-decoration: none;
-    border: 1.5px solid #000000;
+    padding: 1rem 2rem;
     border-radius: 1rem;
-    margin: 0.2rem;
+    }
+
+     .box1 .log{
+    background: #003E27;
+    color: #F3CE64;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1.2rem 2rem;
     }
 
  header .box3 #btn{
@@ -1274,13 +1314,31 @@ text-decoration: none;
     display: flex;
     }
 
-    header .box3 a{
-    color:#000000;
-    text-decoration: none;
-    border: 1.5px solid #000000;
-    border-radius: 1rem;
-    margin: 0.2rem;
+    .box1{
+        gap: 1rem;
     }
+
+    .box3 .reg{
+    color: #003E27;
+    border: 2px solid #003E27;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    }
+
+     .box3 .log{
+    background: #003E27;
+    color: #F3CE64;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1.2rem 1.5rem;
+    margin-right: 1rem;
+    }
+
 
     header .box{
     display: flex;
@@ -1364,7 +1422,7 @@ text-decoration: none;
     }
 
     header .box2{
-        display: flex;
+        display: none;
     }
     
     header .box4{
@@ -1918,12 +1976,25 @@ text-decoration: none;
     display: flex;
     }
 
-    header .box3 a{
-    color:#000000;
+.box3 .reg{
+    color: #003E27;
+    border: 2px solid #003E27;
+    font-weight: 600;
+    font-size: 1.6rem;
     text-decoration: none;
-    border: 1.5px solid #000000;
+    padding: 1rem 1.5rem;
     border-radius: 1rem;
-    margin: 0.2rem;
+    }
+
+     .box3 .log{
+    background: #003E27;
+    color: #F3CE64;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1.2rem 1.5rem;
+    margin-right: 1rem;
     }
 
 
@@ -2013,7 +2084,7 @@ text-decoration: none;
     }
 
     header .box2{
-        display: flex;
+        display: none;
     }
     
     header .box4{
@@ -2567,12 +2638,25 @@ text-decoration: none;
     display: flex;
     }
 
-    header .box3 a{
-    color:#000000;
+.box3 .reg{
+    color: #003E27;
+    border: 2px solid #003E27;
+    font-weight: 600;
+    font-size: 1.6rem;
     text-decoration: none;
-    border: 1.5px solid #000000;
+    padding: 1rem 1.5rem;
     border-radius: 1rem;
-    margin: 0.2rem;
+    }
+
+     .box3 .log{
+    background: #003E27;
+    color: #F3CE64;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1.2rem 1.5rem;
+    margin-right: 1rem;
     }
 
     header .box{
@@ -2657,7 +2741,7 @@ text-decoration: none;
     }
 
     header .box2{
-        display: flex;
+        display:none;
     }
 
     header .box1{
@@ -3215,13 +3299,25 @@ text-decoration: none;
 header .box3{
     display: flex;
     }
-
-    header .box3 a{
-    color:#000000;
+    .box3 .reg{
+    color: #003E27;
+    border: 2px solid #003E27;
+    font-weight: 600;
+    font-size: 1.6rem;
     text-decoration: none;
-    border: 1.5px solid #000000;
+    padding: 1rem 1.5rem;
     border-radius: 1rem;
-    margin: 0.2rem;
+    }
+
+     .box3 .log{
+    background: #003E27;
+    color: #F3CE64;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1.2rem 1.5rem;
+    margin-right: 1rem;
     }
 
     header .box{
@@ -3310,7 +3406,7 @@ header .box3{
     }
 
     header .box2{
-        display: flex;
+        display:none;
     }
     
     header .box4{
@@ -3863,12 +3959,25 @@ text-decoration: none;
     display: flex;
     }
 
-    header .box3 a{
-    color:#000000;
+   .box3 .reg{
+    color: #003E27;
+    border: 2px solid #003E27;
+    font-weight: 600;
+    font-size: 1.6rem;
     text-decoration: none;
-    border: 1.5px solid #000000;
-    border-radius:0 1rem;
-    margin: 0.2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    }
+
+     .box3 .log{
+    background: #003E27;
+    color: #F3CE64;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1.2rem 1.5rem;
+    margin-right: 1rem;
     }
 
 
@@ -3892,7 +4001,7 @@ text-decoration: none;
     }
 
     header .box2{
-    display:flex;
+    display:none;
     }
 
     header .nav{
