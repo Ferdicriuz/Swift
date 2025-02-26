@@ -1857,6 +1857,9 @@ display: none;
 
     main .box h1{
     margin: 1rem 2rem;
+    width: 100%;
+    text-align: center;
+    height: auto;
     font-size: 5rem;
     color: #FFFFFF;
     }
