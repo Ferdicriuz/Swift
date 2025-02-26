@@ -707,7 +707,7 @@ display: none;
 
     nav a{
     font-size: 1.5rem;
-    color: #000000;
+    color: #ffffff;
     padding:1rem;
     font-weight: 500;
     font-weight: 700;
@@ -720,7 +720,7 @@ display: none;
     }
 
     .dropdown-button {
-    color: #000000;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     padding: 2rem;
@@ -1524,7 +1524,7 @@ display: none;
 
     nav a{
     font-size: 1.5rem;
-    color: #000000;
+    color: #ffffff;
     padding:1rem;
     font-weight: 500;
     font-weight: 700;
@@ -1537,7 +1537,7 @@ display: none;
     }
 
     .dropdown-button {
-    color: #000000;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     padding: 2rem;
@@ -2200,7 +2200,7 @@ display: none;
 
     nav a{
     font-size: 1.5rem;
-    color: #000000;
+    color: #ffffff;
     padding:1rem;
     font-weight: 500;
     font-weight: 700;
@@ -2213,7 +2213,7 @@ display: none;
     }
 
     .dropdown-button {
-    color: #000000;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     padding: 2rem;
@@ -2889,7 +2889,7 @@ display: none;
 
     nav a{
     font-size: 1.5rem;
-    color: #000000;
+    color: #ffffff;
     padding:1rem;
     font-weight: 500;
     font-weight: 700;
@@ -2902,7 +2902,7 @@ display: none;
     }
 
     .dropdown-button {
-    color: #000000;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     padding: 2rem;
@@ -3566,7 +3566,7 @@ display: none;
 
     nav a{
     font-size: 1.5rem;
-    color: #000000;
+    color: #ffffff;
     padding:1rem;
     font-weight: 500;
     font-weight: 700;
@@ -3579,7 +3579,7 @@ display: none;
     }
 
     .dropdown-button {
-    color: #000000;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     padding: 2rem;
@@ -4203,9 +4203,9 @@ text-decoration: none;
     padding-right: 2rem;
     }
 
-     header .boxnill{
-    display: flex;
-    }
+header .boxnill{
+display: flex;
+}
 
 header .boxnill #menu-button{
 border: none;
@@ -4241,7 +4241,7 @@ display: none;
 
     nav a{
     font-size: 1.5rem;
-    color: #000000;
+    color: #ffffff;
     padding:1rem;
     font-weight: 500;
     font-weight: 700;
@@ -4254,7 +4254,7 @@ display: none;
     }
 
     .dropdown-button {
-    color: #000000;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     padding: 2rem;

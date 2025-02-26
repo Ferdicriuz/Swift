@@ -13,12 +13,16 @@
 <body>
     <header>
         <div class="logo box"><img src="Assets/Logo.svg" alt="Logo"/>
-            <button type="button" id="boxout"><i class="fa fa-bars"></i></button></div>
+            <div class="boxnill">
+                <button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button>
+            </div> 
         </div>
-        <nav class="nav box">
+        <nav class="nav box" id="menu-links">
 
             <div class="dropdown">
+                <form action="landingpage.html">
                 <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
+                </form>
                 <div id="myDropdown" class="dropdown-content">
                   <a href="#">Link 1</a>
                   <a href="#">Link 2</a>
@@ -57,7 +61,8 @@
             <button id="cart" class="cart"><i class="fa fa-shopping-cart"></i><span>0</span></button>
         </div>
         
-        <div class="box3"><button type="button" id="btn"><i class="fa fa-bars"></i></button></div>
+        <div class="box3"><button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button>
+        </div>
 
         <div class="box4">
             <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
