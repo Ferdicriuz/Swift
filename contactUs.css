@@ -326,7 +326,11 @@ background-position: center;
 background-repeat: no-repeat;
 }
 
-
+.mad{
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
 
    
     footer{
@@ -748,6 +752,11 @@ border: none;
     text-align: center;
 }
 
+.mad{
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
 
 
 .showCase .container2 .box2 .soba{
@@ -1236,6 +1245,13 @@ height: 8rem;
 background-position: center;
 background-repeat: no-repeat;
 }
+
+.mad{
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
+
   
 footer{
 display: flex;
@@ -1709,6 +1725,13 @@ display: none;
     background-position: center;
     background-repeat: no-repeat;
     }
+
+    .mad{
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
+
       
 footer{
 display: flex;
@@ -2182,6 +2205,13 @@ display: none;
     background-position: center;
     background-repeat: no-repeat;
     }
+
+    .mad{
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
+
      
 footer{
 display: flex;
@@ -2654,6 +2684,13 @@ display: none;
     background-position: center;
     background-repeat: no-repeat;
     }
+
+    .mad{
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
+
         
 footer{
 display: flex;
@@ -3107,7 +3144,12 @@ display: none;
         text-align: center;
     }
     
-    
+    .mad{
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
+
     
     .showCase .container2 .box2 .soba{
     background-image: url('Assets/Contact Us/messages.svg');
