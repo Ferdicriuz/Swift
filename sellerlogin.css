@@ -70,7 +70,10 @@
     font-size: 1rem;
     }
     
-    
+    input{
+padding-left: 1rem;
+}
+
     
     .box2{
     height: 35rem;
@@ -208,7 +211,10 @@
     font-size: 1rem;
     }
     
-    
+    input{
+padding-left: 1rem;
+}
+
     
     .box2{
     height: 35rem;
@@ -333,7 +339,10 @@
     font-size: 1rem;
     }
     
-    
+    input{
+padding-left: 1rem;
+}
+
     
     .box2{
     height: 35rem;
@@ -456,7 +465,10 @@
     font-size: 1rem;
     }
     
-    
+    input{
+padding-left: 1rem;
+}
+
     
     .box2{
     height: 35rem;
@@ -580,7 +592,10 @@
     font-size: 1rem;
     }
     
-    
+    input{
+padding-left: 1rem;
+}
+
     
     .box2{
     height: 35rem;
@@ -703,7 +718,10 @@
     font-size: 1rem;
     }
     
-    
+    input{
+padding-left: 1rem;
+}
+
     
     .box2{
     height: 35rem;
@@ -779,6 +797,10 @@
     min-height: 100vh;
     }
     
+    input{
+padding-left: 1rem;
+}
+
     .container{
     display: flex;
     justify-content: space-around;

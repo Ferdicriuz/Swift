@@ -58,7 +58,10 @@
     .sox p{
     font-size: 1.6rem;
     }
-    
+    input{
+padding-left: 1rem;
+}
+
     .sox a{
     color: black;
     font-weight: 300;
@@ -186,6 +189,10 @@ font-size: 1.5rem;
     margin-top: 2rem;
     }
     
+    input{
+padding-left: 1rem;
+}
+
     .sox{
     text-align: center;
     }
@@ -349,6 +356,10 @@ font-size: 1.5rem;
     height: 20rem;
     }
     
+    input{
+padding-left: 1rem;
+}
+
     label{
     font-size: 1.6rem;
     font-weight: 500;
@@ -449,6 +460,10 @@ font-size: 1.5rem;
     box-shadow: 2px 2px 2px 2px rgba(131, 131, 131, 0.249);
     }
     
+    input{
+padding-left: 1rem;
+}
+
     .box{
     display: flex;
     justify-content: space-around;
@@ -586,6 +601,10 @@ font-size: 1.5rem;
     box-shadow: 2px 2px 2px 2px rgba(131, 131, 131, 0.249);
     }
     
+    input{
+padding-left: 1rem;
+}
+
     .box{
     display: flex;
     justify-content: space-around;
@@ -759,6 +778,11 @@ font-size: 1.5rem;
     .box2{
     height: 20rem;
     }
+
+    input{
+padding-left: 1rem;
+}
+
     
     label{
     font-size: 1.5rem;
@@ -892,6 +916,11 @@ font-size: 1.5rem;
     #fill{
     height: 25rem;
     }
+
+    input{
+padding-left: 1rem;
+}
+
     
     .box2{
     height: 20rem;

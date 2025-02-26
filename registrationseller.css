@@ -87,7 +87,10 @@
     .form-step {
         display: none;
     font-family: "Raleway", serif;
+    }
 
+     input{
+    padding-left: 2rem;
     }
 
     .form-step.active {
@@ -345,7 +348,10 @@
     .form-step {
         display: none;
     font-family: "Raleway", serif;
+    }
 
+     input{
+    padding-left: 2rem;
     }
 
     .form-step.active {
@@ -601,7 +607,10 @@
     .form-step {
         display: none;
     font-family: "Raleway", serif;
+    }
 
+     input{
+    padding-left: 2rem;
     }
 
     .form-step.active {
@@ -858,7 +867,10 @@
     .form-step {
         display: none;
     font-family: "Raleway", serif;
+    }
 
+     input{
+    padding-left: 2rem;
     }
 
     .form-step.active {
@@ -1116,7 +1128,10 @@
     .form-step {
         display: none;
     font-family: "Raleway", serif;
+    }
 
+     input{
+    padding-left: 2rem;
     }
 
     .form-step.active {
@@ -1374,7 +1389,11 @@
     .form-step {
         display: none;
     font-family: "Raleway", serif;
+    margin-left: 2rem;
+    }
 
+    input{
+    padding-left: 2rem;
     }
 
     .form-step.active {
@@ -1631,8 +1650,13 @@
     .form-step {
         display: none;
     font-family: "Raleway", serif;
-
+    margin-left: 2rem;
     }
+
+    input{
+padding-left: 1rem;
+}
+
 
     .form-step.active {
         display: flex;

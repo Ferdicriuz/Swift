@@ -121,7 +121,9 @@ padding: 0 2rem;
 height: 20rem;
 }
 
-
+input{
+padding-left: 1rem;
+}
 
 .box5 a{
 font-size: 1.6rem;
@@ -195,6 +197,10 @@ color: black;
 font-weight: 300;
 text-decoration: none;
 font-size: 1rem;
+}
+
+input{
+padding-left: 1rem;
 }
 
 #fill{
@@ -328,6 +334,10 @@ text-decoration: none;
 font-size: 1rem;
 }
 
+input{
+padding-left: 1rem;
+}
+
 #fill{
 height: 45rem;
 }
@@ -458,6 +468,10 @@ font-weight: 300;
 text-decoration: none;
 font-size: 1rem;
 }
+
+input{
+    padding-left: 1rem;
+    }
 
 #fill{
 height: 45rem;
@@ -598,6 +612,10 @@ height: 45rem;
 height: 60rem;
 }
 
+input{
+padding-left: 1rem;
+}
+
 label{
 font-size: 1.6rem;
 font-weight: 500;
@@ -704,6 +722,10 @@ height: 10rem;
 
 .sox{
 text-align: center;
+}
+
+input{
+padding-left: 1rem;
 }
 
 .box2 h1{
@@ -851,6 +873,11 @@ font-weight: 300;
 text-decoration: none;
 font-size: 1rem;
 }
+
+input{
+padding-left: 1rem;
+}
+
 
 #fill{
 height: 45rem;
