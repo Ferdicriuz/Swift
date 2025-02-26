@@ -49,7 +49,7 @@
     background:transparent;
     }
 
-    .boxnill{
+    .boxnill, .vanish{
         display: none;
     }
 
@@ -704,6 +704,16 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.box4{
+font-size: 2rem;
+}
 
 nav .fa-angle-down{
 display: none;
@@ -1535,6 +1545,16 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.box4{
+font-size: 2rem;
+}
 
 nav .fa-angle-down{
 display: none;
@@ -2225,6 +2245,16 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.box4{
+font-size: 2rem;
+}
 
 nav .fa-angle-down{
 display: none;
@@ -2928,6 +2958,16 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.box4{
+font-size: 2rem;
+}
 
 nav .fa-angle-down{
 display: none;
@@ -3619,6 +3659,16 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.box4{
+font-size: 2rem;
+}
 
 nav .fa-angle-down{
 display: none;
@@ -4308,6 +4358,16 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.box4{
+font-size: 2rem;
+}
 
 nav .fa-angle-down{
 display: none;
