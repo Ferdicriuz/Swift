@@ -12,7 +12,7 @@
 // Toggle Hamburger Menu
 function toggleMenu() { 
     const menu = document.querySelector("#menu-links");
-    const icon = document.querySelector("#menu-icon");
+    const icon = document.querySelector("menu-icon");
 
     menu.classList.toggle("active");
 
@@ -26,18 +26,6 @@ function toggleMenu() {
     }
 }
 
-// Toggle Dropdown Menus
-function toggleDropdown(id) {
-    const dropdown = document.getElementById(id);
-    dropdown.classList.toggle("show");
-
-    // Close other dropdowns
-    document.querySelectorAll(".dropdown-content").forEach((item) => {
-        if (item.id !== id) {
-            item.classList.remove("show");
-        }
-    });
-}
 
 // Close dropdowns when clicking outside
 window.onclick = function (event) {
@@ -238,3 +226,7 @@ let currentStep = 0;
             event.preventDefault();
             document.getElementById("successMessage").style.display = "block";
         }
+
+
+        // car
+        
