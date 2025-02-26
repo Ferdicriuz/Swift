@@ -1855,9 +1855,10 @@ display: none;
     background: #003E27;
     }
 
-    main .box h1{
-    margin: 1rem 2rem;
+     main .box h1{
+    margin-bottom: 1rem;
     width: 100%;
+    align-items: center;
     text-align: center;
     height: auto;
     font-size: 5rem;
@@ -2205,8 +2206,9 @@ display: none;
     }
 
     main .box h1{
-    margin: 1rem 2rem;
+    margin-bottom: 1rem;
     width: 100%;
+    align-items: center;
     text-align: center;
     height: auto;
     font-size: 5rem;
