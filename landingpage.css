@@ -53,8 +53,12 @@
         display: none;
     }
 
+    .userdash, .itm2{
+        display: none;
+        }
+
     nav a{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: #000000;
     padding:1rem;
     font-weight: 500;
@@ -71,7 +75,7 @@
     border: none;
     cursor: pointer;
     padding: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     }
 
     .dropdown-content {
@@ -715,8 +719,22 @@ display: none;
     }
 
     .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -1531,9 +1549,23 @@ display: none;
     text-decoration: none;
     }
 
-    .dropdown {
+  .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -2207,9 +2239,23 @@ display: none;
     text-decoration: none;
     }
 
-    .dropdown {
+  .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -2896,9 +2942,23 @@ display: none;
     text-decoration: none;
     }
 
-    .dropdown {
+   .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -3573,9 +3633,23 @@ display: none;
     text-decoration: none;
     }
 
-    .dropdown {
+   .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -4248,9 +4322,23 @@ display: none;
     text-decoration: none;
     }
 
-    .dropdown {
+   .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {

@@ -20,6 +20,10 @@
     display: none;
     }
 
+    .userdash, .itm2{
+    display: none;
+    }
+    
     header{
     display: flex;
     justify-content: space-around;
@@ -62,6 +66,10 @@
     padding:1rem;
     font-weight: 500;
     text-decoration: none;
+    }
+
+    .vanish{
+    display: none;
     }
 
     .dropdown {
@@ -497,6 +505,13 @@ nav .fa-angle-down{
 display: none;
 }
 
+.vanish{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+
     nav a{
     font-size: 1.5rem;
     color: #ffffff;
@@ -506,9 +521,23 @@ display: none;
     text-decoration: none;
     }
 
-    .dropdown {
+   .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -961,6 +990,12 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
 
 nav .fa-angle-down{
 display: none;
@@ -975,9 +1010,23 @@ display: none;
     text-decoration: none;
     }
 
-    .dropdown {
+   .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -1435,6 +1484,12 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
 
 nav .fa-angle-down{
 display: none;
@@ -1449,9 +1504,23 @@ display: none;
     text-decoration: none;
     }
 
-    .dropdown {
+   .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -1844,6 +1913,12 @@ text-decoration: none;
     font-size: 2rem;
     }
 
+.vanish{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
 
     header .box{
     display: flex;
@@ -1924,9 +1999,23 @@ display: none;
     text-decoration: none;
     }
 
-    .dropdown {
+.dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -2318,6 +2407,12 @@ text-decoration: none;
     font-size: 2rem;
     }
 
+.vanish{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    } 
 
     header .box{
     display: flex;
@@ -2398,9 +2493,23 @@ display: none;
     text-decoration: none;
     }
 
-    .dropdown {
+   .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -2792,6 +2901,12 @@ text-decoration: none;
     font-size: 2rem;
     }
 
+    .vanish{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        }
 
     header .box{
     display: flex;
@@ -2873,9 +2988,23 @@ display: none;
     }
 
     .dropdown {
-    position: relative;
-    display: inline-block;
-    }
+        display: none;
+         }
+     
+          .itm2 {
+         position: relative;
+         display: inline-block;
+         }
+     
+         .userdash{
+         display: flex;
+         justify-content: center;
+         width: 90%;
+         padding: 3rem 0;
+         font-size: 5rem;
+         text-align: center;
+         color: #FFFFFF;
+         }
 
     .dropdown-button {
     color: #ffffff;

@@ -31,7 +31,11 @@
     width: 10rem;
     }
 
-    .box3, .boxnill{
+    .box3, .boxnill, .vanish{
+    display: none;
+    }
+    
+.userdash, .itm2{
     display: none;
     }
 
@@ -44,7 +48,7 @@
 
     .dropdown-button, .login, .cart, .fa-caret-down{
     border: none;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     cursor: pointer;
     padding: 0.5rem;
     color: #FFFFFF;
@@ -460,6 +464,12 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
 
 nav .fa-angle-down{
 display: none;
@@ -474,8 +484,22 @@ display: none;
     }
 
     .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
    
@@ -868,6 +892,7 @@ text-decoration: none;
     background: none;
     padding-right: 2rem;
     }
+
   nav{
 display: none;
 justify-content: center;
@@ -888,6 +913,12 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
 
 nav .fa-angle-down{
 display: none;
@@ -913,10 +944,23 @@ display: none;
     margin-right: 1rem;
     }
 
+.dropdown {
+   display: none;
+    }
 
-    .dropdown {
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -956,6 +1000,10 @@ display: none;
 
     header .box2{
         display: none;
+    }
+
+    header .box4{
+    font-size: 2rem;
     }
     
     header .box4{
@@ -1281,6 +1329,9 @@ text-decoration: none;
     font-size: 2rem;
     }
 
+    header .box4{
+    font-size: 2rem;
+    }
 
     header .box{
     display: flex;
@@ -1335,6 +1386,12 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
 
 nav .fa-angle-down{
 display: none;
@@ -1360,9 +1417,23 @@ display: none;
     margin-right: 1rem;
     }
 
-    .dropdown {
+ .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -1731,6 +1802,9 @@ text-decoration: none;
     font-size: 2rem;
     }
 
+header .box4{
+    font-size: 2rem;
+    }
 
     header .box{
     display: flex;
@@ -1785,6 +1859,12 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
 
 nav .fa-angle-down{
 display: none;
@@ -1811,8 +1891,22 @@ display: none;
     }
 
     .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -2180,7 +2274,9 @@ text-decoration: none;
     display: none;
     font-size: 2rem;
     }
-
+    header .box4{
+        font-size: 2rem;
+        }
 
     header .box{
     display: flex;
@@ -2214,6 +2310,7 @@ text-decoration: none;
     background: none;
     padding-right: 2rem;
     }
+
   nav{
 display: none;
 justify-content: center;
@@ -2234,6 +2331,12 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
 
 nav .fa-angle-down{
 display: none;
@@ -2259,10 +2362,23 @@ display: none;
     margin-right: 1rem;
     }
 
+.dropdown {
+   display: none;
+    }
 
-    .dropdown {
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {
@@ -2631,6 +2747,9 @@ text-decoration: none;
     font-size: 2rem;
     }
 
+ header .box4{
+    font-size: 2rem;
+    }
 
     header .box{
     display: flex;
@@ -2685,6 +2804,12 @@ display: flex;
 width: 100%;
 }
 
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
 
 nav .fa-angle-down{
 display: none;
@@ -2711,9 +2836,23 @@ display: none;
     }
 
 
-    .dropdown {
+   .dropdown {
+   display: none;
+    }
+
+     .itm2 {
     position: relative;
     display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
     }
 
     .dropdown-button {

@@ -12,14 +12,25 @@
 </head>
 <body>
     <header>
-        <div class="logo box"><img src="Assets/Logo.svg" alt="Logo"/>
+        <div class="logo box"><a href="landingpage.html"><img src="Assets/Logo.svg" alt="Logo"/></a>
             <div class="boxnill">
                 <button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button>
             </div> 
         </div>
         <nav class="nav box" id="menu-links">
+            <button id="login" class="login userdash"><i class="fa fa-user"></i></button>
+            <div class="dropdown itm1">
+                <form >
+                <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
+                </form>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
 
-            <div class="dropdown">
+              <div class="itm2">
                 <form action="landingpage.html">
                 <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
                 </form>
@@ -49,7 +60,14 @@
                   <a href="#">Link 3</a>
                 </div>
               </div>
-              
+
+               <div class="vanish">
+                <a href="about.html">About us</a>
+                <a href="terms&condition.css">Terms and conditions</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="contactUs.html">Contact us</a>
+                <a href="faq.html">FAQ</a>
+                </div>
         </nav>
 
         <div class="box2">
