@@ -623,17 +623,17 @@ text-decoration: none;
 .cart-nav {
     position: relative;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 /* Floating Cart (Appears After Scrolling) */
 .floating-cart {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2rem;
+    right: 2rem;
     background-color: #003E27;
     color: white;
-    padding: 15px;
+    padding: 1.5rem;
     border-radius: 50%;
     cursor: pointer;
     display: none; /* Hidden by default */
@@ -649,9 +649,9 @@ text-decoration: none;
 .floating-cart .cart-count {
     background: red;
     color: white;
-    font-size: 14px;
-    width: 18px;
-    height: 18px;
+    font-size: 1.4rem;
+    width: 1.8rem;
+    height: 1.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -668,16 +668,59 @@ text-decoration: none;
 /* Floating Cart Sidebar */
 .cart-sidebar {
     position: fixed;
-    right: -300px;
+    right: -300rem;
     top: 0;
-    width: 300px;
+    width: 35rem;
     height: 100%;
     background: white;
-    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 0 8px #003e2746;
     transition: right 0.3s ease;
     padding: 20px;
     z-index: 1002;
 }
+
+.cart-sidebar h3{
+    font-size: 3rem;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.cart-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.cart-items button{
+border: none;
+background: transparent;
+}
+
+.cart-items img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+.cart-sidebar .checkout-btn{
+margin-top: 3rem;
+background: #003E27;
+width: 100%;
+padding: 1rem;
+color: #F3CE64;
+}
+
+.cart-sidebar .checkout-btn:hover{
+    background: #18553f;
+}
+
 
 /* Show Sidebar */
 .cart-sidebar.open {
@@ -703,16 +746,14 @@ text-decoration: none;
     padding: 0;
     box-sizing: border-box;
     }
-/* Responsive: Hide Floating Cart on Desktop */
     
 .floating-cart {
     display: flex;
 }
 .cart-nav {
-    display: none; /* Hide navbar cart on mobile */
-}
+    display: none; 
 
-/* Close Button */
+}
 .close-cart {
     background: none;
     border: none;

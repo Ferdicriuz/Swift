@@ -280,7 +280,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const checkoutBtn = document.querySelector(".checkout-btn");
 
     // Show Floating Cart on Scroll (Only on Desktop)
-    window.addEventListener("scroll", function () {
+    window.addEventListener("scroll", function (event) {
+        event.preventDefault();
         if (window.scrollY > 100) {
             floatingCart.style.display = "flex"; // Show when scrolling
         } else {
@@ -314,8 +315,8 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             cart.push({ name, price, quantity: 1 }); // Add new item
         }
-
         updateCart();
+        saveCart();
     }
 
     // Function to Update Cart UI
@@ -326,7 +327,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cart.forEach((item, index) => {
             total += item.price;
             const li = document.createElement("li");
-            li.innerHTML = `${item.name} -  ${item.name} - $${(item.price * item.quantity).toFixed(2)} 
+            li.innerHTML = `${item.name} - $${(item.price * item.quantity).toFixed(2)} 
                 (x${item.quantity})
                 <button onclick="changeQuantity(${index}, -1)">
                     <i class="fa fa-minus"></i>
@@ -339,10 +340,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 </button>
         `;
         cartItems.appendChild(li);
+
     });
 
 
-        cartCountElements.forEach(el => el.textContent = cart.length);
+        cartCountElements.forEach(el => el.textContent =cart.reduce((sum, item) => sum + item.quantity, 0));
         cartTotal.textContent = `Total: $${total.toFixed(2)}`;
     }
     
@@ -353,16 +355,22 @@ document.addEventListener("DOMContentLoaded", function () {
             cart[index].quantity += change;
         } else {
             cart.splice(index, 1); // Remove if quantity goes to 0
+            
         }
-
         updateCart();
+        saveCart();
+    }
+        
          // Function to Remove Items from Cart
     window.removeFromCart = function (index) {
         cart.splice(index, 1);
         updateCart();
-    };
+        saveCart();
 
     };
+
+    updateCart()
+
 
 
     // Function to Handle Checkout
@@ -370,13 +378,20 @@ document.addEventListener("DOMContentLoaded", function () {
         if (cart.length === 0) {
             alert("Your cart is empty!");
         } else {
+            
             window.location.href = "checkout.html"; // Redirect to checkout page
         }
     });
 
      // Load cart on page load
      updateCart();
+     saveCart();
 });
+
+function proceedToCheckout() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+    window.location.href = "checkout.html";
+}
 
 
 // Function to Save Cart to Storage
@@ -410,6 +425,30 @@ function loadCartFromStorage() {
     return JSON.parse(localStorage.getItem("cart")) || [];
 }
 
+updateCart();
+
+// checkout to payment
+document.addEventListener("DOMContentLoaded", function () {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartItems = document.querySelector(".cart-items");
+    const totalElement = document.querySelector(".total");
+
+    let total = 0;
+    cart.forEach(item => {
+        total += item.price;
+        const li = document.createElement("li");
+        li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+        cartItems.appendChild(li);
+    });
+
+    totalElement.textContent = `Total: $${total.toFixed(2)}`;
+
+    // Handle Payment (Example: Redirecting to Payment Gateway)
+    document.querySelector(".pay-btn").addEventListener("click", function () {
+        alert("Redirecting to payment...");
+        window.location.href = "payment.html"; // Replace with actual payment gateway link
+    });
+});
 
 
 //         document.addEventListener("DOMContentLoaded", function() {
