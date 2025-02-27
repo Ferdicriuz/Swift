@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift.com</title>
+    <link rel="stylesheet" href="faq.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo box"><img src="Assets/WhiteLogo.svg" alt="Logo"/>
+            <div class="boxnill">
+                <button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button></div>
+            </div>
+        </div>
+        
+        <nav class="nav box" id="menu-links">
+            <button id="login" class="login userdash"><i class="fa fa-user"></i></button>
+            <div class="dropdown itm1">
+                <form >
+                <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
+                </form>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <div class="itm2">
+                <form action="landingpage.html">
+                <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
+                </form>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <button id="Location" class="dropdown-button">Location <i id="drop-icon" class="fa fa-angle-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <a href="blog.html">Blog</a>
+
+              <div class="dropdown">
+                <button id="Help" class="dropdown-button">Help/Support <i id="drop-icon" class="fa fa-angle-down"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              
+              <div class="vanish">
+                <a href="about.html">About us</a>
+                <a href="terms&conditions.html">Terms and conditions</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="contactUs.html">Contact us</a>
+                <a href="faq.html">FAQ</a>
+  
+                </div>
+        </nav>
+
+        <div class="box2">
+            <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
+        </div>
+
+        <div class="box1 box">
+            <button id="login" class="login"><i class="fa fa-user"></i></button>
+            <button id="cart" class="cart"><i class="fa fa-shopping-cart"></i><span>0</span></button>
+        </div>
+        
+        <div class="box3"><button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button></div>
+
+        <div class="box4">
+            <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
+        </div>
+    </header>
+
+    <main class="showCase">
+        <section class="container1">
+            <div class="box1">
+                <h1>Frequently Asked Questions</h1><span class="icon">▾</span>
+            </div>
+            <div class="box2">
+                <img src="Assets/FAQ/mingcute_question-line.svg" alt="24support"/>
+                <p>Live</p>
+            </div>
+        </section>
+
+<section class="container2">
+    <div class="behind">
+        <div class="faq-container">
+           
+            <h2>For Buyers</h2>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I make a purchase on Swift?
+                    <span class="icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Browse products, add items to your cart, and proceed to checkout. Choose
+                        your payment method, and once your payment is processed through our
+                        escrow system, the order will be confirmed.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    What payment methods are available?
+                    <span class="icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Swift supports multiple payment methods, including credit/debit cards,
+                        third-party wallets, and bank transfers. We also allow third-party payment links for added convenience</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is the escrow payment system?
+                    <span class="icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Our escrow system ensures your payment is securely held until you
+                        confirm receipt of the product in satisfactory condition. This system
+                        protects both buyers and sellers, providing a fair and transparent
+                        transaction process.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    How can I track my order?
+                    <span class="icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Once your order is shipped, you will receive a tracking number via email or
+                        your account dashboard. Use this number to monitor your order's progress.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    What happens if I receive a damaged or incorrect product?
+                    <span class="icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>If your order is incorrect or damaged, you can file a dispute within the
+                        platform. Provide relevant details, including photos, and our team will resolve the issue promptly</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I create an account on Swift?
+                    <span class="icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cancellation and return policies depend on the seller's terms. Check the
+                        product page for specific details before making a purchase.</p>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="faq-container">
+                <h2>For Seller</h2>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I start selling on Swift?
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sign up for a <span style="color: #ecbe42">seller account,</span> provide your business details, and list your
+                            products. Once approved, you can manage your store through the seller
+                            dashboard.
+                            </p>
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are there fees for selling on Swift?
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, Swift charges a nominal transaction fee on every successful sale,
+                            Additional fees may apply for premium features like promotional tools or
+                            highlighted listings.
+                            </p>
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <button class="faq-question">How do payouts work for sellers?
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Payouts are processed once the buyer confirms receipt of the product or
+                            after a resolved dispute, Funds will be transferred to your linked bank
+                            account or wallet
+                            </p>
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I promote my products?
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Swift offers promotional packages, including homepage
+                            visibility, banner ads, and personalized email campaigns to boost your sales</p>
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        
+                        How do I handle disputes with buyers?
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sellers must respond promptly to buyer disputes by providing relevant
+                            evidence. Swift's dispute resolution team will mediate and issue a fair
+                            decision based on the facts</p>
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I manage multiple stores on Swift?
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, Swift allows sellers to manage multiple stores under a single account.
+                            Use the seller dashboard to organize and track your stores independently.</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="faq-container">
+           
+            <h2>Technical Support</h2>
+    
+            <div class="faq-item">
+                <button class="faq-question">The website is not loading correctly. What should I do?
+                    <span class="icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Ensure your internet connection is stable and clear your browser cache. If
+                        the issue persists, try accessing Swift from another device or browser.
+                        </p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I update my account information?
+                    <span class="icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Log in to your account and navigate to the "Profile Settings" section. Update
+                        your details and save the changes.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    I forgot my password. How can I reset it?
+                    <span class="icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Click on "Forgot Password" on the login page, enter your registered email,
+                        and follow the instructions to reset your password.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <button class="faq-question">
+                    How can I contact customer support?
+                    <span class="icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Swift offers 24/7 support through live chat, email, and phone. Visit the
+                        "Contact Us" page for more details.</p>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="faq-container">
+           
+                <h2>Policies and Features</h2>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is Swift’s return and refund policy?
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Returns and refunds are subject to the seller's policy. Swift acts as an
+                            intermediary to ensure fair outcomes in case of disputes.</p>
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Does Swift offer gift cards?
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can purchase digital sift cards and send them to friends or family.
+                            Gift cards can be redeemed on the platform for any purchase.</p>
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I transfer my loyalty points to someone else?
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Currently, loyalty points are non-transferable, However, you can use them
+                            to gift items directly to friends or family through the platform.</p>
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is the "Add Friends" feature?
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our social shopping feature allows users to add friends, view mutual
+                            shopping interests, and send or receive gifts seamlessly</p>
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How does gamification work on Swift?
+                        <span class="icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Earn points for every purchase, participate in spinning events, and unlock
+                            exclusive rewards. Points can be redeemed for discounts, coupons, or
+                            special offers.</p>
+                    </div>
+                </div>
+                </div>
+
+                
+                <div class="faq-container">
+           
+                    <h2>Security and Privacy</h2>
+            
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How secure is my data on Swift?
+                            <span class="icon">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We prioritize your data security by using advanced encryption, PCI-DSS-
+                                compliant payment systems, and multi-factor authentication. Your,
+                                information is never shared without consent.</p>
+                        </div>
+                    </div>
+            
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What should I do if I suspect fraudulent activity?
+                            <span class="icon">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>If you notice suspicious activity on your account, contact our support team
+                                immediately. Change your password and enable multi-factor
+                                authentication for added security.</p>
+                        </div>
+                    </div>
+            
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Does Swift comply with data protection regulations?
+                            <span class="icon">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, Swift complies with global data protection laws, including GDPR and
+                                CCPA, to safeguard your privacy and personal information.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    
+                    <div class="faq-container">
+                        <h2>General Questions</h2>
+                
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                What is Swift?
+                                <span class="icon">▼</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Swift is a modern e-commerce platform that connects buyers and sellers in
+                                    a secure and user-friendly environment. We offer personalized shopping
+                                    experiences, escrow-secured payments, and advanced features for seamless transactions.</p>
+                            </div>
+                        </div>
+                
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                How does Swift work?
+                                <span class="icon">▼</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>The buyers, Swift provides a marketplace to browse, compare, and purchase products securely. For sellers, we offer tools to list, promote, and
+                                    manage products. The escrow system ensures funds are held securely until the buyer is satisfied with their purchase.
+                                </p>
+                            </div>
+                        </div>
+                
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                Is Swift available globally?
+                                <span class="icon">▼</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>No, Swift operates only in Nigeria.
+                                </p>
+                            </div>
+                        </div>
+                
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                How do I create an account on Swift?
+                                <span class="icon">▼</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Click the "Sign Up" button on the homepage and choose between a buyer
+                                    or seller account. Fill in the required information, verify your email, and
+                                    start exploring Swift!</p>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </section>
+</main>
+
+
+
+    <footer>
+        <section class="container1">
+        <div class="logo">
+            <img src="Assets/WhiteLogo.svg" alt="logo" />
+        </div>
+        </section>
+        
+        <section class="container2">
+        <div class="box">
+            <h1>About Swift</h1>
+            <a href="about.html">About Us</a>
+    <a href="blog.html">Blog</a>
+    <a href="privacy.html">Privacy and Policy</a>
+    <a href="terms&conditions.html">Terms and Condition</a>
+        </div>
+
+        <div class="box">
+            <h1>Join Swift</h1>
+            <a href="#">Sell on Swift</a>
+        </div>
+
+        <div class="box">
+            <h1>Need Helps?</h1>
+            <a href="#">Chat with Us</a>
+            <a href="#">Help Center</a>
+            <a href="#">Contact Us</a>
+            <a href="#">FAQ</a>
+        </div>
+
+        <div class="box">
+            <h1>Payment Method</h1>
+            <a href="#">Mastercard</a>
+            <a href="#">Visa</a>
+            <a href="#">Verve</a>
+            <a href="#">Interswitch</a>
+        </div>
+
+        <div class="box">
+            <h1>Delivery Partners</h1>
+            <a href="#">DHL</a>
+            <a href="#">MAX</a>
+        </div>
+
+        <div class="box">
+            <h1>Follow Us on</h1>
+            <a href="#">X</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Tiktok</a>
+            <a href="#">YouTube</a>
+        </div>
+        </section>
+            </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

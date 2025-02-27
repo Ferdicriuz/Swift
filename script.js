@@ -229,4 +229,72 @@ let currentStep = 0;
 
 
         // car
-        
+
+        document.addEventListener("DOMContentLoaded", function() {
+    const faqQuestions = document.querySelectorAll(".faq-question");
+
+    faqQuestions.forEach(question => {
+        question.addEventListener("click", function() {
+            const answer = this.nextElementSibling;
+            const icon = this.querySelector(".icon");
+
+            // Close other open answers and reset icons
+            document.querySelectorAll(".faq-answer").forEach(faq => {
+                if (faq !== answer) {
+                    faq.classList.remove("show");
+                }
+            });
+
+            document.querySelectorAll(".faq-question").forEach(q => {
+                if (q !== question) {
+                    q.classList.remove("active");
+                    q.querySelector(".icon").textContent = "▼"; // Reset to down arrow
+                }
+            });
+
+            // Toggle the clicked FAQ
+            answer.classList.toggle("show");
+            question.classList.toggle("active");
+
+            // Change icon based on state
+            if (question.classList.contains("active")) {
+                icon.textContent = "▲"; // Change to up arrow
+            } else {
+                icon.textContent = "▼"; // Change back to down arrow
+            }
+        });
+    });
+});
+
+
+
+
+//         document.addEventListener("DOMContentLoaded", function() {
+//     const dropdowns = document.querySelectorAll(".dropdown");
+
+//     dropdowns.forEach(dropdown => {
+//         const dropbtn = dropdown.querySelector(".dropbutton");
+//         const dropdownContent = dropdown.querySelector(".dropdown-content");
+
+//         dropbtn.addEventListener("click", function(event) {
+//             event.preventDefault(); // Prevent link default action
+
+//             // Close other open dropdowns
+//             document.querySelectorAll(".dropdown-content").forEach(content => {
+//                 if (content !== dropdownContent) {
+//                     content.classList.remove("show");
+//                 }
+//             });
+
+//             // Toggle the clicked dropdown
+//             dropdownContent.classList.toggle("show");
+//         });
+
+//         // Close dropdown if clicking outside
+//         document.addEventListener("click", function(event) {
+//             if (!dropdown.contains(event.target)) {
+//                 dropdownContent.classList.remove("show");
+//             }
+//         });
+//     });
+// });
