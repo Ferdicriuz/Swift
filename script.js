@@ -268,6 +268,7 @@ let currentStep = 0;
 
 
 document.addEventListener("DOMContentLoaded", function () {
+    
     let cart = [];
     const cartCountElements = document.querySelectorAll(".cart-count");
     const cartNav = document.querySelector(".cart-nav");
@@ -276,6 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cartItems = document.querySelector(".cart-items");
     const cartTotal = document.querySelector(".cart-total");
     const addToCartButtons = document.querySelectorAll(".add-to-cart");
+    const checkoutBtn = document.querySelector(".checkout-btn");
 
     // Show Floating Cart on Scroll (Only on Desktop)
     window.addEventListener("scroll", function () {
@@ -303,9 +305,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Function to Add to Cart
-    function addToCart(name, price) {
-        cart.push({ name, price });
+      // Function to Add to Cart (With Quantity)
+      function addToCart(name, price) {
+        const existingItem = cart.find(item => item.name === name);
+
+        if (existingItem) {
+            existingItem.quantity++; // Increase quantity
+        } else {
+            cart.push({ name, price, quantity: 1 }); // Add new item
+        }
+
         updateCart();
     }
 
@@ -317,19 +326,42 @@ document.addEventListener("DOMContentLoaded", function () {
         cart.forEach((item, index) => {
             total += item.price;
             const li = document.createElement("li");
-            li.innerHTML = `${item.name} - $${item.price.toFixed(2)} 
-                <button onclick="removeFromCart(${index})">❌</button>`;
-            cartItems.appendChild(li);
-        });
+            li.innerHTML = `${item.name} -  ${item.name} - $${(item.price * item.quantity).toFixed(2)} 
+                (x${item.quantity})
+                <button onclick="changeQuantity(${index}, -1)">
+                    <i class="fa fa-minus"></i>
+                </button>
+                <button onclick="changeQuantity(${index}, 1)">
+                    <i class="fa fa-plus"></i>
+                </button>
+                <button onclick="removeFromCart(${index})">
+                    <i class="fa fa-trash"></i>
+                </button>
+        `;
+        cartItems.appendChild(li);
+    });
+
 
         cartCountElements.forEach(el => el.textContent = cart.length);
         cartTotal.textContent = `Total: $${total.toFixed(2)}`;
     }
+    
 
-    // Function to Remove Items from Cart
+     // Function to Change Quantity
+     window.changeQuantity = function (index, change) {
+        if (cart[index].quantity + change > 0) {
+            cart[index].quantity += change;
+        } else {
+            cart.splice(index, 1); // Remove if quantity goes to 0
+        }
+
+        updateCart();
+         // Function to Remove Items from Cart
     window.removeFromCart = function (index) {
         cart.splice(index, 1);
         updateCart();
+    };
+
     };
 
 
