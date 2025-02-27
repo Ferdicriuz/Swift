@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .checkout-container { max-width: 600px; margin: auto; padding: 20px; }
+        .cart-items { list-style: none; padding: 0; }
+        .cart-items li { margin: 10px 0; }
+        .total { font-weight: bold; margin-top: 10px; }
+        .pay-btn { background: green; color: white; padding: 10px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="checkout-container">
+        <h2>Checkout</h2>
+        <ul class="cart-items"></ul>
+        <p class="total"></p>
+        <button class="pay-btn">Proceed to Payment</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const cartItems = document.querySelector(".cart-items");
+            const totalElement = document.querySelector(".total");
+
+            let total = 0;
+            cart.forEach(item => {
+                total += item.price;
+                const li = document.createElement("li");
+                li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                cartItems.appendChild(li);
+            });
+
+            totalElement.textContent = `Total: $${total.toFixed(2)}`;
+
+            // Handle Payment (Example: Redirecting to Payment Gateway)
+            document.querySelector(".pay-btn").addEventListener("click", function () {
+                alert("Redirecting to payment...");
+                window.location.href = "payment.html"; // Replace with actual payment gateway link
+            });
+        });
+    </script>
+</body>
+</html>

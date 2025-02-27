@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header class="navbar">
         <div class="logo box"><img src="Assets/Logo.svg" alt="Logo"/>
             <div class="boxnill">
                 <button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button></div>
@@ -75,9 +75,9 @@
             <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
         </div>
 
-        <div class="box1 box">
+        <div class="box1 box cart-nav">
             <button id="login" class="login"><i class="fa fa-user"></i></button>
-            <button id="cart" class="cart"><i class="fa fa-shopping-cart"></i><span>0</span></button>
+            <button id="cart" class="cart cart-nav"><i class="fa fa-shopping-cart"></i><span class="cart-count">0</span></button>
         </div>
         
         <div class="box3"><button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button></div>
@@ -86,6 +86,20 @@
             <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
         </div>
     </header>
+
+    <div class="floating-cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+
+    <div class="cart-sidebar">
+        <button class="close-cart">❌</button>
+        <h3>Shopping Cart</h3>
+        <ul class="cart-items"></ul>
+        <p class="cart-total">Total: $0.00</p>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+
 
 <main class="showcase">
     <div class="weekend">
@@ -106,7 +120,7 @@
         <button type="button" id="bottn">Fashion</button>
     </section>
 
-    <section class="cont cont2">
+    <section class="cont cont2" id="product">
         <div class="box">
             <div class="sob1 soba">
                 <button class="favorite-button" onclick="toggleFavorite(this)">
@@ -115,17 +129,18 @@
             </div>
 
             <div class="sob2">
-<h2>Galaxy S25 Ultra 2</h2>
+<h2 class="product">Galaxy S25 Ultra 2</h2>
 <div class="write">
     <p><span style="color: #00000066; text-decoration:line-through;">N9,000</span></p>
-    <p>N6,500</p>
+    <p>N6,700</p>
 </div>
             </div>
 
+           
             <div class="sob3">
                 <p>Compact portable fan</p>
                 <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Galaxy S25 Ultra 1" data-price="6500">Add to Cart</button>
             </div>
         </div>
 
@@ -137,7 +152,7 @@
             </div>
 
             <div class="sob2">
-<h2>Galaxy S25 Ultra 2</h2>
+<h2 class="product">Galaxy S25 Ultra 2</h2>
 <div class="write">
     <p><span style="color: #00000066; text-decoration:line-through;">N9,000</span></p>
     <p>N6,500</p>
@@ -147,7 +162,7 @@
             <div class="sob3">
                 <p>Compact portable fan</p>
                 <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Galaxy A 55" data-price="6500">Add to Cart</button>
             </div>
         </div>
 
