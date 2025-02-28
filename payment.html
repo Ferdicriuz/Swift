@@ -58,11 +58,13 @@
         </div>
     </header>
 <main>
-    <div class="checkout-container">
-        <h2>Checkout</h2>
-        <ul class="cart-items"></ul>
-        <p class="total"></p>
-        <button class="pay-btn">Proceed to Payment</button>
+    <div class="container">
+        <h2>Payment</h2>
+        <div id="order-summary"></div>
+        <h3>Select Payment Method</h3>
+        <button class="payment-option" onclick="processPayment('Credit Card')">Credit Card</button>
+        <button class="payment-option" onclick="processPayment('Bank Transfer')">Bank Transfer</button>
+        <button class="payment-option" onclick="processPayment('PayPal')">PayPal</button>
     </div>
 </main>
     

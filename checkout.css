@@ -141,27 +141,32 @@
     }
     .checkout-container { 
     display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 flex-direction: column;
-    max-width: 60rem;
-    height: 15rem;
+    width: 50rem;
+    height: 25rem;
     margin: auto; 
     padding: 20px;
     box-shadow: 1px 1px 1px 1px #00000060;
     border-radius: 2rem;
  }
+
+ .checkout-container h2{ 
+font-size: 3rem;
+ }
+
     .cart-items { 
     list-style: none; 
     padding: 0;
  }
     .cart-items li {
-    margin: 10px 0; 
+    margin: 1rem 0; 
     color: black;
 }
     .total {
     font-weight: bold; 
-    margin-top: 10px; }
+    margin-top: 1rem; }
 
     .pay-btn {
     background: green;
@@ -177,9 +182,23 @@ min-width: 100vw;
 min-height: 50vh;
 }
 
+
+
+.container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.payment-option {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
     footer{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: start;
         min-width: 100vw;
         min-height: 56vh;
@@ -194,40 +213,7 @@ min-height: 50vh;
         text-align: center;
         }
         
-        footer .container2{
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-wrap: wrap;
-        height: auto;
-        width: 90rem;
-        margin: 3rem ;
-        }
-        
-        footer img{
-        width: 50%;
-        }
-        
-        .container2 .box{
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-direction: column;
-        height: 18rem;
-        width: 20rem;
-        }
-        
-        .container2 .box h1{
-        font-size: 1.6rem;
-        color: #FFFFFF;
-        margin-bottom: 1rem;
-        }
-        .container2 .box a{
-        color: #FFFFFF;
-        font-size: 1.3rem;
-        padding: 0.5rem 0;
-        text-decoration: none;
-        }
+       
 
         @media (max-width:768px){
 *{
@@ -445,56 +431,66 @@ display: none;
     box-shadow: none;
     }
 
+    .checkout-container { 
+    display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+    width: 50rem;
+    height: 25rem;
+    margin: auto; 
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px #00000060;
+    border-radius: 2rem;
+ }
+
+ .checkout-container h2{ 
+font-size: 3rem;
+ }
+
+    .cart-items { 
+    list-style: none; 
+    padding: 0;
+ }
+    .cart-items li {
+    margin: 1rem 0; 
+    color: black;
+}
+    .total {
+    font-weight: bold; 
+    margin-top: 1rem; }
+
+    .pay-btn {
+    background: green;
+    color: white; padding: 10px;
+    border: none; cursor: pointer;
+}
+
+main{
+display: flex;
+justify-content: center;
+align-items: center;
+min-width: 100vw;
+min-height: 50vh;
+}
+
     footer{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: start;
         min-width: 100vw;
-        min-height: 50vh;
+        min-height: 56vh;
         background-image: url('Assets/Footer\ Backround.jpg');
         background-position: center;
         background-size: cover;
         }
         
         footer .container1{
-        margin: 3rem ;
+        margin: 3rem 0;
+        width: 40rem;
+        text-align: center;
         }
         
-        footer .container2{
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-wrap: wrap;
-        height: auto;
-        width: 60rem;
-        margin: 3rem ;
-        }
-        
-        footer img{
-        width: 70%;
-        }
-        
-        .container2 .box{
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        flex-direction: column;
-        height: 18rem;
-        width: 15rem;
-        }
-        
-        .container2 .box h1{
-        font-size: 1.6rem;
-        color: #FFFFFF;
-        margin-bottom: 1rem;
-        }
-        .container2 .box a{
-        color: #FFFFFF;
-        font-size: 1.3rem;
-        padding: 0.5rem 0;
-        text-decoration: none;
-        }
-        }
 
         @media (max-width:450px){
 *{
@@ -543,23 +539,7 @@ display: none;
     min-height: 10vh;
     padding: 2rem 0;
     }
-    .floating-cart {
-        display: flex;
-    }
-    .cart-nav {
-        display: none; /* Hide navbar cart on mobile */
-    }
-    
-    /* Close Button */
-    .close-cart {
-        background: none;
-        border: none;
-        font-size: 20px;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-    }
+   
     header img{
     width: 10rem;
     }
@@ -745,55 +725,63 @@ display: none;
     border: none;
     box-shadow: none;
     }
-
-    footer{
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
-min-width: 100vw;
-min-height: 50vh;
-background-image: url('Assets/Footer\ Backround.jpg');
-background-position: center;
-background-size: cover;
-}
-
-footer .container1{
-text-align: center;
-width: 100%;
-}
-
-footer .container2{
-display: flex;
+.checkout-container { 
+    display: flex;
 justify-content: space-around;
 align-items: center;
-height: auto;
-width: 100%;
+flex-direction: column;
+    width: 50rem;
+    height: 25rem;
+    margin: auto; 
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px #00000060;
+    border-radius: 2rem;
+ }
+
+ .checkout-container h2{ 
+font-size: 3rem;
+ }
+
+    .cart-items { 
+    list-style: none; 
+    padding: 0;
+ }
+    .cart-items li {
+    margin: 1rem 0; 
+    color: black;
+}
+    .total {
+    font-weight: bold; 
+    margin-top: 1rem; }
+
+    .pay-btn {
+    background: green;
+    color: white; padding: 10px;
+    border: none; cursor: pointer;
 }
 
-footer img{
-width: 40%;
-}
-
-.container2 .box{
+main{
 display: flex;
 justify-content: center;
 align-items: center;
-flex-direction: column;
-height: 18rem;
-width: 100%;
+min-width: 100vw;
+min-height: 50vh;
 }
 
-.container2 .box h1{
-font-size: 2rem;
-color: #FFFFFF;
-margin-bottom: 1rem;
-}
-.container2 .box a{
-color: #FFFFFF;
-font-size: 1.6rem;
-padding: 0.5rem 0;
-text-decoration: none;
-}
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        min-width: 100vw;
+        min-height: 56vh;
+        background-image: url('Assets/Footer\ Backround.jpg');
+        background-position: center;
+        background-size: cover;
         }
         
+        footer .container1{
+        margin: 3rem 0;
+        width: 40rem;
+        text-align: center;
+        }
+    }};  

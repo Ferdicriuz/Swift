@@ -267,6 +267,8 @@ let currentStep = 0;
 });
 
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
     
     let cart = [];
@@ -424,7 +426,7 @@ function saveCartToStorage(cart) {
 function loadCartFromStorage() {
     return JSON.parse(localStorage.getItem("cart")) || [];
 }
-
+console.log(localStorage);
 updateCart();
 
 // checkout to payment
@@ -434,6 +436,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalElement = document.querySelector(".total");
 
     let total = 0;
+    cartItems.innerHTML = "";
     cart.forEach(item => {
         total += item.price;
         const li = document.createElement("li");
@@ -443,12 +446,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
     totalElement.textContent = `Total: $${total.toFixed(2)}`;
 
-    // Handle Payment (Example: Redirecting to Payment Gateway)
     document.querySelector(".pay-btn").addEventListener("click", function () {
-        alert("Redirecting to payment...");
-        window.location.href = "payment.html"; // Replace with actual payment gateway link
+        localStorage.setItem("cart", JSON.stringify(cart));
+        window.location.href = "payment.html";
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (document.getElementById("order-summary")) {
+        const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
+        let total = 0;
+        const summaryContainer = document.getElementById("order-summary");
+        summaryContainer.innerHTML = "<h3>Order Summary</h3>";
+        storedCart.forEach(item => {
+            summaryContainer.innerHTML += `<p>${item.name}: $${item.price.toFixed(2)}</p>`;
+            total += item.price;
+        });
+        summaryContainer.innerHTML += `<p><strong>Total: $${total.toFixed(2)}</strong></p>`;
+    }
+});
+
+function processPayment(method) {
+    setTimeout(() => {
+        alert(`Payment successful via ${method}!`);
+        localStorage.removeItem("cart");
+        window.location.href = "checkout.html";
+    }, 1000);
+}
+
+function processPayment(method) {
+    alert(`Payment successful via ${method}!`);
+    localStorage.removeItem("cartData");
+    window.location.href = "checkout.html";
+}
+
+
+
+
+
+
+
 
 
 //         document.addEventListener("DOMContentLoaded", function() {

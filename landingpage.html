@@ -21,16 +21,9 @@
 
             <button id="login" class="login userdash"><i class="fa fa-user"></i></button>
             <div class="dropdown itm1">
-                <form >
-                <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
-                </form>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </div>
-
+                
+                <button id="Category" class="dropdown-button" onclick="toggleCategory()">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
+</div>
               <div class="itm2">
                 <form action="landingpage.html">
                 <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
@@ -43,13 +36,8 @@
               </div>
 
               <div class="dropdown">
-                <button id="Location" class="dropdown-button">Location <i id="drop-icon" class="fa fa-angle-down"></i></button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                <button id="Location" class="dropdown-button">Location </i></button>
                 </div>
-              </div>
 
               <a href="blog.html">Blog</a>
 
@@ -86,6 +74,15 @@
             <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
         </div>
     </header>
+    <div id="categorySection" class="category-section">
+        <div class="box1"></div>
+        <div class="box2">
+            <div class="sob1"></div>
+            <div class="sob2">
+
+            </div>
+        </div>
+    </div>
 
     <div class="floating-cart">
         <i class="fa fa-shopping-cart"></i>
@@ -100,7 +97,7 @@
         <button class="checkout-btn" onclick="proceedToCheckout()">Checkout</button>
     </div>
 
-
+    
 <main class="showcase">
     <div class="weekend">
         <h1>Weekend Buzz Sales</h1>
@@ -129,7 +126,7 @@
             </div>
 
             <div class="sob2">
-<h2 class="product">Galaxy S25 Ultra 2</h2>
+<h2 class="product">Galaxy S25 Ultra </h2>
 <div class="write">
     <p><span style="color: #00000066; text-decoration:line-through;">N9,000</span></p>
     <p>N6,700</p>
@@ -140,7 +137,7 @@
             <div class="sob3">
                 <p>Compact portable fan</p>
                 <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Galaxy S25 Ultra 1" data-price="6500" data-image="item1.jpg">Add to Cart</button>
+                <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Galaxy S25 Ultra 1" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
             </div>
         </div>
 
@@ -152,7 +149,7 @@
             </div>
 
             <div class="sob2">
-<h2 class="product">Galaxy S25 Ultra 2</h2>
+<h2 class="product">Galaxy S23 plus</h2>
 <div class="write">
     <p><span style="color: #00000066; text-decoration:line-through;">N9,000</span></p>
     <p>N6,500</p>
@@ -162,7 +159,7 @@
             <div class="sob3">
                 <p>Compact portable fan</p>
                 <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Galaxy A 55" data-price="6500">Add to Cart</button>
+                <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Galaxy S23 plus" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
             </div>
         </div>
 
@@ -174,7 +171,7 @@
             </div>
 
             <div class="sob2">
-<h2>Galaxy S25 Ultra 2</h2>
+                <h2 class="product">Galaxy Tab 10 plus</h2>
 <div class="write">
     <p><span style="color: #00000066; text-decoration:line-through;">N9,000</span></p>
     <p>N6,500</p>
@@ -184,7 +181,7 @@
             <div class="sob3">
                 <p>Compact portable fan</p>
                 <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Galaxy Tab 10 plus" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
             </div>
         </div>
 
@@ -196,7 +193,7 @@
             </div>
 
             <div class="sob2">
-<h2>Samsung Tab S102</h2>
+<h2 class="product">Samsung Tab S10</h2>
 <div class="write">
     <p><span style="color: #00000066; text-decoration:line-through;">N9,000</span></p>
     <p>N6,500</p>
@@ -206,7 +203,7 @@
             <div class="sob3">
                 <p>Compact portable fan</p>
                 <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Samsung Tab S10" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
             </div>
         </div>
     </section>
@@ -245,7 +242,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -254,7 +251,7 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
     
@@ -266,7 +263,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -275,7 +272,7 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan-1-" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
     
@@ -287,7 +284,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -296,7 +293,7 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan-2-" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
     
@@ -308,7 +305,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -317,10 +314,10 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan-3-" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
-
+    
             <div class="box">
                 <div class="sob1 sox">
                     <button class="favorite-button" onclick="toggleFavorite(this)">
@@ -329,7 +326,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -338,30 +335,30 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan-4-" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
                 </div>
-
-                <div class="box">
-                    <div class="sob1 sox">
-                        <button class="favorite-button" onclick="toggleFavorite(this)">
-                            <i class="fa fa-heart icon"></i>
-                        </button>
-                    </div>
-        
-                    <div class="sob2">
-        <h2>Compact portable fan</h2>
-        <div class="write">
-            <p>N9,000</p>
-        </div>
-                    </div>
-        
-                    <div class="sob3">
-                        <p>Compact portable fan</p>
-                        <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                        <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
-                    </div>
-                    </div>
+    
+                <div class="sob2">
+    <h2 class="product">Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan-5-" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
+                </div>
+            </div>
         </section>
         </section>
 
@@ -380,7 +377,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -389,7 +386,7 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan-6-" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
     
@@ -401,7 +398,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -410,7 +407,7 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan-7-" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
     
@@ -422,7 +419,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -431,7 +428,7 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan-8-" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
     
@@ -443,7 +440,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -452,10 +449,10 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan-9-" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
-
+    
             <div class="box">
                 <div class="sob1 sox">
                     <button class="favorite-button" onclick="toggleFavorite(this)">
@@ -464,7 +461,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -473,30 +470,30 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
                 </div>
-
-                <div class="box">
-                    <div class="sob1 sox">
-                        <button class="favorite-button" onclick="toggleFavorite(this)">
-                            <i class="fa fa-heart icon"></i>
-                        </button>
-                    </div>
-        
-                    <div class="sob2">
-        <h2>Compact portable fan</h2>
-        <div class="write">
-            <p>N9,000</p>
-        </div>
-                    </div>
-        
-                    <div class="sob3">
-                        <p>Compact portable fan</p>
-                        <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                        <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
-                    </div>
-                    </div>
+    
+                <div class="sob2">
+    <h2 class="product">Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
+                </div>
+            </div>
         </section>
         </section>
 
@@ -550,7 +547,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -559,7 +556,7 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
     
@@ -571,7 +568,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -580,7 +577,7 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
     
@@ -592,7 +589,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -601,7 +598,7 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
     
@@ -613,7 +610,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -622,7 +619,49 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2 class="product">Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
+                </div>
+    
+                <div class="sob2">
+    <h2 class="product">Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
 
@@ -634,7 +673,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -643,52 +682,10 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
-                </div>
-                </div>
-
-                <div class="box">
-                    <div class="sob1 sox">
-                        <button class="favorite-button" onclick="toggleFavorite(this)">
-                            <i class="fa fa-heart icon"></i>
-                        </button>
-                    </div>
-        
-                    <div class="sob2">
-        <h2>Compact portable fan</h2>
-        <div class="write">
-            <p>N9,000</p>
-        </div>
-                    </div>
-        
-                    <div class="sob3">
-                        <p>Compact portable fan</p>
-                        <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                        <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
-                    </div>
-                    </div>
-
-                    <div class="box">
-                <div class="sob1 sox">
-                    <button class="favorite-button" onclick="toggleFavorite(this)">
-                        <i class="fa fa-heart icon"></i>
-                    </button>
-                </div>
-    
-                <div class="sob2">
-    <h2>Compact portable fan</h2>
-    <div class="write">
-        <p>N9,000</p>
-    </div>
-                </div>
-    
-                <div class="sob3">
-                    <p>Compact portable fan</p>
-                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
             </div>
-
+    
             <div class="box">
                 <div class="sob1 sox">
                     <button class="favorite-button" onclick="toggleFavorite(this)">
@@ -697,7 +694,7 @@
                 </div>
     
                 <div class="sob2">
-    <h2>Compact portable fan</h2>
+    <h2 class="product">Compact portable fan</h2>
     <div class="write">
         <p>N9,000</p>
     </div>
@@ -706,30 +703,30 @@
                 <div class="sob3">
                     <p>Compact portable fan</p>
                     <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                    <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
                 </div>
+            </div>
+    
+            <div class="box">
+                <div class="sob1 sox">
+                    <button class="favorite-button" onclick="toggleFavorite(this)">
+                        <i class="fa fa-heart icon"></i>
+                    </button>
                 </div>
-
-                <div class="box">
-                    <div class="sob1 sox">
-                        <button class="favorite-button" onclick="toggleFavorite(this)">
-                            <i class="fa fa-heart icon"></i>
-                        </button>
-                    </div>
-        
-                    <div class="sob2">
-        <h2>Compact portable fan</h2>
-        <div class="write">
-            <p>N9,000</p>
-        </div>
-                    </div>
-        
-                    <div class="sob3">
-                        <p>Compact portable fan</p>
-                        <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
-                        <button type="button" id="addToCart" class="add-To-Cart">Add to Cart</button>
-                    </div>
-                    </div>
+    
+                <div class="sob2">
+    <h2 class="product">Compact portable fan</h2>
+    <div class="write">
+        <p>N9,000</p>
+    </div>
+                </div>
+    
+                <div class="sob3">
+                    <p>Compact portable fan</p>
+                    <p>Brand: <b>Shopster</b> <span> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></p>
+                    <button type="button" id="addToCart" class="add-To-Cart add-to-cart" data-name="Compact portable fan" data-price="6500" data-image="item1.jpg"><i class="fa fa-shopping-cart"> Add to Cart</i></button>
+                </div>
+            </div>
         </section>
         </section>
 
