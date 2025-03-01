@@ -58,14 +58,38 @@
         </div>
     </header>
 <main>
-    <div class="container">
-        <h2>Payment</h2>
-        <div id="order-summary"></div>
-        <h3>Select Payment Method</h3>
-        <button class="payment-option" onclick="processPayment('Credit Card')">Credit Card</button>
-        <button class="payment-option" onclick="processPayment('Bank Transfer')">Bank Transfer</button>
-        <button class="payment-option" onclick="processPayment('PayPal')">PayPal</button>
+    <div class="catt">
+        <p>Cart</p> <i style="color:#939393;" class="fa fa-angle-right"> <span style="font-weight: bold; padding: 0 1rem; color: black;">Checkout </span></i> <i style="color:#939393;" class="fa fa-angle-right"><span style="color:#939393; padding: 0 1rem;">Payment</span></i>
+     </div>
+     <div class="checking-out">
+        <h2>Shipping Details</h2>
+    
+        <!-- Shopping Details Form -->
+        <form id="shopping-details-form">
+            <label for="customer-name">Full name of receiver:</label><br>
+            <input type="text" id="customer-name" required>
+    
+            <label for="customer-email">Email:</label>
+            <input type="email" id="customer-email" required>
+    
+            <label for="customer-address">Address:</label>
+            <input type="text" id="customer-address" required>
+    
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" required>
+                <option value="Credit Card">Credit Card</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+            </select>
+        </form>
+    
+        <ul class="cart-items"></ul>
+        <p class="total"></p>
+        <p class="item-count"></p>
+    
+        <button class="pay-btn">Proceed to Payment</button>
     </div>
+    
 </main>
     
     <footer>

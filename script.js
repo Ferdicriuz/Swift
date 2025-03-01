@@ -445,26 +445,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const cartItemsContainer = document.querySelector(".cart-items");
     const totalContainer = document.querySelector(".total");
+    const itemCountContainer = document.createElement("p"); // Item count display
     const payBtn = document.querySelector(".pay-btn");
+    const clearCartBtn = document.createElement("button"); // Clear Cart button
 
-    let cart = JSON.parse(localStorage.getItem("cart")) || []; // Retrieve stored cart
+    let cart = JSON.parse(localStorage.getItem("cart")) || []; // Retrieve cart
 
     if (cart.length === 0) {
-        cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+        cartItemsContainer.innerHTML = "<i>Your cart is empty.</i>";
         totalContainer.textContent = "Total: $0.00";
-        payBtn.disabled = true; // Disable button if cart is empty
+        payBtn.disabled = true; // Disable payment button if cart is empty
         return;
     }
 
     let total = 0;
+    let totalItems = 0;
     cartItemsContainer.innerHTML = "";
 
     cart.forEach(item => {
         total += item.price * item.quantity;
+        totalItems += item.quantity;
 
         const li = document.createElement("li");
         li.innerHTML = `
@@ -473,27 +476,76 @@ document.addEventListener("DOMContentLoaded", function () {
         cartItemsContainer.appendChild(li);
     });
 
+    // Display total price
     totalContainer.textContent = `Total: $${total.toFixed(2)}`;
+
+    itemCountContainer.classList.add("item-count");
+    clearCartBtn.textContent = "Clear Cart";
+    clearCartBtn.classList.add("clear-cart-btn")
+
+    // Display item count
+    itemCountContainer.textContent = `Total Items: ${totalItems}`;
+    document.querySelector(".checkout-container").insertBefore(itemCountContainer, cartItemsContainer);
+
+    // Create Clear Cart button
+    clearCartBtn.textContent = "Clear Cart";
+    clearCartBtn.classList.add("clear-cart-btn");
+    document.querySelector(".checkout-container").appendChild(clearCartBtn);
+
+    // Event listener for Clear Cart button
+    clearCartBtn.addEventListener("click", function () {
+        localStorage.removeItem("cart"); // Clear cart
+        alert("Cart cleared!");
+        window.location.reload(); // Reload checkout page
+    });
+
+    // Event listener for Proceed to Payment button
+    payBtn.addEventListener("click", function () {
+        localStorage.setItem("order", JSON.stringify(cart)); // Save order
+        window.location.href = "payment.html"; // Redirect to payment page
+    });
 });
 
 
+payBtn.addEventListener("click", function () {
+    const name = document.getElementById("customer-name").value;
+    const email = document.getElementById("customer-email").value;
+    const address = document.getElementById("customer-address").value;
+    const paymentMethod = document.getElementById("payment-method").value;
 
+    if (!name || !email || !address || !paymentMethod) {
+        alert("Please fill in all shopping details!");
+        return;
+    }
 
+    const shoppingDetails = {
+        name,
+        email,
+        address,
+        paymentMethod,
+        cart,
+        total
+    };
 
+    localStorage.setItem("shoppingDetails", JSON.stringify(shoppingDetails));
+    window.location.href = "payment.html";
+});
 
-// // Function to Save Cart to Local Storage
-// function saveCartToStorage(cart) {
-//     localStorage.setItem("cart", JSON.stringify(cart));
-// }
+document.querySelector(".pay-btn").addEventListener("click", function () {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// // Function to Load Cart from Local Storage
-// function loadCartFromStorage() {
-//     return JSON.parse(localStorage.getItem("cart")) || [];
-// }
-// console.log(localStorage);
-// updateCart();
+    if (cart.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
 
-// checkout to payment
+    // Save order details before redirecting (can be sent to a backend later)
+    localStorage.setItem("order", JSON.stringify(cart));
+    
+    // Redirect to payment page
+    window.location.href = "payment.html";
+});
+
 
 
 
