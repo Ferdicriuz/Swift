@@ -183,7 +183,7 @@
     }
 
     #customer-name, #customer-address, #customer-postal{
-    width: 49rem;
+    width: 45rem;
     height: 4rem;
     padding-left: 1rem;
     border-radius: 0.5rem;
@@ -194,14 +194,16 @@
         font-size: 1.6rem;
     }
     
+    
     .checking-out .box{
     display: flex;
-    justify-content: space-between;
+    justify-content:start;
+    gap: 1rem;
     }
 
     .checking-out #customer-region, #customer-state, #Alternative-number,
     #customer-phone{
-    width: 23rem;
+    width: 21rem;
     margin: 1rem 0;
     height: 4rem;
     padding-left: 1rem;
@@ -530,6 +532,7 @@ display: none;
     border: none;
     box-shadow: none;
     }
+
     .checkout-container { 
         display: flex;
     justify-content: space-around;

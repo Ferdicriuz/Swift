@@ -145,157 +145,57 @@
         display: flex;
         justify-content:center;
         align-items: center;
+        flex-direction: column;
         min-width: 100vw;
         min-height: auto;
         flex-wrap: wrap;
         }
 
+.container{
+display: flex;
+justify-content: start;
+align-items: center;
+flex-direction: column;
+width: 50rem;
+height: 40rem;
+margin:3rem 0;
+gap: 2rem;
+box-shadow: 1px 1px 1px 1px #00000060;
+border-radius: 2rem;
+}
 
-          .catt{
-    display: flex;
-    width: 100%;
-    height: 5rem;
-    justify-content: start;
-    align-items: center;
-    font-size: 1.6rem;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.479);
-    }
-    
-    .catt i{
-    padding: 0 1rem;
-    }
-     
-        main .flow1{
-     display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50rem;
-        height: auto;
-        border-radius: 0.5rem;
-        flex-direction: column;
-        box-shadow: 1px 2px 1px 2px #0000004a;
-        margin: 2rem;
-    }
+.catt{
+display: flex;
+width: 50rem;
+font-size: 1.6rem;
+gap: 1rem;
+margin: 2rem 0;
+}
 
-    main .checking-out h2{
-    font-size: 2.5rem;
-    padding: 1rem 0;
-    }
+.container h2{
+    margin-top: 2rem;
+font-size: 2.5rem;
+}
 
-    #customer-name, #customer-address, #customer-postal{
-    width: 49rem;
-    height: 4rem;
-    padding-left: 1rem;
-    border-radius: 0.5rem;
-    margin: 1rem 0;
-    }
+.container p, h3{
+font-size: 1.5rem;
+}
+.container label{
+font-size: 1.6rem;
+}
+.container input{
+margin: 1rem 0;
+}
 
-    .checking-out label{
-        font-size: 1.6rem;
-    }
-    
-    .checking-out .box{
-    display: flex;
-    justify-content: space-between;
-    }
-
-    .checking-out #customer-region, #customer-state, #Alternative-number,
-    #customer-phone{
-    width: 23rem;
-    margin: 1rem 0;
-    height: 4rem;
-    padding-left: 1rem;
-    border-radius: 0.5rem;
-    }
-
-       main .flow2{
-     display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 45rem;
-        height: auto;
-        flex-direction: column;
-        border-radius: 0.5rem;
-        box-shadow: 1px 2px 1px 2px #0000004a;
-        margin: 2rem;
-    }
-
-    .checking-out .weeks{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 48rem;
-    border: 1px solid #00000044;
-    margin: 1rem 0;
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 0.5rem;
-    }
-
-    .checking-out .weeks:hover{
-    border: 1px solid #000000;
-    }
-
-    .checking-out .weeks .dot1{
-    display: flex;
-    }
-    
-    .checking-out .weeks .deal{
-    height: 3.4rem;
-    align-content: end;
-    margin-left: 1rem;
-    }
-
-    .checking-out .weeks .free{
-    border: #0000002e;
-    }
-    
-    .checking-out ul{
-    padding: 2rem;
-    }
-
-     .checking-out ul li{
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    font-weight: 600;
-    }
-
-    .total{
-    font-weight: 600;
-    font-size: 1.3rem;
-    }
-
-    #coupon-code{
-    width: 30rem;
-    height: 4rem;
-    border-radius: 0.5rem 0 0 0.5rem  ;
-    padding-left: 1rem;
-    }
-
-    #apply{
-    background: #CAAC53;
-    height: 4rem;
-    width: 7rem;
-    border: none;
-    border-radius:0 0.5rem 0.5rem 0 ;
-    margin: 1rem 0;
-    }
-
-    .checking-out p{
-    font-size: 1.4rem;
-    padding: 1rem 0;
-    }
-
-    .checking-out .pay-btn{
-    background: #003E27;
-    color: #F3CE64;
-    padding: 1rem 5rem;
-   margin-left: 8rem;
-   margin-top: 2rem;
-   margin-bottom: 2rem;
-   font-weight: 700;
-    }
-
+.confirm-payment-btn{
+background: #003E27;
+color: #F3CE64;
+font-weight: 700;
+font-size: 1.4rem;
+padding: 1rem 5rem;
+margin-top: 4rem;
+border-radius: 0.5rem;
+}
     footer{
         display: flex;
         justify-content: center;
@@ -530,44 +430,61 @@ display: none;
     border: none;
     box-shadow: none;
     }
-    .checkout-container { 
+    main{
         display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-        width: 50rem;
-        height: auto;
-        margin: 2rem; 
-        padding: 20px;
-        box-shadow: 1px 1px 1px 1px #00000060;
-        border-radius: 2rem;
-     }
-    
-     .checkout-container h2{ 
-    font-size: 3rem;
-     }
-    
-        .cart-items { 
-        list-style: none; 
-        padding: 0;
-     }
-        .cart-items li {
-        margin: 1.5rem 0; 
-        font-size: 1.3rem; 
-        color: black;
-    }
-        .total {
-        font-weight: bold;
-        font-size: 1.5rem; 
-        margin: 1rem; }
-    
-        .pay-btn {
-        background: green;
-        color: white; padding: 1rem 6rem;
-        border: none; cursor: pointer;
-    }
-    
-  
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 100vw;
+        min-height: auto;
+        flex-wrap: wrap;
+        }
+
+.container{
+display: flex;
+justify-content: start;
+align-items: center;
+flex-direction: column;
+width: 50rem;
+height: 40rem;
+margin:3rem 0;
+gap: 2rem;
+box-shadow: 1px 1px 1px 1px #00000060;
+border-radius: 2rem;
+}
+
+.catt{
+display: flex;
+width: 50rem;
+font-size: 1.6rem;
+gap: 1rem;
+margin: 2rem 0;
+}
+
+.container h2{
+    margin-top: 2rem;
+font-size: 2.5rem;
+}
+
+.container p, h3{
+font-size: 1.5rem;
+}
+.container label{
+font-size: 1.6rem;
+}
+.container input{
+margin: 1rem 0;
+}
+
+.confirm-payment-btn{
+background: #003E27;
+color: #F3CE64;
+font-weight: 700;
+font-size: 1.4rem;
+padding: 1rem 5rem;
+margin-top: 4rem;
+border-radius: 0.5rem;
+}
 
     footer{
         display: flex;
@@ -820,6 +737,62 @@ display: none;
     border: none;
     box-shadow: none;
     }
+
+    main{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 100vw;
+        min-height: auto;
+        flex-wrap: wrap;
+        }
+
+.container{
+display: flex;
+justify-content: start;
+align-items: center;
+flex-direction: column;
+width: 50rem;
+height: 40rem;
+margin:3rem 0;
+gap: 2rem;
+box-shadow: 1px 1px 1px 1px #00000060;
+border-radius: 2rem;
+}
+
+.catt{
+display: flex;
+width: 50rem;
+font-size: 1.6rem;
+gap: 1rem;
+margin: 2rem 0;
+}
+
+.container h2{
+    margin-top: 2rem;
+font-size: 2.5rem;
+}
+
+.container p, h3{
+font-size: 1.5rem;
+}
+.container label{
+font-size: 1.6rem;
+}
+.container input{
+margin: 1rem 0;
+}
+
+.confirm-payment-btn{
+background: #003E27;
+color: #F3CE64;
+font-weight: 700;
+font-size: 1.4rem;
+padding: 1rem 5rem;
+margin-top: 4rem;
+border-radius: 0.5rem;
+}
    
     
     footer{

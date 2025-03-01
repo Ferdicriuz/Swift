@@ -58,20 +58,32 @@
         </div>
     </header>
 <main>
-    
-    <div class="payment-stage">
-        <h2>Payment</h2>
-        <p>Total Amount to Pay: <strong id="total">N0.00</strong></p>
-
-        <label for="payment-method">Select Payment Method:</label>
-        <select id="payment-method">
-            <option value="card">Credit/Debit Card</option>
-            <option value="bank">Bank Transfer</option>
-            <option value="wallet">Wallet</option>
-        </select>
-
-        <button class="confirm-payment-btn" onclick="confirmPayment()">Confirm Payment</button>
-    </div>
+    <div class="catt">
+        <p style="color:#939393;">Cart</p> <i style="color:#939393;" class="fa fa-angle-right"> <span style=" padding: 0 1rem; color:#939393; font-family: Raleway, serif;">Checkout </span></i> <i style="color:#939393;" class="fa fa-angle-right"><span style="color:#000000; font-weight: bold; padding: 0 1rem; font-family: Raleway, serif;">Payment</span></i>
+     </div>
+     
+    <section class="container">
+     <h2>Payment</h2>
+     <p class="total">Total Amount to Pay: <strong id="total-amount"></strong></p>
+     
+     <h3>Shipping Information</h3>
+     <p id="shipping-info"></p>
+     
+     <div class="payment-stage">
+         <h3>Select Payment Method:</h3>
+         <label>
+             <input type="checkbox" name="payment-method" value="card"> Credit/Debit Card
+         </label><br>
+         <label>
+             <input type="checkbox" name="payment-method" value="bank"> Bank Transfer
+         </label><br>
+         <label>
+             <input type="checkbox" name="payment-method" value="wallet"> Wallet
+         </label><br>
+         
+         <button class="confirm-payment-btn" onclick="confirmPayment()">Confirm Payment</button>
+     </div>
+</section>
 </main>
     
     <footer>
