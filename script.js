@@ -531,19 +531,36 @@ payBtn.addEventListener("click", function () {
     window.location.href = "payment.html";
 });
 
-document.querySelector(".pay-btn").addEventListener("click", function () {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    if (cart.length === 0) {
-        alert("Your cart is empty!");
-        return;
-    }
+// document.querySelector(".pay-btn").addEventListener("click", function () {
+//     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    // Save order details before redirecting (can be sent to a backend later)
-    localStorage.setItem("order", JSON.stringify(cart));
+//     if (cart.length === 0) {
+//         alert("Your cart is empty!");
+//         return;
+//     }
+
+//     // Save order details before redirecting (can be sent to a backend later)
+//     localStorage.setItem("order", JSON.stringify(cart));
     
-    // Redirect to payment page
-    window.location.href = "payment.html";
+//     // Redirect to payment page
+//     window.location.href = "payment.html";
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let total = 0;
+    cart.forEach(item => {
+        total += item.price * item.quantity;
+    });
+    localStorage.setItem("totalAmount", total.toFixed(2));
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (document.getElementById("total-amount")) {
+        const totalAmount = localStorage.getItem("totalAmount") || "0.00";
+        document.getElementById("total-amount").textContent = totalAmount;
+    }
 });
 
 
