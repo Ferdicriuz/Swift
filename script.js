@@ -532,21 +532,6 @@ payBtn.addEventListener("click", function () {
 });
 
 
-// document.querySelector(".pay-btn").addEventListener("click", function () {
-//     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-//     if (cart.length === 0) {
-//         alert("Your cart is empty!");
-//         return;
-//     }
-
-//     // Save order details before redirecting (can be sent to a backend later)
-//     localStorage.setItem("order", JSON.stringify(cart));
-    
-//     // Redirect to payment page
-//     window.location.href = "payment.html";
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     let total = 0;
@@ -564,6 +549,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+// trying to get images from background not working th
+const cartItems = document.querySelectorAll('.cart-item');
+
+cartItems.forEach(item => {
+    // Get computed style of the element
+    const style = window.getComputedStyle(item);
+    const bgImage = style.getPropertyValue('background-image');
+
+    // Extract the URL from background-image
+    const imageUrl = bgImage.replace(/url\(["']?(.*?)["']?\)/, '$1');
+
+    // Create an img element and add it to the cart
+    if (imageUrl) {
+        const imgElement = document.createElement('img');
+        imgElement.src = imageUrl;
+        imgElement.style.width = "100px"; // Adjust as needed
+        imgElement.style.height = "100px";
+        document.getElementById('soba').appendChild(imgElement);
+    }
+});
 
 
 

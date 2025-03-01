@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="navbar">
-        <div class="logo box"><img src="Assets/Logo.svg" alt="Logo"/>
+        <div class="logo box"><a href="landingpage.html"><img src="Assets/Logo.svg" alt="Logo"/></a>
             <div class="boxnill">
                 <button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button></div>
             </div>
@@ -118,7 +118,7 @@
     </div>
 </div>
 <div class="dot">
-    <h3>NO</h3>
+    <h3 style="text-decoration: line-through; color: #939393;">NO</h3>
 </div>
             </div>
         </div>
@@ -127,8 +127,8 @@
 <div class="dot1">
     <input type="checkbox"/>
     <div class="deal">
-        <h4>Free</h4>
-        <p>8-10 working days</p>
+        <h4>Regular</h4>
+        <p>3-5 working days</p>
     </div>
 </div>
 <div class="dot">
@@ -140,8 +140,8 @@
 <div class="dot1">
     <input type="checkbox"/>
     <div class="deal">
-    <h4>Free</h4>
-    <p>8-10 working days</p>
+    <h4>Express</h4>
+    <p>1-3 working days</p>
 </div>
 </div>
 <div class="dot">
@@ -154,14 +154,29 @@
     </section>
 
     <section class="flow2">
-    
-        <ul class="cart-items"></ul>
-        <p class="total"></p>
-        <p class="item-count"></p>
-    
-        <button class="pay-btn">Proceed to Payment</button>
-    </div>
+        <div class="checking-out">
+            <div class="checking-out">
+                <ul class="cart-items"></ul>
+                <div class="coupon-section">
+                    <input type="text" id="coupon-code" placeholder="Enter coupon code">
+                    <button id="apply" onclick="applyCoupon()">Apply</button>
+                </div>
+                <p class="subtotal">Subtotal: <span id="subtotal">N0.00</span></p>
+            
+                
+            
+                <p class="discount">Discount: <span id="discount">N0.00</span></p>
+                <p class="shipping">Estimated Shipping: <span>Calculated at checkout</span></p>
+                <p class="total"><strong>Grand Total:</strong> <span id="grand-total">N0.00</span></p>
+            <form action="paid.html">
+                <button class="pay-btn" onclick="proceedToPayment()">Proceed to Payment</button>
+                </form>
+            </div>
+            
+        </div>
+        
 </section>
+
 </main>
     
     <footer>
