@@ -82,28 +82,51 @@
     display:none;
     flex-direction: column;
     position: absolute;
-    background-color: white;
-    width: 100rem;
+    background-color: #003E27;
+    width: 20rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
     z-index: 1;
     }
 
-    .dropdown-content.show{
-    display: flex;
+    .dropdown:hover .dropdown-content {
+        display: flex;
     }
 
     .dropdown-content a {
-    color: black;
+    color: #F3CE64;
     padding: 10px;
     text-decoration: none;
     display: block;
     }
 
     .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #18553f;
     }
+
+    .cart-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width:75vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.cart-content.show {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.varity{
+width: 100vw;
+background-color: #FFFFFF;
+height: 65vh;
+}
 
     header .box2{
     display: flex;

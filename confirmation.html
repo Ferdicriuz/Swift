@@ -3,11 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comfirmation.css"/>
     <title>Payment Confirmation</title>
 </head>
 <body>
+    <header class="navbar">
+        <div class="logo box"><a href="landingpage.html"><img src="Assets/Logo.svg" alt="Logo"/></a>
+            <div class="boxnill">
+                <button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button></div>
+            </div>
+        </div>
+
+        <nav class="nav box" id="menu-links">
+
+            <button id="login" class="login userdash"><i class="fa fa-user"></i></button>
+
+              <div class="itm2">
+                <form action="landingpage.html">
+                <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
+                </form>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+              <div class="vanish">
+                <a href="about.html">About us</a>
+                <a href="terms&conditions.html">Terms and conditions</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="contactUs.html">Contact us</a>
+                <a href="faq.html">FAQ</a>
+                </div>
+        </nav>
+
+        <div class="box2">
+            <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
+        </div>
+
+        <div class="box1 box cart-nav">
+            <button id="login" class="login"><i class="fa fa-user"></i></button>
+            <button id="cart" class="cart cart-nav"><i class="fa fa-shopping-cart"></i><span class="cart-count">0</span></button>
+        </div>
+        
+        <div class="box3"><button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button></div>
+
+        <div class="box4">
+            <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
+        </div>
+    </header>
+<main>
     <h2>Payment Successful 🎉</h2>
     <p>Thank you for your purchase! Your payment has been received.</p>
     <a href="landingpage.html">Return to Home</a>
+</main>
+
+    <footer>
+        <section class="container1">
+        <div class="logo">
+            <img src="Assets/WhiteLogo.svg" alt="logo" />
+        </div>
+        </section>
+        
+            </footer>
+        
+            <script src="script.js">
+                
+            </script>
+            
 </body>
 </html>

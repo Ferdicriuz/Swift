@@ -507,102 +507,89 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-payBtn.addEventListener("click", function () {
-    const name = document.getElementById("customer-name").value;
-    const email = document.getElementById("customer-email").value;
-    const address = document.getElementById("customer-address").value;
-    const paymentMethod = document.getElementById("payment-method").value;
+function proceedToPayment() {
+    const name = document.getElementById("customer-name")?.value;
+    const number = document.getElementById("customer-phone")?.value;
+    const calls = document.getElementById("alternative-number")?.value;
+    const address = document.getElementById("customer-address")?.value;
+    const postcard = document.getElementById("customer-postal")?.value;
 
-    if (!name || !email || !address || !paymentMethod) {
-        alert("Please fill in all shopping details!");
-        return;
-    }
+    // if (!name || !address || !postcard || !number || !calls) {
+    //     alert("Please fill in all shopping details!");
+    //     return;
+    // }
+
+    // Retrieve cart and total from localStorage
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const total = localStorage.getItem("totalAmount") || "0.00";
 
     const shoppingDetails = {
         name,
-        email,
         address,
-        paymentMethod,
+        number,
+        postcard,
+        calls,
         cart,
         total
     };
 
     localStorage.setItem("shoppingDetails", JSON.stringify(shoppingDetails));
-    window.location.href = "payment.html";
-});
+    window.location.href = "paid.html";
+}
 
-
+// Load cart total on page load
 document.addEventListener("DOMContentLoaded", function () {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     let total = 0;
     cart.forEach(item => {
         total += item.price * item.quantity;
     });
+
     localStorage.setItem("totalAmount", total.toFixed(2));
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-    if (document.getElementById("total-amount")) {
-        const totalAmount = localStorage.getItem("totalAmount") || "0.00";
-        document.getElementById("total-amount").textContent = totalAmount;
+    const totalAmountElement = document.getElementById("total-amount");
+    if (totalAmountElement) {
+        totalAmountElement.textContent = total.toFixed(2);
     }
 });
 
 
+function confirmPayment() {
+    const totalAmount = document.getElementById("total-amount").textContent;
+    const selectedMethod = document.querySelector('input[name="payment-method"]:checked');
 
-// trying to get images from background not working th
-const cartItems = document.querySelectorAll('.cart-item');
+    if (!selectedMethod) {
+        alert("Please select a payment method.");
+        return;
+    }
 
-cartItems.forEach(item => {
-    // Get computed style of the element
-    const style = window.getComputedStyle(item);
-    const bgImage = style.getPropertyValue('background-image');
+    const paymentMethod = selectedMethod.value;
+    const shoppingDetails = JSON.parse(localStorage.getItem("shoppingDetails")) || {};
+    shoppingDetails.paymentMethod = paymentMethod;
+    shoppingDetails.total = totalAmount;
 
-    // Extract the URL from background-image
-    const imageUrl = bgImage.replace(/url\(["']?(.*?)["']?\)/, '$1');
+    // Store updated shopping details
+    localStorage.setItem("shoppingDetails", JSON.stringify(shoppingDetails));
 
-    // Create an img element and add it to the cart
-    if (imageUrl) {
-        const imgElement = document.createElement('img');
-        imgElement.src = imageUrl;
-        imgElement.style.width = "100px"; // Adjust as needed
-        imgElement.style.height = "100px";
-        document.getElementById('soba').appendChild(imgElement);
+    // Clear the cart after checkout
+    localStorage.removeItem("cart");
+    localStorage.removeItem("totalAmount");
+
+    // Show confirmation and redirect
+    alert("Payment confirmed! Redirecting to home page...");
+    window.location.href = "landingpage.html"; // Change this to your landing page URL
+}
+
+function toggleCategory() {
+    document.getElementById("categoryDropdown").classList.toggle("show");
+}
+
+// Close dropdown when clicking outside
+document.addEventListener("click", function (event) {
+    const dropdown = document.getElementById("categoryDropdown");
+    const button = document.getElementById("Category");
+
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.classList.remove("show");
     }
 });
-
-
-
-
-
-
-//         document.addEventListener("DOMContentLoaded", function() {
-//     const dropdowns = document.querySelectorAll(".dropdown");
-
-//     dropdowns.forEach(dropdown => {
-//         const dropbtn = dropdown.querySelector(".dropbutton");
-//         const dropdownContent = dropdown.querySelector(".dropdown-content");
-
-//         dropbtn.addEventListener("click", function(event) {
-//             event.preventDefault(); // Prevent link default action
-
-//             // Close other open dropdowns
-//             document.querySelectorAll(".dropdown-content").forEach(content => {
-//                 if (content !== dropdownContent) {
-//                     content.classList.remove("show");
-//                 }
-//             });
-
-//             // Toggle the clicked dropdown
-//             dropdownContent.classList.toggle("show");
-//         });
-
-//         // Close dropdown if clicking outside
-//         document.addEventListener("click", function(event) {
-//             if (!dropdown.contains(event.target)) {
-//                 dropdownContent.classList.remove("show");
-//             }
-//         });
-//     });
-// });
-
