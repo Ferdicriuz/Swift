@@ -65,7 +65,7 @@
     text-decoration: none;
     }
 
-    .dropdown {
+    .dropdown,.dropdown1 {
     position: relative;
     display: inline-block;
     }
@@ -102,6 +102,7 @@
     }
 
     .dropdown-content a:hover {
+    transition: 0.5s ease;
     background-color: #18553f;
     }
 
@@ -144,9 +145,11 @@ height: 55rem;
 
 .varity .phase2{
 width: 70rem;
-height: 55rem;
+height: 20rem;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
 margin-left: 1rem;
-border: 1px solid red;
 }
 
 .caq {
@@ -197,8 +200,39 @@ gap: 1rem;
     max-height: 200px; /* Adjust based on content */
     padding: 10px 15px;
 }
-.varity{}
-.varity{}
+.varity .phase2 .game1{
+width:100%;
+height: 5rem;
+align-content: center;
+padding-left: 2rem;
+}
+
+.varity .phase2 .game2{
+display: flex;
+justify-content: space-around;
+width:100%;
+height: 14rem;
+align-content: center;
+padding-left: 2rem;
+}
+
+.varity .phase2 .owe{
+align-content: center;
+text-align: center;
+width: 10rem;
+height: 13rem;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.062);
+border-radius: 0.5rem;
+}
+
+.varity .phase2 .owe img{
+width: 70%;
+border-radius: 50rem;
+}
+
+.varity .phase2 .owe p{
+font-weight: 600;
+}
 
     header .box2{
     display: flex;

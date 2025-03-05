@@ -19,35 +19,159 @@
         </div>
         <nav class="nav box" id="menu-links">
             <button id="login" class="login userdash"><i class="fa fa-user"></i></button>
-            <div class="dropdown itm1">
-                <form >
-                <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
-                </form>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </div>
+            <div class="dropdown1 itm1">
+                <button id="Category" class="dropdown-button" onclick="toggleCategory()">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
+                <div class="cart-content"  id="categoryDropdown">
+<div class="varity">
+    <div class="phase1">
+        <div class="caq">
+            <div class="caq-top" onclick="toggleCAQ(this)">
+                <i class="fa fa-television"></i><h2>Electronics & Gadgets</h2><i class="fa fa-angle-down"></i>
+            </div>
+            <div class="caq-under">
+                <div class="act"><i class="fa fa-desktop"></i><p>Personal Computing</p></div>
+                <div class="act"><i class="fa fa-mobile"></i><p>Mobile & Wearable Technology</p></div>
+                <div class="act"><i class="fa fa-tv"></i><p>Home Entertainment & Audio</p></div>
+                <div class="act"><i class="fa fa-gamepad"></i><p>Gaming & Virtual Reality</p></div>
+        </div>
+
+        <div class="caq-top" onclick="toggleCAQ(this)">
+            <i class="fa fa-shopping-bag"></i><h2>Fashion & Apparel</h2><i class="fa fa-angle-down"></i>
+        </div>
+        <div class="caq-under">
+            <div class="act"><i class="fa fa-desktop"></i><p>Personal Computing</p></div>
+            <div class="act"><i class="fa fa-mobile"></i><p>Mobile & Wearable Technology</p></div>
+            <div class="act"><i class="fa fa-tv"></i><p>Home Entertainment & Audio</p></div>
+            <div class="act"><i class="fa fa-gamepad"></i><p>Gaming & Virtual Reality</p></div>
+    </div>
+
+    <div class="caq-top" onclick="toggleCAQ(this)">
+        <i class="fa fa-heart"></i><h2>Health & Beauty</h2><i class="fa fa-angle-down"></i>
+    </div>
+    <div class="caq-under">
+        <div class="act"><i class="fa fa-desktop"></i><p>Personal Computing</p></div>
+        <div class="act"><i class="fa fa-mobile"></i><p>Mobile & Wearable Technology</p></div>
+        <div class="act"><i class="fa fa-tv"></i><p>Home Entertainment & Audio</p></div>
+        <div class="act"><i class="fa fa-gamepad"></i><p>Gaming & Virtual Reality</p></div>
+</div>
+
+<div class="caq-top" onclick="toggleCAQ(this)">
+    <i class="fa fa-shopping-cart"></i><h2>Groceries & Food Items</h2><i class="fa fa-angle-down"></i>
+</div>
+<div class="caq-under">
+    <div class="act"><i class="fa fa-desktop"></i><p>Personal Computing</p></div>
+    <div class="act"><i class="fa fa-mobile"></i><p>Mobile & Wearable Technology</p></div>
+    <div class="act"><i class="fa fa-tv"></i><p>Home Entertainment & Audio</p></div>
+    <div class="act"><i class="fa fa-gamepad"></i><p>Gaming & Virtual Reality</p></div>
+</div>
+
+<div class="caq-top" onclick="toggleCAQ(this)">
+    <i class="fa fa-home"></i><h2>Home, Kitchen & Living</h2><i class="fa fa-angle-down"></i>
+</div>
+<div class="caq-under">
+    <div class="act"><i class="fa fa-desktop"></i><p>Personal Computing</p></div>
+    <div class="act"><i class="fa fa-mobile"></i><p>Mobile & Wearable Technology</p></div>
+    <div class="act"><i class="fa fa-tv"></i><p>Home Entertainment & Audio</p></div>
+    <div class="act"><i class="fa fa-gamepad"></i><p>Gaming & Virtual Reality</p></div>
+</div>
+
+<div class="caq-top" onclick="toggleCAQ(this)">
+    <i class="fa fa-briefcase"></i><h2>Automotive & Tools</h2><i class="fa fa-angle-down"></i>
+</div>
+<div class="caq-under">
+    <div class="act"><i class="fa fa-desktop"></i><p>Personal Computing</p></div>
+    <div class="act"><i class="fa fa-mobile"></i><p>Mobile & Wearable Technology</p></div>
+    <div class="act"><i class="fa fa-tv"></i><p>Home Entertainment & Audio</p></div>
+    <div class="act"><i class="fa fa-gamepad"></i><p>Gaming & Virtual Reality</p></div>
+</div>
+
+<div class="caq-top" onclick="toggleCAQ(this)">
+    <i class="fa fa-shopping-basket"></i><h2>Baby & Kids</h2><i class="fa fa-angle-down"></i>
+</div>
+<div class="caq-under">
+    <div class="act"><i class="fa fa-desktop"></i><p>Personal Computing</p></div>
+    <div class="act"><i class="fa fa-mobile"></i><p>Mobile & Wearable Technology</p></div>
+    <div class="act"><i class="fa fa-tv"></i><p>Home Entertainment & Audio</p></div>
+    <div class="act"><i class="fa fa-gamepad"></i><p>Gaming & Virtual Reality</p></div>
+</div>
+
+<div class="caq-top" onclick="toggleCAQ(this)">
+    <i class="fa fa-soccer-ball-o"></i><h2>Sports & Outdoor</h2><i class="fa fa-angle-down"></i>
+</div>
+<div class="caq-under">
+    <div class="act"><i class="fa fa-desktop"></i><p>Personal Computing</p></div>
+    <div class="act"><i class="fa fa-mobile"></i><p>Mobile & Wearable Technology</p></div>
+    <div class="act"><i class="fa fa-tv"></i><p>Home Entertainment & Audio</p></div>
+    <div class="act"><i class="fa fa-gamepad"></i><p>Gaming & Virtual Reality</p></div>
+</div>
+
+<div class="caq-top" onclick="toggleCAQ(this)">
+    <i class="fa fa-book"></i><h2>Books & Stationery</h2><i class="fa fa-angle-down"></i>
+</div>
+<div class="caq-under">
+    <div class="act"><i class="fa fa-desktop"></i><p>Personal Computing</p></div>
+    <div class="act"><i class="fa fa-mobile"></i><p>Mobile & Wearable Technology</p></div>
+    <div class="act"><i class="fa fa-tv"></i><p>Home Entertainment & Audio</p></div>
+    <div class="act"><i class="fa fa-gamepad"></i><p>Gaming & Virtual Reality</p></div>
+</div>
+
+<div class="caq-top" onclick="toggleCAQ(this)">
+    <i class="fa fa-paw"></i><h2>Pet Supplies</h2><i class="fa fa-angle-down"></i>
+</div>
+<div class="caq-under">
+    <div class="act"><i class="fa fa-desktop"></i><p>Personal Computing</p></div>
+    <div class="act"><i class="fa fa-mobile"></i><p>Mobile & Wearable Technology</p></div>
+    <div class="act"><i class="fa fa-tv"></i><p>Home Entertainment & Audio</p></div>
+    <div class="act"><i class="fa fa-gamepad"></i><p>Gaming & Virtual Reality</p></div>
+</div>
+    </div>
+    </div>
+
+    
+    
+    <div class="phase2">
+        <div class="game1">
+            <h1>Gaming & Virtual Reality <i class="fa fa-arrow-right"></i></h1>
+        </div>
+        <div class="game2">
+            <div class="owe">
+                <img src="Icons/xbox.jpeg"/>
+                <p>Gaming Consoles</p>
+            </div>
+
+            <div class="owe">
+                <img src="Icons/pad.jpg"/>
+                <p>Gaming Accessories</p>
+            </div>
+
+            <div class="owe">
+                <img src="Icons/vr headset.jpg"/>
+                <p>VR Headsets</p>
+            </div>
+
+            <div class="owe">
+                <img src="Icons/vr contoller.jpg"/>
+                <p>VR Contoller</p>
+            </div>
+
+            <div class="owe">
+                <img src="Icons/Gaming Peripherals.jpg"/>
+                <p>Gaming Peripherals</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
 
               <div class="itm2">
                 <form action="landingpage.html">
                 <button id="Category" class="dropdown-button">Category <i id="drop-icon" class="fa fa-angle-down"></i></button>
                 </form>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
               </div>
 
               <div class="dropdown">
                 <button id="Location" class="dropdown-button">Location <i id="drop-icon" class="fa fa-angle-down"></i></button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
               </div>
 
               <a href="blog.html">Blog</a>
@@ -55,9 +179,11 @@
               <div class="dropdown">
                 <button id="Help" class="dropdown-button">Help/Support <i id="drop-icon" class="fa fa-angle-down"></i></button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                    <a href="contactUs.html">Contact Us</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="about.html">About Us</a>
+                    <a href="terms&conditions.html">Terms and Conditions</a>
+                    <a href="privacy.html">Privacy</a>
                 </div>
               </div>
 
