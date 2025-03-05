@@ -593,3 +593,12 @@ document.addEventListener("click", function (event) {
         dropdown.classList.remove("show");
     }
 });
+
+function toggleCAQ(element) {
+    let answer = element.nextElementSibling;
+    answer.classList.toggle("show");
+
+    let icon = element.querySelector("i");
+    icon.classList.toggle("fa-angle-down");
+    icon.classList.toggle("fa-angle-up");
+}

@@ -123,10 +123,82 @@
 
 
 .varity{
+display: flex;
 width: 100vw;
 background-color: #FFFFFF;
-height: 65vh;
+height: 70vh;
+overflow: scroll;
+scrollbar-width: none; 
 }
+
+.varity::-webkit-scrollbar {
+    display: none; 
+}
+
+.varity .phase1{
+width: 25rem;
+height: 55rem;
+}
+
+
+
+.varity .phase2{
+width: 70rem;
+height: 55rem;
+margin-left: 1rem;
+border: 1px solid red;
+}
+
+.caq {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    margin: 0 1rem;
+}
+
+.caq-top {
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.caq-top h2{
+font-weight: 500;
+}
+
+.caq-top i, .caq-under i{
+font-size: 1.6rem;
+}
+
+.caq-under {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0 15px;
+}
+
+.caq-under p{
+font-size: 1.2rem;
+margin: 0.5rem 0;
+}
+
+.caq-under .act {
+display: flex;
+justify-content: center;
+width: 20rem;
+gap: 1rem;
+}
+
+.caq-under.show {
+    max-height: 200px; /* Adjust based on content */
+    padding: 10px 15px;
+}
+.varity{}
+.varity{}
 
     header .box2{
     display: flex;
