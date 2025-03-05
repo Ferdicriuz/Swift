@@ -667,6 +667,30 @@ text-decoration: none;
     font-size: 2rem;
     }
 
+.floating-cart {
+    display: flex;
+}
+
+.cart-nav {
+    display: none; 
+
+}
+
+.fa-times{
+display: flex;
+color: #000000;
+}
+
+.close-cart {
+    background: none;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
  header .box3 #menu-button{
 border: none;
 background: none;
