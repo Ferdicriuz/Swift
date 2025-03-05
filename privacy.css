@@ -101,12 +101,14 @@
         background-color: #18553f;
         }
     
-        .cart-content {
+       .cart-content {
         display: none;
         position: absolute;
+        top: 70px;
+        left: -200px;
         background-color: white;
         color: #000000;
-        width:75vw;
+        width:85vw;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         overflow: hidden;
