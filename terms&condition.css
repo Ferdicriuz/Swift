@@ -695,6 +695,10 @@ color: #000000;
     cursor: pointer;
 }
 
+    header .nav .itm1{
+    display: none;
+    }
+
  header .box3 #menu-button{
 border: none;
 background: none;

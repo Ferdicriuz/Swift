@@ -147,6 +147,7 @@ height: 55rem;
 
 
 .varity .phase2{
+display: flex;
 width: 70rem;
 height: 20rem;
 display: flex;
@@ -970,6 +971,13 @@ header .box{
     header .nav, header .box1{
     display: none;
     }
+
+    header .nav .itm1{
+    display: none;
+    }
+
+    
+
 
 nav{
 display: none;
