@@ -577,7 +577,7 @@ function confirmPayment() {
 
     // Show confirmation and redirect
     alert("Payment confirmed! Redirecting to home page...");
-    window.location.href = "landingpage.html"; // Change this to your landing page URL
+    window.location.href = "comfirmpayment.html"; // Change this to your landing page URL
 }
 
 function toggleCategory() {
