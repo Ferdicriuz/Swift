@@ -206,7 +206,7 @@
 
         <div class="box1 box">
             <button id="login" class="login"><i class="fa fa-user"></i></button>
-            <button id="cart" class="cart"><i class="fa fa-shopping-cart"></i><span>0</span></button>
+            <button id="cart" class="cart cart-nav"><i class="fa fa-shopping-cart"></i><span class="cart-count">0</span></button>
         </div>
         
         <div class="box3"><button onclick="toggleMenu()" type="button" id="menu-button" class="menu-iconn"><i id="bars" class="fa fa-bars"></i></button></div>
@@ -215,6 +215,18 @@
             <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
         </div>
     </header>
+    <div class="floating-cart">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+
+    <div class="cart-sidebar">
+        <button class="close-cart"><i class="fa fa-times"></i></button>
+        <h3>Shopping Cart</h3>
+        <ul class="cart-items"></ul>
+        <p class="cart-total">Total: $0.00</p>
+        <button class="checkout-btn" onclick="proceedToCheckout()">Checkout</button>
+    </div>
 
     <main class="showCase">
         <section class="container1">
