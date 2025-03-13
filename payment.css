@@ -170,9 +170,9 @@
         align-items: center;
         width: 50rem;
         height: auto;
-        border-radius: 0.5rem;
+        border-radius: 1rem;
         flex-direction: column;
-        box-shadow: 1px 2px 1px 2px #0000004a;
+        border: 2px solid #B7B7B7;
         margin: 2rem;
     }
 
@@ -200,7 +200,7 @@
     gap: 1rem;
     }
 
-    .checking-out #customer-region, #customer-state, #Alternative-number,
+    .checking-out #customer-region, #customer-state, #alternative-number,
     #customer-phone{
     width: 21rem;
     margin: 1rem 0;
@@ -211,13 +211,13 @@
 
        main .flow2{
      display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         width: 45rem;
         height: auto;
         flex-direction: column;
-        border-radius: 0.5rem;
-        box-shadow: 1px 2px 1px 2px #0000004a;
+        border-radius: 1rem;
+        border: 2px solid #B7B7B7;
         margin: 2rem;
     }
 
@@ -297,6 +297,35 @@
    font-weight: 700;
    border-radius: 0.5rem;
    border: none;
+    }
+
+    .dive{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .note{
+    width: 45rem;
+    height: 25rem;
+    align-content: center;
+    line-height: 2;
+    padding: 0 1rem ;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: 2px solid #B7B7B7;
+    }
+
+    ol{
+    list-style-position: inside;
+    padding: 0 1rem ;
+    }
+
+    .note a{
+    text-decoration: none;
+    color: #CAAC53;
+    font-weight: 600;
     }
 
     footer{
@@ -555,7 +584,7 @@ display: none;
         height: auto;
         border-radius: 0.5rem;
         flex-direction: column;
-        box-shadow: 1px 2px 1px 2px #0000004a;
+        border: 2px solid #B7B7B7;
         margin: 2rem;
     }
 
@@ -583,7 +612,7 @@ display: none;
     gap: 1rem;
     }
 
-    .checking-out #customer-region, #customer-state, #Alternative-number,
+    .checking-out #customer-region, #customer-state, #alternative-number,
     #customer-phone{
     width: 20rem;
     margin: 1rem 0;
@@ -600,7 +629,7 @@ display: none;
         height: auto;
         flex-direction: column;
         border-radius: 0.5rem;
-        box-shadow: 1px 2px 1px 2px #0000004a;
+        border: 2px solid #B7B7B7;
         margin: 2rem;
     }
 
@@ -680,7 +709,36 @@ display: none;
    margin-bottom: 2rem;
    font-weight: 700;
     }
-    
+
+ .dive{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    }
+
+    .note{
+    width: 45rem;
+    height: 25rem;
+    align-content: center;
+    line-height: 2;
+    padding: 0 1rem ;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: 2px solid #B7B7B7;
+    }
+
+    ol{
+    list-style-position: inside;
+    padding: 0 1rem ;
+    }
+
+    .note a{
+    text-decoration: none;
+    color: #CAAC53;
+    font-weight: 600;
+    }
   
 
     footer{
@@ -956,7 +1014,7 @@ display: none;
         height: auto;
         border-radius: 0.5rem;
         flex-direction: column;
-        box-shadow: 1px 2px 1px 2px #0000004a;
+        border: 2px solid #B7B7B7;
         margin: 2rem;
     }
 
@@ -984,7 +1042,7 @@ display: none;
     gap: 1rem;
     }
 
-    .checking-out #customer-region, #customer-state, #Alternative-number,
+    .checking-out #customer-region, #customer-state, #alternative-number,
     #customer-phone{
     width: 20rem;
     margin: 1rem 0;
@@ -1001,7 +1059,7 @@ display: none;
         height: auto;
         flex-direction: column;
         border-radius: 0.5rem;
-        box-shadow: 1px 2px 1px 2px #0000004a;
+        border: 2px solid #B7B7B7;
         margin: 2rem;
     }
 
@@ -1078,11 +1136,39 @@ display: none;
    margin-left: 5rem;
    margin-top: 2rem;
    margin-bottom: 2rem;
-   border-radius: 2rem;
+   border-radius: 0.5rem;
    font-weight: 700;
     }
     
-  
+.dive{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    }
+
+    .note{
+    width: 45rem;
+    height: 25rem;
+    align-content: center;
+    line-height: 2;
+    padding: 0 1rem ;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: 2px solid #B7B7B7;
+    }
+
+    ol{
+    list-style-position: inside;
+    padding: 0 1rem ;
+    }
+
+    .note a{
+    text-decoration: none;
+    color: #CAAC53;
+    font-weight: 600;
+    }
    
     
     footer{

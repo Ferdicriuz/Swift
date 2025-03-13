@@ -403,7 +403,7 @@ document.addEventListener("DOMContentLoaded", function () {
         categoryContainer.innerHTML = "Your categories go here...";
     }
 
-    updateCart(); // ✅ Now called after defining the function
+    updateCart(); // Now called after defining the function
     setupAddToCartButtons();
 });
 
@@ -497,7 +497,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
 function proceedToPayment() {
     const name = document.getElementById("customer-name")?.value;
     const number = document.getElementById("customer-phone")?.value;
@@ -505,14 +504,25 @@ function proceedToPayment() {
     const address = document.getElementById("customer-address")?.value;
     const postcard = document.getElementById("customer-postal")?.value;
 
-    // if (!name || !address || !postcard || !number || !calls) {
-    //     alert("Please fill in all shopping details!");
-    //     return;
-    // }
+    if (!name || !address || !postcard || !number || !calls) {
+        alert("Please fill in all shipping details!");
+        return;
+    }
+
+    // Get selected shipping method
+    const shippingMethod = document.querySelector('input[name="shipping-method"]:checked');
+    if (!shippingMethod) {
+        alert("Please select a shipping method!");
+        return;
+    }
+    const shippingCost = parseFloat(shippingMethod.value);
 
     // Retrieve cart and total from localStorage
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    const total = localStorage.getItem("totalAmount") || "0.00";
+    let total = parseFloat(localStorage.getItem("totalAmount")) || 0;
+
+    // Update total with shipping cost
+    total += shippingCost;
 
     const shoppingDetails = {
         name,
@@ -521,14 +531,19 @@ function proceedToPayment() {
         postcard,
         calls,
         cart,
-        total
+        total,
+        shippingCost
     };
 
     localStorage.setItem("shoppingDetails", JSON.stringify(shoppingDetails));
+
+    // Update displayed total
+    document.getElementById("shipping-cost").textContent = `N${shippingCost.toFixed(2)}`;
+    document.getElementById("grand-total").textContent = `N${total.toFixed(2)}`;
+
     window.location.href = "paid.html";
 }
 
-// Load cart total on page load
 document.addEventListener("DOMContentLoaded", function () {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     let total = 0;
@@ -538,11 +553,55 @@ document.addEventListener("DOMContentLoaded", function () {
 
     localStorage.setItem("totalAmount", total.toFixed(2));
 
-    const totalAmountElement = document.getElementById("total-amount");
-    if (totalAmountElement) {
-        totalAmountElement.textContent = total.toFixed(2);
-    }
+    document.getElementById("subtotal").textContent = `N${total.toFixed(2)}`;
+    document.getElementById("grand-total").textContent = `N${total.toFixed(2)}`;
 });
+
+// function proceedToPayment() {
+//     const name = document.getElementById("customer-name")?.value;
+//     const number = document.getElementById("customer-phone")?.value;
+//     const calls = document.getElementById("alternative-number")?.value;
+//     const address = document.getElementById("customer-address")?.value;
+//     const postcard = document.getElementById("customer-postal")?.value;
+
+//     if (!name || !address || !postcard || !number || !calls) {
+//         alert("Please fill in all shopping details!");
+//         return;
+//     }
+
+//     // Retrieve cart and total from localStorage
+//     const cart = JSON.parse(localStorage.getItem("cart")) || [];
+//     const total = localStorage.getItem("totalAmount") || "0.00";
+
+//     const shoppingDetails = {
+//         name,
+//         address,
+//         number,
+//         postcard,
+//         calls,
+//         cart,
+//         total
+//     };
+
+//     localStorage.setItem("shoppingDetails", JSON.stringify(shoppingDetails));
+//     window.location.href = "paid.html";
+// }
+
+// // Load cart total on page load
+// document.addEventListener("DOMContentLoaded", function () {
+//     const cart = JSON.parse(localStorage.getItem("cart")) || [];
+//     let total = 0;
+//     cart.forEach(item => {
+//         total += item.price * item.quantity;
+//     });
+
+//     localStorage.setItem("totalAmount", total.toFixed(2));
+
+//     const totalAmountElement = document.getElementById("total-amount");
+//     if (totalAmountElement) {
+//         totalAmountElement.textContent = total.toFixed(2);
+//     }
+// });
 
 
 let selectedPayment = null;

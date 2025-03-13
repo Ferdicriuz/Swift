@@ -57,6 +57,137 @@
             <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
         </div>
     </header>
+
+    <main>
+        <div class="catt">
+            <p style="color:#939393;">Cart</p> 
+            <i style="color:#939393;" class="fa fa-angle-right"> 
+                <span style="font-weight: bold; padding: 0 1rem; color: black; font-family: Raleway, serif;">Checkout </span>
+            </i> 
+            <i style="color:#939393;" class="fa fa-angle-right">
+                <span style="color:#939393; padding: 0 1rem; font-family: Raleway, serif;">Payment</span>
+            </i>
+        </div>
+    
+        <section class="flow1">    
+            <div class="checking-out">
+                <h2>Shipping Details</h2>
+                <form id="shopping-details-form">
+                    <label for="customer-name">Full name of receiver*</label><br>
+                    <input type="text" id="customer-name" required><br>
+    
+                    <div class="box">
+                        <div class="sub">
+                            <label for="customer-phone">Phone Number*</label><br>
+                            <input type="text" id="customer-phone" required><br>
+                        </div>
+                        <div class="sub">
+                            <label for="alternative-number">Alternative Phone Number*</label><br>
+                            <input type="text" id="alternative-number" required><br>
+                        </div>
+                    </div>
+    
+                    <label for="customer-address">Street name and home address*</label><br>
+                    <input type="text" id="customer-address" required>
+    
+                    <div class="box">
+                        <div class="sub">
+                            <label for="customer-state">State*</label><br>
+                            <select id="customer-state" required>
+                                <option value="select">Select</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Portharcourt">Portharcourt</option>
+                            </select><br>
+                        </div>
+                        <div class="sub">
+                            <label for="customer-region">Region*</label><br>
+                            <select id="customer-region" required>
+                                <option value="select">Select</option>
+                                <option value="African">African</option>
+                                <option value="Asia">Asia</option>
+                                <option value="Europe">Europe</option>
+                            </select><br>
+                        </div>
+                    </div>
+    
+                    <label for="customer-postal">Postal Code*</label><br>
+                    <input type="text" id="customer-postal" required max="5">
+                </form>
+    
+                <div class="method">
+                    <h2>Shipping Method</h2>
+                    
+                    <div class="weeks free">
+                        <div class="dot1">
+                            <input type="radio" name="shipping-method" value="0" required/>
+                            <div class="deal">
+                                <h4>Free</h4>
+                                <p>8-10 working days</p>
+                            </div>
+                        </div>
+                        <div class="dot">
+                            <h3 style="text-decoration: line-through; color: #939393;">NO</h3>
+                        </div>
+                    </div>
+    
+                    <div class="weeks">
+                        <div class="dot1">
+                            <input type="radio" name="shipping-method" value="3000" required/>
+                            <div class="deal">
+                                <h4>Regular</h4>
+                                <p>3-5 working days</p>
+                            </div>
+                        </div>
+                        <div class="dot">
+                            <h3>N3,000.00</h3>
+                        </div>
+                    </div>
+    
+                    <div class="weeks">
+                        <div class="dot1">
+                            <input type="radio" name="shipping-method" value="7000" required/>
+                            <div class="deal">
+                                <h4>Express</h4>
+                                <p>1-3 working days</p>
+                            </div>
+                        </div>
+                        <div class="dot">
+                            <h3>N7,000.00</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="dive">
+            <section class="flow2">
+                <div class="checking-out">
+                    <ul class="cart-items"></ul>
+                    <div class="coupon-section">
+                        <input type="text" id="coupon-code" placeholder="Enter coupon code">
+                        <button id="apply" onclick="applyCoupon()">Apply</button>
+                    </div>
+                    <p class="subtotal">Subtotal: <span id="subtotal">N0.00</span></p>
+                    <p class="discount">Discount: <span id="discount">N0.00</span></p>
+                    <p class="shipping">Estimated Shipping: <span id="shipping-cost">N0.00</span></p>
+                    <p class="total"><strong>Grand Total:</strong> <span id="grand-total">N0.00</span></p>
+                    <button class="pay-btn" onclick="proceedToPayment()">Proceed to Payment</button>
+                </div>
+            </section>
+    
+            <div class="note">
+                <h2>Notice</h2>
+                <ol>
+                    <li><b>Delivery:</b> Shipping timelines depend on the seller. Tracking details will be provided.</li>
+                    <li><b>Escrow Payment:</b> Funds are held securely until the buyer confirms receipt.</li>
+                    <li><b>Returns & Refunds:</b> Eligible returns must be requested within 3 days per seller policy.</li>
+                </ol>
+                <p>See <a href="terms&conditions.html">Terms & Policies</a> for details.</p>
+            </div>
+        </section>
+    </main>
+
+<!--     
 <main>
     <div class="catt">
         <p style="color:#939393;">Cart</p> <i style="color:#939393;" class="fa fa-angle-right"> <span style="font-weight: bold; padding: 0 1rem; color: black; font-family: Raleway, serif;">Checkout </span></i> <i style="color:#939393;" class="fa fa-angle-right"><span style="color:#939393; padding: 0 1rem; font-family: Raleway, serif;">Payment</span></i>
@@ -154,6 +285,7 @@
 
     </section>
 
+    <section class="dive">
     <section class="flow2">
         <div class="checking-out">
             <div class="checking-out">
@@ -171,13 +303,22 @@
                 <p class="total"><strong>Grand Total:</strong> <span id="grand-total">N0.00</span></p>
                 <button class="pay-btn" onclick="proceedToPayment()">Proceed to Payment</button>
             </div>
-            
         </div>
+
         
 </section>
-
+<div class="note">
+    <h2>Notice</h2>
+    <ol>
+        <li><b>Delivery:</b> Shipping timelines depend on the seller. Tracking details will be provided.</li>
+        <li><b>Escrow Payment:</b> Funds are held securely until the buyer confirms receipt.</li>
+        <li><b>Returns & Refunds:</b> Eligible returns must be requested within 3 days per seller policy.</li>
+    </ol>
+    <p>See <a href="terms&conditions.html"> Terms & Policies</a> for details.</p>
+</div>
+</section>
 </main>
-    
+     -->
     <footer>
 <section class="container1">
 <div class="logo">
