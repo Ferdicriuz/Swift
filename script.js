@@ -1,14 +1,5 @@
 "use strict"
 
-// nav
-
-// document.querySelector(".menu-iconn").addEventListener("click", function(){
-// const menuLinks = document.querySelector("#menu-links");
-// const icon = document.querySelector("#bars");
-// menuLinks.classList.toggle("show");
-// icon.classList.toggle("fa-user-times");
-// });
-
 // Toggle Hamburger Menu
 function toggleMenu() { 
     const menu = document.querySelector("#menu-links");
@@ -554,18 +545,69 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function confirmPayment() {
-    const totalAmount = document.getElementById("total-amount").textContent;
-    const selectedMethod = document.querySelector('input[name="payment-method"]:checked');
+let selectedPayment = null;
 
-    if (!selectedMethod) {
+function selectPayment(imgElement) {
+    // Get selected payment method
+    selectedPayment = imgElement.getAttribute("data-method");
+
+    // Highlight the selected image
+    document.querySelectorAll('.banks img').forEach(img => img.classList.remove('selected'));
+    imgElement.classList.add('selected');
+
+    // Check if payment method is available
+    if (selectedPayment === "paypal" || selectedPayment === "google-pay") {
+        document.getElementById("unavailable-message").style.display = "block";
+        document.getElementById("card-details").style.display = "none";
+    } else {
+        document.getElementById("unavailable-message").style.display = "none";
+        document.getElementById("card-details").style.display = "block";
+    }
+}
+
+function confirmPayment() {
+    const totalAmount = document.getElementById("total-amount")?.textContent || "0";
+
+    if (!selectedPayment) {
         alert("Please select a payment method.");
         return;
     }
 
-    const paymentMethod = selectedMethod.value;
+    // Prevent checkout for unavailable methods
+    if (selectedPayment === "paypal" || selectedPayment === "google-pay") {
+        alert("This payment method is not available. Please choose another.");
+        return;
+    }
+
+    // Validate card details for Stripe and Mastercard
+    if (selectedPayment === "stripe" || selectedPayment === "mastercard") {
+        const cardNumber = document.getElementById("card-number").value.trim();
+        const expiryDate = document.getElementById("expiry-date").value.trim();
+        const cvc = document.getElementById("cvc").value.trim();
+
+        if (!cardNumber || !expiryDate || !cvc) {
+            alert("Please enter all card details.");
+            return;
+        }
+
+        if (!/^\d{16}$/.test(cardNumber.replace(/\s/g, ''))) {
+            alert("Invalid card number. Please enter a 16-digit number.");
+            return;
+        }
+
+        if (!/^\d{2}\/\d{2}$/.test(expiryDate)) {
+            alert("Invalid expiry date. Use MM/YY format.");
+            return;
+        }
+
+        if (!/^\d{3}$/.test(cvc)) {
+            alert("Invalid CVC. It should be a 3-digit number.");
+            return;
+        }
+    }
+
     const shoppingDetails = JSON.parse(localStorage.getItem("shoppingDetails")) || {};
-    shoppingDetails.paymentMethod = paymentMethod;
+    shoppingDetails.paymentMethod = selectedPayment;
     shoppingDetails.total = totalAmount;
 
     // Store updated shopping details
@@ -577,7 +619,7 @@ function confirmPayment() {
 
     // Show confirmation and redirect
     alert("Payment confirmed! Redirecting to home page...");
-    window.location.href = "confirmation.html"; // Change this to your landing page URL
+    window.location.href = "confirmation.html";
 }
 
 function toggleCategory() {

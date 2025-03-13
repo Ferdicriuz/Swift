@@ -57,34 +57,55 @@
             <input type="search" id="search" name="search" placeholder="Search for products, brands, categories..."/><i class="fa fa-search"></i>
         </div>
     </header>
-<main>
-    <div class="catt">
-        <p style="color:#939393;">Cart</p> <i style="color:#939393;" class="fa fa-angle-right"> <span style=" padding: 0 1rem; color:#939393; font-family: Raleway, serif;">Checkout </span></i> <i style="color:#939393;" class="fa fa-angle-right"><span style="color:#000000; font-weight: bold; padding: 0 1rem; font-family: Raleway, serif;">Payment</span></i>
-     </div>
-     
-    <section class="container">
-     <h2>Payment</h2>
-     <p class="total">Total Amount to Pay: <strong id="total-amount"></strong></p>
-     
-     <h3>Shipping Information</h3>
-     <p id="shipping-info"></p>
-     
-     <div class="payment-stage">
-         <h3>Select Payment Method:</h3>
-         <label>
-             <input type="checkbox" name="payment-method" value="card"> Credit/Debit Card
-         </label><br>
-         <label>
-             <input type="checkbox" name="payment-method" value="bank"> Bank Transfer
-         </label><br>
-         <label>
-             <input type="checkbox" name="payment-method" value="wallet"> Wallet
-         </label><br>
-         
-         <button class="confirm-payment-btn" onclick="confirmPayment()">Confirm Payment</button>
-     </div>
-</section>
-</main>
+
+    <main>
+        <div class="catt">
+            <p style="color:#939393;">Cart</p> 
+            <i style="color:#939393;" class="fa fa-angle-right"> 
+                <span style="padding: 0 1rem; color:#939393; font-family: Raleway, serif;">Checkout </span>
+            </i> 
+            <i style="color:#939393;" class="fa fa-angle-right">
+                <span style="color:#000000; font-weight: bold; padding: 0 1rem; font-family: Raleway, serif;">Payment</span>
+            </i>
+        </div>
+    
+        <section class="container">
+            <h2>Payment</h2>
+    
+            <div class="payment-stage">
+                <h3>Select Payment Method:</h3>
+    
+                <div class="banks">
+                    <img src="Assets/Cart/credit-card-1.svg" data-method="stripe" onclick="selectPayment(this)" alt="Stripe">
+                    <img src="Assets/Cart/credit-card-2.svg" data-method="paypal" onclick="selectPayment(this)" alt="PayPal">
+                    <img src="Assets/Cart/credit-card-3.svg" data-method="mastercard" onclick="selectPayment(this)" alt="Mastercard">
+                    <img src="Assets/Cart/credit-card-4.svg" data-method="google-pay" onclick="selectPayment(this)" alt="Google Pay">
+                </div>
+    
+                <p id="unavailable-message" style="color: red; display: none; font-weight: bold;">This payment method is not available.</p>
+    
+                <div id="card-details" style="display: none;">
+                    <h2>Card details</h2>
+                    <label>Card number</label><br>
+                    <input id="card-number" type="text" placeholder="1234 5678 9012 3456">
+    
+                    <div class="sob">
+                        <div class="inner">
+                            <label>Expiry date</label><br>
+                            <input id="expiry-date" type="text" placeholder="MM/YY">
+                        </div>
+    
+                        <div class="inner">
+                            <label>CVC</label><br>
+                            <input id="cvc" type="text" placeholder="123">
+                        </div>
+                    </div>
+                </div>
+    
+                <button class="confirm-payment-btn" onclick="confirmPayment()">Confirm Payment</button>
+            </div>
+        </section>
+    </main>
     
     <footer>
 <section class="container1">

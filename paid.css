@@ -154,14 +154,37 @@
 .container{
 display: flex;
 justify-content: start;
-align-items: center;
+align-items: start;
 flex-direction: column;
 width: 50rem;
-height: 40rem;
+height: auto;
 margin:3rem 0;
+padding-left: 5rem;
 gap: 2rem;
 box-shadow: 1px 1px 1px 1px #00000060;
 border-radius: 2rem;
+}
+
+.banks{
+word-spacing: 2rem;
+margin: 1rem 0;
+}
+
+.banks img:hover{
+ opacity: 0.5;
+ transition: .3s ease;
+ cursor: pointer;
+ border-radius: 1rem;
+}
+
+
+.banks img.selected {
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+}
+
+#unavailable-message {
+    margin-top: 10px;
 }
 
 .catt{
@@ -173,27 +196,56 @@ margin: 2rem 0;
 }
 
 .container h2{
-    margin-top: 2rem;
+    margin: 2rem 0;
 font-size: 2.5rem;
 }
 
-.container p, h3{
+.container h3{
 font-size: 1.5rem;
 }
+
 .container label{
-font-size: 1.6rem;
+font-size: 1.2rem;
 }
+
 .container input{
-margin: 1rem 0;
+padding-left: 1rem ;
+}
+
+.container #card-number{
+width: 42rem;
+height: 3rem;
+}
+
+.container #expiry-date, #cvc{
+height: 3rem;
+width: 20rem;
+}
+
+.container #card-number1{
+width: 42rem;
+height: 3rem;
+}
+
+.container #expiry-date1, #cvc1{
+height: 3rem;
+width: 20rem;
+}
+
+.container .sob{
+display: flex;
+justify-content: space-between;
+margin-top: 1rem;
 }
 
 .confirm-payment-btn{
 background: #003E27;
-color: #F3CE64;
+color: #ffffff;
 font-weight: 700;
 font-size: 1.4rem;
-padding: 1rem 5rem;
-margin-top: 4rem;
+padding: 1rem 15rem;
+margin: 2rem 0;
+cursor: pointer;
 border: none;
 border-radius: 0.5rem;
 }
@@ -431,6 +483,7 @@ display: none;
     border: none;
     box-shadow: none;
     }
+
     main{
         display: flex;
         justify-content:center;
@@ -444,14 +497,41 @@ display: none;
 .container{
 display: flex;
 justify-content: start;
-align-items: center;
+align-items: start;
 flex-direction: column;
 width: 50rem;
-height: 40rem;
+height: auto;
 margin:3rem 0;
+padding-left: 5rem;
 gap: 2rem;
 box-shadow: 1px 1px 1px 1px #00000060;
 border-radius: 2rem;
+}
+
+.banks{
+word-spacing: 2rem;
+margin: 1rem 0;
+}
+
+.banks img{
+width: 8rem;
+}
+
+.banks img:hover{
+ opacity: 0.5;
+ transition: .3s ease;
+ cursor: pointer;
+ border-radius: 1rem;
+}
+
+
+.banks img.selected {
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+}
+
+#unavailable-message {
+    margin-top: 10px;
 }
 
 .catt{
@@ -463,30 +543,60 @@ margin: 2rem 0;
 }
 
 .container h2{
-    margin-top: 2rem;
+    margin: 2rem 0;
 font-size: 2.5rem;
 }
 
-.container p, h3{
+.container h3{
 font-size: 1.5rem;
 }
+
 .container label{
-font-size: 1.6rem;
+font-size: 1.2rem;
 }
+
 .container input{
-margin: 1rem 0;
+padding-left: 1rem ;
+}
+
+.container #card-number{
+width: 42rem;
+height: 3rem;
+}
+
+.container #expiry-date, #cvc{
+height: 3rem;
+width: 20rem;
+}
+
+.container #card-number1{
+width: 42rem;
+height: 3rem;
+}
+
+.container #expiry-date1, #cvc1{
+height: 3rem;
+width: 20rem;
+}
+
+.container .sob{
+display: flex;
+justify-content: space-between;
+margin-top: 1rem;
 }
 
 .confirm-payment-btn{
 background: #003E27;
-color: #F3CE64;
+color: #ffffff;
 font-weight: 700;
 font-size: 1.4rem;
-padding: 1rem 5rem;
-margin-top: 4rem;
+padding: 1rem 15rem;
+margin: 2rem 0;
+cursor: pointer;
 border: none;
 border-radius: 0.5rem;
 }
+
 
     footer{
         display: flex;
@@ -753,46 +863,98 @@ display: none;
 .container{
 display: flex;
 justify-content: start;
-align-items: center;
+align-items: start;
 flex-direction: column;
-width: 50rem;
-height: 40rem;
+width: 45rem;
+height: auto;
 margin:3rem 0;
+padding-left: 2rem;
 gap: 2rem;
 box-shadow: 1px 1px 1px 1px #00000060;
 border-radius: 2rem;
 }
 
+.banks{
+word-spacing: 2rem;
+margin: 1rem 0;
+}
+
+.banks img:hover{
+ opacity: 0.5;
+ transition: .3s ease;
+ cursor: pointer;
+ border-radius: 1rem;
+}
+
+
+.banks img.selected {
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+}
+
+#unavailable-message {
+    margin-top: 10px;
+}
+
 .catt{
 display: flex;
-width: 50rem;
+width: 45rem;
 font-size: 1.6rem;
 gap: 1rem;
 margin: 2rem 0;
 }
 
 .container h2{
-    margin-top: 2rem;
+    margin: 2rem 0;
 font-size: 2.5rem;
 }
 
-.container p, h3{
+.container h3{
 font-size: 1.5rem;
 }
+
 .container label{
-font-size: 1.6rem;
+font-size: 1.2rem;
 }
+
 .container input{
-margin: 1rem 0;
+padding-left: 1rem ;
+}
+
+.container #card-number{
+width: 42rem;
+height: 3rem;
+}
+
+.container #expiry-date, #cvc{
+height: 3rem;
+width: 20rem;
+}
+
+.container #card-number1{
+width: 42rem;
+height: 3rem;
+}
+
+.container #expiry-date1, #cvc1{
+height: 3rem;
+width: 20rem;
+}
+
+.container .sob{
+display: flex;
+justify-content: space-between;
+margin-top: 1rem;
 }
 
 .confirm-payment-btn{
 background: #003E27;
-color: #F3CE64;
+color: #ffffff;
 font-weight: 700;
 font-size: 1.4rem;
-padding: 1rem 5rem;
-margin-top: 4rem;
+padding: 1rem 15rem;
+margin: 2rem 0;
+cursor: pointer;
 border: none;
 border-radius: 0.5rem;
 }
@@ -815,3 +977,362 @@ border-radius: 0.5rem;
         text-align: center;
         }
     }};  
+
+    @media (max-width:350px){
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+    
+    html{
+    font-size: 50%;
+    scroll-behavior: smooth;
+    }
+    
+.floating-cart {
+    display: flex;
+}
+.cart-nav {
+    display: none; /* Hide navbar cart on mobile */
+}
+
+/* Close Button */
+.close-cart {
+    background: none;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+    header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100vw;
+    min-height: 10vh;
+    padding: 2rem 0;
+    }
+   
+    header img{
+    width: 10rem;
+    }
+
+   header .box3{
+    display: none;
+    font-size: 2rem;
+    }
+
+
+    header .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    }
+
+    .dropdown-button, .login, .cart{
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background:transparent;
+    }
+
+    header .nav, header .box1, .box3{
+    display: none;
+    }
+
+    header .logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+
+    header .logo #boxout{
+    display: flex;
+    border: none;
+    font-size: 3rem;
+    background: none;
+    padding-right: 2rem;
+    }
+
+     header .boxnill{
+    display: flex;
+    }
+
+header .boxnill #menu-button{
+border: none;
+background: none;
+font-size: 3rem;
+margin-right: 1rem;
+}
+
+    nav{
+display: none;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+position: absolute;
+top: 80px;
+right: 2px;
+min-width: 100%;
+border-radius: 0 1px 10px 10px;
+height: auto;
+background-color:rgba(18, 18, 18, 0.363);
+z-index: 99;
+}
+
+nav.active{
+display: flex;
+width: 100%;
+}
+
+.vanish{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.box4{
+font-size: 2rem;
+}
+
+nav .fa-angle-down{
+display: none;
+}
+
+    nav a{
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding:1rem;
+    font-weight: 500;
+    font-weight: 700;
+    text-decoration: none;
+    }
+
+   .dropdown {
+   display: none;
+    }
+
+     .itm2 {
+    position: relative;
+    display: inline-block;
+    }
+
+    .userdash{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 3rem 0;
+    font-size: 5rem;
+    text-align: center;
+    color: #FFFFFF;
+    }
+
+    .dropdown-button {
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    }
+
+    .dropdown-content {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 100rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    }
+
+    .dropdown-content.show{
+    display: flex;
+    }
+
+    .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    }
+
+    header .box2{
+        display: none;
+    }
+    
+    header .box4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    width: auto; 
+    border-bottom: 2px solid #000000;
+    border-radius: 1rem;
+    }
+
+    .box2 .fa-search{
+    cursor: pointer;
+    font-size: 3rem;
+    }
+
+    #search{
+    border: none;
+    width:30rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background: transparent;
+    }
+
+    #search:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    }
+
+    main{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 100vw;
+        min-height: auto;
+        flex-wrap: wrap;
+        }
+
+.container{
+display: flex;
+justify-content: start;
+align-items: start;
+flex-direction: column;
+width: 40rem;
+height: auto;
+margin:3rem 0;
+padding-left: 1rem;
+gap: 1rem;
+box-shadow: 1px 1px 1px 1px #00000060;
+border-radius: 2rem;
+}
+
+.banks{
+word-spacing: 2rem;
+margin: 1rem 0;
+}
+
+.banks img{
+width: 10rem;
+}
+.banks img:hover{
+ opacity: 0.5;
+ transition: .3s ease;
+ cursor: pointer;
+ border-radius: 1rem;
+}
+
+
+.banks img.selected {
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+}
+
+#unavailable-message {
+    margin-top: 0.5rem;
+}
+
+.catt{
+display: flex;
+width: 40rem;
+font-size: 1.6rem;
+gap: 1rem;
+margin: 2rem 0;
+}
+
+.container h2{
+    margin: 2rem 0;
+font-size: 2.5rem;
+}
+
+.container h3{
+font-size: 1.5rem;
+}
+
+.container label{
+font-size: 1.2rem;
+}
+
+.container input{
+padding-left: 1rem ;
+}
+
+.container #card-number{
+width: 38rem;
+height: 3rem;
+}
+
+.container #expiry-date, #cvc{
+height: 3rem;
+width: 15rem;
+}
+
+
+.container .sob{
+display: flex;
+justify-content: space-between;
+margin-top: 1rem;
+}
+
+.confirm-payment-btn{
+background: #003E27;
+color: #ffffff;
+font-weight: 700;
+font-size: 1.4rem;
+padding: 1rem 10rem;
+margin: 2rem 0;
+cursor: pointer;
+border: none;
+border-radius: 0.5rem;
+}
+   
+    
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        min-width: 100vw;
+        min-height: 56vh;
+        background-image: url('Assets/Footer\ Backround.jpg');
+        background-position: center;
+        background-size: cover;
+        }
+        
+        footer .container1{
+        margin: 3rem 0;
+        width: 40rem;
+        text-align: center;
+        }
+    };  
+
+
+    
