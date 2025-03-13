@@ -536,12 +536,12 @@ function proceedToPayment() {
     };
 
     localStorage.setItem("shoppingDetails", JSON.stringify(shoppingDetails));
+    window.location.href = "paid.html";
 
     // Update displayed total
     document.getElementById("shipping-cost").textContent = `N${shippingCost.toFixed(2)}`;
     document.getElementById("grand-total").textContent = `N${total.toFixed(2)}`;
 
-    window.location.href = "paid.html";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
