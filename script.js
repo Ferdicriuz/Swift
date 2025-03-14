@@ -659,3 +659,31 @@ function toggleCAQ(element) {
     icon.classList.toggle("fa-angle-down");
     icon.classList.toggle("fa-angle-up");
 }
+
+const userDashButton = document.getElementById("login1");
+const userDashButtn = document.getElementById("login");
+const userDashboard = document.getElementById("userDashboard");
+const closeDashboard = document.getElementById("closeDashboard1");
+const overlay = document.getElementById("overlay1");
+
+// Toggle dashboard visibility
+function toggleDashboard() {
+    userDashboard.classList.toggle("active");
+    overlay.classList.toggle("active");
+}
+
+// Close dashboard
+function closeUserDashboard() {
+    userDashboard.classList.remove("active");
+    overlay.classList.remove("active");
+}
+
+// Open dashboard on click
+userDashButton.addEventListener("click", toggleDashboard);
+userDashButtn.addEventListener("click", toggleDashboard);
+
+// Close when clicking outside
+overlay.addEventListener("click", closeUserDashboard);
+
+// Close using close button
+closeDashboard.addEventListener("click", closeUserDashboard);
