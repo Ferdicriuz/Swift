@@ -693,8 +693,10 @@ text-decoration: none;
     display: none;
     }
 
-    .floating-cart {
+  .floating-cart {
     display: flex;
+    margin-right: 2rem;
+
 }
 
 .cart-nav {
@@ -705,6 +707,7 @@ text-decoration: none;
 .fa-times{
 display: flex;
 color: #000000;
+padding-right: 2rem;
 }
 
 .close-cart {
@@ -713,10 +716,9 @@ color: #000000;
     font-size: 20px;
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 15px;
     cursor: pointer;
 }
-
 
     header .nav .itm1{
     display: none;
