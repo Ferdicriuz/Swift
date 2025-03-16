@@ -87,7 +87,7 @@ font-size: 1.6rem;
 font-weight: 500;
 }
 
-#email, #psword{
+#loginEmail, #loginPassword{
 width: 35rem;
 height: 5rem;
 font-size: 1.6rem;

@@ -48,6 +48,39 @@ function toggleFavorite(button) {
     }
 }
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("registerForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevents page refresh
+
+        let email = document.getElementById("email").value.trim();
+        let phone = document.getElementById("phone").value.trim();
+        let password = document.getElementById("psword").value;
+        let confirmPassword = document.getElementById("cmpsword").value;
+
+        // Validate password match
+        if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            return;
+        }
+        localStorage.setItem("user", JSON.stringify(user));
+        // Store user data in localStorage
+        let user = {
+            email: email,
+            phone: phone,
+            password: password
+        };
+
+        
+
+        // Redirect to preference.html
+        window.location.href = "preference.html";
+    });
+});
+
+
+// preference
+
 const categories = {
     "Electronics & Gadgets": ["Smartphones & Accessories", "Laptops & Computers", "Gaming & Consoles", "Audio & Wearables"],
     "Fashion & Apparel": ["Men's Clothing", "Women's Clothing", "Kid's Fashion", "Accessories"],
@@ -112,18 +145,16 @@ function selectPreference(category, selectedOption) {
 }
 
 // Handle submission and redirect to another page
-function submitPreferences() {
-    if (Object.keys(selections).length === 0) {
-        alert("Please select at least one option before proceeding!");
-        return;
-    }
+document.addEventListener("DOMContentLoaded", function () {
+    generateCategories(); // Ensure categories load
 
-    let queryString = new URLSearchParams(selections).toString();
-    window.location.href = "login.html?" + queryString; // Redirect with data
-}
+    document.getElementById("Skip").addEventListener("click", function () {
+        localStorage.setItem("preferences", JSON.stringify(selections)); // Save empty preferences if skipping
+        window.location.href = "login.html"; // Redirect to login
+    });
+});
 
-// Load categories when page loads
-window.onload = generateCategories;
+
 
 
 // news letter

@@ -26,24 +26,24 @@
     <p>Let’s get started</p>
     </div>
 
-    <form action="preference.html" id="fill">
-    <label for="email">Email <br>
-        <input type="text" id="email" name="email"/>
-    </label><br>
-    
-    <label for="phone">Phone number <br>
-        <input type="number" id="quantity" name="quantity"  max="10"/>
-    </label><br>
+    <form id="registerForm" action="preference.html">
+        <label for="email">Email <br>
+            <input type="email" id="email" name="email" required/>
+        </label><br>
 
-    <label for="password">Password<br>
-        <input type="password" id="psword" name="password"/>
-    </label><br>
+        <label for="phone">Phone number <br>
+            <input type="text" id="phone" name="phone" maxlength="11" required/>
+        </label><br>
 
-    <label for="comfirm-password">Comfirm Password<br>
-        <input type="password" id="cmpsword" name="comfirm-password"/>
-    </label><br>
-    
-    <button type="submit" id="login" > Continue </button>
+        <label for="password">Password<br>
+            <input type="password" id="psword" name="password" required/>
+        </label><br>
+
+        <label for="confirm-password">Confirm Password<br>
+            <input type="password" id="cmpsword" name="confirm-password" required/>
+        </label><br>
+
+        <button type="submit" id="continue">Continue</button>
     </form>
 </div>
 
