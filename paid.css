@@ -8,11 +8,13 @@
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: weight;
+    overflow-x: hidden;
     font-style: normal;
     }
     
     html{
     font-size: 62.5%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     }
     
@@ -399,11 +401,13 @@ border-radius: 0.5rem;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: weight;
+    overflow-x: hidden;
     font-style: normal;
     }
     
     html{
     font-size: 50%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     }
     
@@ -733,11 +737,13 @@ border-radius: 0.5rem;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: weight;
+    overflow-x: hidden;
     font-style: normal;
     }
     
     html{
     font-size: 50%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     }
     
@@ -1095,11 +1101,13 @@ border-radius: 0.5rem;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: weight;
+    overflow-x: hidden;
     font-style: normal;
     }
     
     html{
     font-size: 50%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     }
     

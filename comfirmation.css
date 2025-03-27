@@ -8,10 +8,12 @@
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: weight;
+    overflow-x: hidden;
     font-style: normal;
     }
     
     html{
+    overflow-x: hidden;
     font-size: 62.5%;
     scroll-behavior: smooth;
     }
@@ -293,11 +295,13 @@ padding: 1rem 10rem;
     body{
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
+    overflow-x: hidden;
     font-weight: weight;
     font-style: normal;
     }
     
     html{
+    overflow-x: hidden;
     font-size: 50%;
     scroll-behavior: smooth;
     }
@@ -559,10 +563,12 @@ padding: 1rem 10rem;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: weight;
+    overflow-x: hidden;
     font-style: normal;
     }
     
     html{
+    overflow-x: hidden;
     font-size: 50%;
     scroll-behavior: smooth;
     }

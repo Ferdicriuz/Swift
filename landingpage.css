@@ -6,6 +6,7 @@
     
     body{
     font-family: "Raleway", serif;
+    overflow-x: hidden;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
@@ -13,6 +14,7 @@
     
     html{
     font-size: 62.5%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     }
     
@@ -1229,11 +1231,13 @@ color: #000000;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: weight;
+    overflow-x: hidden;
     font-style: normal;
     }
     
     html{
     font-size: 50%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     }
     
@@ -2271,11 +2275,13 @@ text-decoration: none;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: weight;
+    overflow-x: hidden;
     font-style: normal;
     }
     
     html{
     font-size: 50%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     }
     
@@ -3198,11 +3204,13 @@ text-decoration: none;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: weight;
+    overflow-x: hidden;
     font-style: normal;
     }
     
     html{
     font-size: 50%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     }
     
@@ -4138,11 +4146,13 @@ text-decoration: none;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: weight;
+    overflow-x: hidden;
     font-style: normal;
     }
     
     html{
     font-size: 50%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     }
 
@@ -5066,10 +5076,12 @@ text-decoration: none;
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
     font-weight: weight;
+    overflow-x: hidden;
     font-style: normal;
     }
     
     html{
+    overflow-x: hidden;
     font-size: 50%;
     scroll-behavior: smooth;
     }
@@ -6007,12 +6019,14 @@ text-decoration: none;
     body{
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
+    overflow-x: hidden;
     font-weight: weight;
     font-style: normal;
     }
     
     html{
     font-size: 50%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     }
     
