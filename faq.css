@@ -13,6 +13,7 @@
     
     html{
     font-size: 62.5%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     }
     
@@ -805,6 +806,7 @@ text-decoration: none;
     }
     
     html{
+    overflow-x: hidden;
     font-size: 50%;
     scroll-behavior: smooth;
     }
@@ -1207,6 +1209,7 @@ text-decoration: none;
     }
     
     html{
+    overflow-x: hidden;
     font-size: 50%;
     scroll-behavior: smooth;
     }
@@ -1608,6 +1611,7 @@ text-decoration: none;
     }
     
     html{
+    overflow-x: hidden;
     font-size: 50%;
     scroll-behavior: smooth;
     }
@@ -2008,6 +2012,7 @@ text-decoration: none;
     }
     
     html{
+    overflow-x: hidden;
     font-size: 50%;
     scroll-behavior: smooth;
     }
@@ -2408,6 +2413,7 @@ text-decoration: none;
     }
     
     html{
+    overflow-x: hidden;
     font-size: 50%;
     scroll-behavior: smooth;
     }
@@ -2808,6 +2814,7 @@ text-decoration: none;
     
     html{
     font-size: 50%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     }
     
